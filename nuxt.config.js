@@ -1,7 +1,16 @@
 const pkg = require('./package')
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'? {
+        router: {
+          base: '/<nom-du-depot>/'
+        }
+      }:{};
+
 module.exports = {
   mode: 'spa',
+
+  ...routerBase,
 
   /*
    ** Headers of the page
