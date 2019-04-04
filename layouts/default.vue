@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-dark">
+    <section class="hero is-dark sticky">
       <div class="container has-text-centered">
         <img src="~/assets/stunfest_logo.png" alt="Stunfest Indie Game logo" />
       </div>
@@ -31,6 +31,12 @@ a {
   width: 100%;
   max-width: 30rem;
   margin: 2rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 3000; /* For some reason cards were above the nav */
 }
 </style>
 <script>
