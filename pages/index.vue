@@ -70,7 +70,7 @@
         </nav>
       </div>
     </section>
-    <div class="scroll-section">
+    <div>
       <section
         v-if="filter === 'all' || filter === 'competition'"
         class="section"
@@ -115,13 +115,6 @@
     </div>
   </div>
 </template>
-
-<style>
-.scroll-section {
-  max-height: calc(100vh - 80px);
-  overflow: scroll;
-}
-</style>
 
 <script>
 import Card from '~/components/Card'
