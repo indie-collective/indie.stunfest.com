@@ -116,6 +116,12 @@
   </div>
 </template>
 
+<style>
+  .tabs {
+    font-family: 'Montserrat';
+  }
+</style>
+
 <script>
 import Card from '~/components/Card'
 
