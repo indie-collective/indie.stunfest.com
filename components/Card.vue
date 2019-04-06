@@ -42,6 +42,9 @@
 </template>
 
 <style>
+.title {
+  font-family: 'Montserrat';
+}
 .card-content {
   min-height: 350px;
 }
