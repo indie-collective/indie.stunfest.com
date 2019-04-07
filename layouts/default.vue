@@ -1,11 +1,17 @@
 <template>
   <div>
-    <section class="hero is-dark sticky">
+    <section class="hero is-dark">
       <div class="container has-text-centered">
         <img src="~/assets/stunfest_logo.png" alt="Stunfest Indie Game logo" />
       </div>
     </section>
     <nuxt />
+    <section class="hero is-dark">
+      <div class="hero-body has-text-centered">
+        Made with 💖 by
+        <a href="https://indieco.xyz" target="_blank">Indie Collective</a>
+      </div>
+    </section>
   </div>
 </template>
 <style>
@@ -28,7 +34,7 @@ a {
 }
 
 .hero img {
-  width: 100%;
+  width: 50vw;
   max-width: 30rem;
   margin: 2rem;
 }
@@ -39,23 +45,3 @@ a {
   z-index: 3000; /* For some reason cards were above the nav */
 }
 </style>
-<script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' }
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
-        }
-      ]
-    }
-  }
-}
-</script>

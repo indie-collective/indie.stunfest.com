@@ -18,20 +18,21 @@
         <p class="title is-3">
           {{ card.title }}
         </p>
-        <p class="subtitle is-5 is-family-monospace">
+        <p class="subtitle is-5">
           {{ card.studio }}
         </p>
         <p class="is-size-6">
           <slot />
         </p>
       </div>
-      <footer class="card-footer">
+      <footer v-if="card.link" class="card-footer">
         <a
           :href="card.link"
           class="card-footer-item has-background-link has-text-white"
           >View more...</a
         >
         <a
+          v-if="isItTimeToVote()"
           href="https://xoyondo.com/ap/RAGfHVZ4lG3o80N"
           class="card-footer-item vote-for-me has-text-weight-bold is-uppercase"
           >Vote for me !</a
@@ -43,10 +44,16 @@
 
 <style>
 .title {
-  font-family: 'Montserrat';
+  font-family: 'Oswald', sans-serif;
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+}
+.image > img {
+  object-fit: cover;
 }
 .card-content {
-  min-height: 350px;
+  min-height: 360px;
 }
 .card-content > p:last-child {
   overflow: hidden;
@@ -127,6 +134,10 @@ export default {
     }
   },
   methods: {
+    isItTimeToVote() {
+      const now = new Date().getTime()
+      return now >= 1558044000000 && now <= 1558260000000
+    },
     path(img) {
       return require('../assets/logos/' + img)
     }
