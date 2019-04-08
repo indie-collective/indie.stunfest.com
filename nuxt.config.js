@@ -1,11 +1,13 @@
 const pkg = require('./package')
 
 const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'? {
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
         router: {
           base: '/indie-nuxt/'
         }
-      }:{};
+      }
+    : {}
 
 module.exports = {
   mode: 'spa',
@@ -16,22 +18,20 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'Indie@Stunfest 2019',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:500,700|Oswald' }
-    ],
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+    ]
   },
 
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#ff5446' },
 
   /*
    ** Global CSS
@@ -49,8 +49,15 @@ module.exports = {
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-webfontloader'
   ],
+
+  webfontloader: {
+    google: {
+      families: ['Montserrat:500,700', 'Oswald']
+    }
+  },
 
   /*
    ** Build configuration
@@ -62,15 +69,24 @@ module.exports = {
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-          options: {
-            fix: true
+        config.module.rules.push(
+          {
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/,
+            options: {
+              fix: true
+            }
+          },
+          {
+            test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+            loader: 'url-loader',
+            query: {
+              name: 'fonts/[name].[ext]'
+            }
           }
-        })
+        )
       }
     }
   }

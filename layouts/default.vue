@@ -2,7 +2,7 @@
   <div>
     <section class="hero is-dark">
       <div class="container has-text-centered">
-        <img src="~/assets/stunfest_logo.png" alt="Stunfest Indie Game logo" />
+        <img src="~/static/stunfest_logo.png" alt="Stunfest Indie Game logo" />
       </div>
     </section>
     <nuxt />
