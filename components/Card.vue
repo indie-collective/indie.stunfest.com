@@ -63,6 +63,7 @@
 .title {
   font-family: 'distortion_of_the_brain_and_mind', 'Oswald', sans-serif;
   letter-spacing: 0.05rem;
+  font-weight: normal;
 }
 .subtitle {
   font-family: 'Montserrat', sans-serif;
