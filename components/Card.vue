@@ -51,15 +51,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.card {
-  transition: all ease-in-out 100ms;
-  transform: perspective(1px) translateZ(0);
-  backface-visibility: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-.card:hover {
-  transform: scale(1.01) perspective(1px) translateZ(0);
-}
 .title {
   font-family: 'distortion_of_the_brain_and_mind', 'Oswald', sans-serif;
   letter-spacing: 0.05rem;
