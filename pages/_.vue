@@ -5,65 +5,62 @@
         <nav class="tabs is-centered is-medium is-fullwidth is-boxed">
           <div class="container">
             <ul>
-              <li
-                :class="{ 'is-active': filter === 'all' }"
-                @click="filter = 'all'"
-              >
-                <a
+              <li :class="{ 'is-active': filter === 'all' }">
+                <nuxt-link
+                  to="/"
                   class="has-text-white"
                   :class="{
                     'has-background-primary has-text-black has-text-weight-bold':
                       filter === 'all'
                   }"
-                  >All</a
                 >
+                  All
+                </nuxt-link>
               </li>
-              <li
-                :class="{ 'is-active': filter === 'competition' }"
-                @click="filter = 'competition'"
-              >
-                <a
+              <li :class="{ 'is-active': filter === 'competition' }">
+                <nuxt-link
+                  to="/competition"
                   class="has-text-white"
                   :class="{
                     'has-background-primary has-text-black has-text-weight-bold':
                       filter === 'competition'
                   }"
-                  >Competition</a
                 >
+                  Competition
+                </nuxt-link>
               </li>
-              <li
-                :class="{ 'is-active': filter === 'village' }"
-                @click="filter = 'village'"
-              >
-                <a
+              <li :class="{ 'is-active': filter === 'village' }">
+                <nuxt-link
+                  to="/village"
                   class="has-text-white"
                   :class="{
                     'has-background-primary has-text-black has-text-weight-bold':
                       filter === 'village'
                   }"
-                  >Indie Village</a
                 >
+                  Indie Village
+                </nuxt-link>
               </li>
-              <li
-                :class="{ 'is-active': filter === 'prototypes' }"
-                @click="filter = 'prototypes'"
-              >
-                <a
+              <li :class="{ 'is-active': filter === 'prototypes' }">
+                <nuxt-link
+                  to="/prototypes"
                   class="has-text-white"
                   :class="{
                     'has-background-primary has-text-black has-text-weight-bold':
                       filter === 'prototypes'
                   }"
-                  >Prototypes</a
                 >
+                  Prototypes
+                </nuxt-link>
               </li>
               <li>
                 <a
                   class="has-background-black-ter has-text-white"
                   href="http://indie.stunfest.fr/2018/"
                   target="_blank"
-                  >Archive</a
                 >
+                  Archive
+                </a>
               </li>
             </ul>
           </div>
@@ -143,13 +140,6 @@ export default {
     Card
   },
 
-  data() {
-    return {
-      filter: 'all',
-      items: {}
-    }
-  },
-
   computed: {
     villageRandom() {
       return randomizeCards(this.items.village)
@@ -162,11 +152,15 @@ export default {
     }
   },
 
-  async asyncData({ $axios, params }) {
-    /* eslint-disable no-console */
-    console.log('params', params)
+  async asyncData({ $axios, params, error }) {
+    const filter = params.pathMatch === '' ? 'all' : params.pathMatch
+
+    if (!['all', 'competition', 'village', 'prototypes'].includes(filter)) {
+      error({ statusCode: 404, message: 'Page not found' })
+    }
+
     const items = await $axios.$get('/items.json')
-    return { items }
+    return { filter, items }
   }
 }
 </script>
