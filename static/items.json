@@ -87,7 +87,7 @@
     {
       "title": "Snowtopia",
       "studio": "Tea For Two",
-      "summary": "Snowtopia is a ski resort construction game with a hint of strategy and respect for the environment. It is intended for ski enthusiasts and tycoon players.",
+      "summary": "Bienvenue à Snowtopia ! Concevez la station de ski idéale, satisfaites des profils de skieurs toujours plus exigeants, et améliorez vos installations dans un cadre de montagnes grandioses et d’hiver éternel.",
       "link": "https://www.playsnowtopia.com/",
       "img": "snowtopia"
     },
@@ -238,13 +238,6 @@
       "studio": "3Axes",
       "summary": "Magicarium est une simulation d'apprentis magicien en VR. Le but est de découvrir les sorts et les interactions possible dans l'environnement mis à disposition du joueur. Il n'y as pas d'objectif spécifique, chaque joueur est libre d'agir comme il le souhait. L’intention recherché est de laissé un maximum de liberté au joueur.",
       "img": "magicarium"
-    },
-    {
-      "title": "::CallBack",
-      "studio": "Water Temple Studio",
-      "summary": "Affrontez-vous dans ce party-game local arcade et frénétique entre amis en propulsant les projectiles sur vos adversaires à toute vitesse ! Trajectoires et rebonds doivent être maîtrisés si vous souhaitez devenir le Champion de l'Arène ! Il vous faut une manette par joueur pour jouer.",
-      "link": "https://store.steampowered.com/app/985930/CallBack/",
-      "img": "callback"
     },
     {
       "title": "Arbopost",
