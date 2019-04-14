@@ -23,9 +23,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
   },
 
   /*
@@ -50,13 +48,18 @@ module.exports = {
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
     '@nuxtjs/pwa',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/axios'
   ],
 
   webfontloader: {
     google: {
       families: ['Montserrat:500,700', 'Oswald']
     }
+  },
+
+  axios: {
+    // proxyHeaders: false
   },
 
   /*
