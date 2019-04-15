@@ -159,7 +159,9 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const items = await $axios.$get(window.location.href + 'items.json')
+    const items = await $axios.$get(
+      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + 'items.json'
+    )
     return { filter, items }
   }
 }
