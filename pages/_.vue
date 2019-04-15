@@ -153,13 +153,13 @@ export default {
   },
 
   async asyncData({ $axios, params, error }) {
-    const filter = params.pathMatch === '' ? 'all' : params.pathMatch
+    const filter = params.pathMatch || 'all'
 
     if (!['all', 'competition', 'village', 'prototypes'].includes(filter)) {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const items = await $axios.$get('items.json')
+    const items = await $axios.$get(window.location.href + 'items.json')
     return { filter, items }
   }
 }
