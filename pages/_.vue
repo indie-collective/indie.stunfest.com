@@ -159,7 +159,7 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const items = await $axios.$get('/items.json')
+    const items = await $axios.$get('./items.json')
     return { filter, items }
   }
 }
