@@ -165,7 +165,7 @@ export default {
     }
 
     const items = await $axios.$get(
-      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2015.json'
+      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2014.json'
     )
     return { filter, items }
   }
