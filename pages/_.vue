@@ -69,7 +69,9 @@
     </section>
     <div>
       <section
-        v-if="filter === 'all' || filter === 'competition'"
+        v-if="
+          (filter === 'all' || filter === 'competition') && items.competition
+        "
         class="section"
       >
         <p class="title is-size-1 is-text-primary is-uppercase">
@@ -86,7 +88,10 @@
           </card>
         </div>
       </section>
-      <section v-if="filter === 'all' || filter === 'village'" class="section">
+      <section
+        v-if="(filter === 'all' || filter === 'village') && items.village"
+        class="section"
+      >
         <p class="title is-size-1 is-text-primary is-uppercase">
           Indie Village
         </p>
@@ -97,7 +102,7 @@
         </div>
       </section>
       <section
-        v-if="filter === 'all' || filter === 'prototypes'"
+        v-if="(filter === 'all' || filter === 'prototypes') && items.prototypes"
         class="section"
       >
         <p class="title is-size-1 is-text-primary is-uppercase">
