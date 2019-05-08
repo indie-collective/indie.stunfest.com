@@ -6,11 +6,7 @@
       <div class="card-image">
         <a :href="card.link">
           <figure class="image is-16by9">
-            <img v-if="card.img" :src="path(card.img)" />
-            <img
-              v-if="!card.img"
-              src="https://place-hold.it/300x169/ffbfba/36?text=No%20images%20!&fontsize=16"
-            />
+            <img :src="path(card.title)" />
           </figure>
         </a>
       </div>
@@ -174,7 +170,9 @@ export default {
       )
     },
     path(img) {
-      return require(`../static/logos/${img}.jpg`)
+      return require(`../static/logos/${img
+        .toLowerCase()
+        .replace(/[^a-zA-Z0-9 -]|\s/gim, '')}.jpg`)
     }
   }
 }
