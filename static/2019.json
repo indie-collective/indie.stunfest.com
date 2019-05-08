@@ -214,7 +214,7 @@
       "studio": "Procrastination Entertainement",
       "summary": "Aux commandes de votre vaisseau spatial et armé d’un disque aux étranges propriétés, pourfendez l’envahisseur qui menace l’univers. Dans ce jeu solo votre sang froid et votre précision serons mis à rude épreuve ! Arriverez vous à sauver l’univers ?!",
       "platforms": ["windows"],
-      "keywords": ["Shoot'Em Up", "Rogue-like", "Solo"]
+      "keywords": ["Shoot 'Em Up", "Rogue-like", "Solo"]
     },
     {
       "title": "2DOOM",
@@ -229,7 +229,7 @@
       "studio": "Reverence Prod",
       "summary": "Ghost 808 est un danmaku alliant graphismes polygonés et ambiance Synthwave. Dans ce Shooter, un trou noir a fait apparition au centre de la galaxie et une armée de spectres suivie de leurs généraux étendent leur domination. Au crépuscule de l’Ère des Poissons, l’Histoire se répète...",
       "platforms": ["windows", "mac"],
-      "keywords": ["Shoot'Em Up", "Solo"],
+      "keywords": ["Shoot 'Em Up", "Solo"],
       "link": "https://www.ghost-808.com/"
     },
     {

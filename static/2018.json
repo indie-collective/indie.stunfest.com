@@ -61,7 +61,7 @@
       "studio": "Lightshards",
       "summary": "Speedjail est un shoot’em up 2D rétro futuriste où votre survie dépend de votre vitesse ! Redéfinissez votre manière de jouer en parcourant des niveaux conçus autour d’une mécanique unique de scrolling et tentez de faire le meilleur score en enchaînant les destructions !",
       "platforms": ["windows", "consoles"],
-      "keywords": ["Shoot'Em Up", "Solo"]
+      "keywords": ["Shoot 'Em Up", "Solo"]
     },
     {
       "title": "Orphan Age",
@@ -212,7 +212,7 @@
     {
       "title": "Domiverse",
       "studio": "Haunted Tie",
-      "summary": "Haunted Tie est un studio indé basé en Belgique et est composé de 3 membres, un pixel artiste, un artiste et un développeur. Nous avons créé nombres de jeux expérimentaux trouvables sur itch.io, mais Domiverse marque la première sortie majeure du studio. Si vous aimez les grivoiseries, n’hésitez pas à nous suivre!",
+      "summary": "Vous avez 3 amis ? Défiez les à Domiverse et prouvez votre talent de gamer ! Choisissez parmi 8 héros aux capacités aussi surprenantes que variées, et remportez le tournoi Domiverse.\n\nVous serez instantanément plongé dans son univers plein de limaces et de chats via un gameplay intuitif et dynamique où chaque attaque est fatale. Et si vous n’avez pas 3 amis, vous pouvez quand même jouer à 2 ou 3.",
       "platforms": ["steam"],
       "keywords": ["Brawler", "Multi"],
       "link": "https://domiverse.be/"
@@ -246,7 +246,7 @@
       "studio": "Headbang Club",
       "summary": "DU METAL, DES ZOMBIES, DES SULFATEUSES, WHAT MOAR?!",
       "platforms": ["steam", "consoles"],
-      "keywords": ["Shoot'Em Up", "Solo"],
+      "keywords": ["Shoot 'Em Up", "Solo"],
       "link": "http://dkh.rocks"
     },
     {
@@ -262,7 +262,7 @@
       "studio": "Pixelnest Studio",
       "summary": "Pixelnest Studio est un studio de développement de jeux, d’applications et sites webs.",
       "platforms": ["steam", "consoles"],
-      "keywords": ["Shoot'Em Up", "Solo"],
+      "keywords": ["Shoot 'Em Up", "Solo"],
       "link": "http://pixelnest.io/"
     },
     {
@@ -327,7 +327,7 @@
       "studio": "Overgame Studio",
       "summary": "Dans KissOrKill vous êtes seul et vous devrez relever le défi qui vous est lancé en tant que joueur. Pour venir à bout de ce shoot-them-up vous devrez choisir entre la voie de l’amour ou celle de la mort. à travers une multitude de niveaux court et graphiquement variés vous devrez assumer les choix de vos actes.",
       "platforms": ["windows", "consoles"],
-      "keywords": ["Shoot'Em Up", "Solo"],
+      "keywords": ["Shoot 'Em Up", "Solo"],
       "link": "http://kissorkillgame.com/"
     },
     {
@@ -335,7 +335,7 @@
       "studio": "Julien Jacquart",
       "summary": "Super Battle Kube est un twin stick shooter convivial jouable jusqu’à 4 joueurs en local. Sa particularité est de proposer un gameplay nerveux dans des environnements kubiques dont la gravité se trouve au centre du kube en question. Prendre des décisions stratégiques peut porter ses fruits mais attention à ne pas trop réfléchir car un adversaire purement offensif à aussi ses chances de parvenir à ses fins.",
       "platforms": ["windows", "mac", "linux"],
-      "keywords": ["Shoot'Em Up", "Multi"],
+      "keywords": ["Shoot 'Em Up", "Multi"],
       "link": "https://twitter.com/NeilujKarja"
     },
     {
