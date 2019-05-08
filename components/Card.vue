@@ -170,9 +170,9 @@ export default {
       )
     },
     path(img) {
-      return require(`../static/logos/${img
+      return require(`../static/logos/2019/${img
         .toLowerCase()
-        .replace(/[^a-zA-Z0-9 -]|\s/gim, '')}.jpg`)
+        .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}.jpg`)
     }
   }
 }
