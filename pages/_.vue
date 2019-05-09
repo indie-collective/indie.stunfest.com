@@ -53,6 +53,21 @@
                   Prototypes
                 </nuxt-link>
               </li>
+              <li
+                v-if="items.gamejam"
+                :class="{ 'is-active': filter === 'gamejam' }"
+              >
+                <nuxt-link
+                  to="/gamejam"
+                  class="has-text-white"
+                  :class="{
+                    'has-background-primary has-text-black has-text-weight-bold':
+                      filter === 'gamejam'
+                  }"
+                >
+                  GameJam
+                </nuxt-link>
+              </li>
               <li>
                 <a
                   class="has-background-black-ter has-text-white"
@@ -146,6 +161,25 @@
           </div>
         </div>
       </section>
+      <section
+        v-if="(filter === 'all' || filter === 'gamejam') && items.gamejam"
+        class="section"
+      >
+        <p class="title is-size-1 is-text-primary is-uppercase">
+          GameJam
+        </p>
+        <div class="columns is-tablet is-multiline is-centered">
+          <div
+            v-for="i in gamejamRandom"
+            :key="i.title"
+            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
+          >
+            <card :card="i">
+              {{ i.summary }}
+            </card>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -211,27 +245,41 @@ export default {
   computed: {
     sortedAwards() {
       const awardsSort = ['indie', 'promise', 'audience', 'gamejam']
-      return this.items.competition
-        .filter(item => item.award)
-        .sort(
-          (a, b) => awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
-        )
+      return [
+        ...this.items.competition
+          .filter(item => item.award)
+          .sort(
+            (a, b) => awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
+          ),
+        ...this.items.gamejam
+          .filter(item => item.award)
+          .sort(
+            (a, b) => awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
+          )
+      ]
     },
     villageRandom() {
       return randomizeCards(this.items.village)
     },
     competitionRandom() {
-      return randomizeCards(this.items.competition.filter(item => !item.award))
+      return randomizeCards(this.items.competition)
     },
     prototypesRandom() {
       return randomizeCards(this.items.prototypes)
+    },
+    gamejamRandom() {
+      return randomizeCards(this.items.gamejam)
     }
   },
 
   async asyncData({ $axios, params, error }) {
     const filter = params.pathMatch || 'all'
 
-    if (!['all', 'competition', 'village', 'prototypes'].includes(filter)) {
+    if (
+      !['all', 'competition', 'village', 'prototypes', 'gamejam'].includes(
+        filter
+      )
+    ) {
       error({ statusCode: 404, message: 'Page not found' })
     }
 

@@ -371,5 +371,24 @@
       "keywords": ["Jeu de société", "Multi"],
       "link": "http://www.wizama.com/"
     }
+  ],
+  "gamejam": [
+    {
+      "title": "Bonjour, Helen",
+      "studio": "Studio Casserole",
+      "summary": "Bonjour Helen explore le thème du refuge.  L'idée était de faire un jeu sensible, qui trouve un équilibre entre gameplay et narration. Nous voulions que chaque personne dans l'équipe puisse s'exprimer sur le projet, et que tout soit créé spécifiquement pour cette expérience de jeu.",
+      "platforms": ["windows"],
+      "keywords": ["Puzzle", "Solo"],
+      "award": "gamejam",
+      "link": "https://felixelvis.com/bonjour-helen"
+    },
+    {
+      "title": "Sanity Rush",
+      "studio": "zriL",
+      "summary": "Need a fix? Play our trippy puzzle game \"Sanity Rush\" made in 48h for the Stun Jam #gamejam. The theme was \"Refuge\".",
+      "platforms": ["windows"],
+      "keywords": ["Puzzle", "Solo"],
+      "link": "https://zril.itch.io/sanity-rush"
+    }
   ]
 }
