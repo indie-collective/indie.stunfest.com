@@ -22,6 +22,7 @@
       "summary": "Koloro relate l’histoire de Kora qui part à la recherche de sa soeur dans un monde imaginaire et onirique, à travers un jeu contemplatif de plateformes et de réflexion. Le jeu propose un gameplay original jouable à un seul bouton qui permettra au joueur de sauter et de sauter contre les murs pour faire demi-tour. L’aventure offre plus d’une centaines de niveaux avec plusieurs boss épiques et le tout accompagné d’un scénario intriguant. Il est aussi possible de découvrir une aventure annexe à deux joueurs en coopération dans laquelle l’entraide sera primordiale pour sortir des tableaux.",
       "platforms": ["windows", "mac", "mobile"],
       "keywords": ["Platformer", "Solo"],
+      "award": "promise",
       "link": "http://skoll-studio.com/koloro.html"
     },
     {
@@ -46,6 +47,7 @@
       "summary": "Sumocrats est un jeu de sport futuriste en zéro gravité. De gigantesques corporations s’affrontent pour leur suprématie aux confins de l’espace dans des tournois ultra médiatisés. Les matches sont intenses, en 2vs2, et durent 6 minutes. Il n’y a aucun arrêt de jeu. Blitzez et punchez vos adversaires ou la balle. Chargez votre poing pour infliger un KO “instant” ou un « supershot ». Tentez le combos dash + punch pour renverser le cours du match. Sumocrats offre un mix de foule frénétique et d’ électro minimal au cœur de stations spatiales abandonnées reconverties le temps d’un match en arènes de Sumo.",
       "platforms": ["windows"],
       "keywords": ["Sport", "Solo", "Multi", "Online"],
+      "award": "audience",
       "link": "http://www.sumocrats.com"
     },
     {
@@ -69,6 +71,7 @@
       "summary": "Au milieu d’une guerre cyberpunk, un gang d’orphelins tente de survivre. Orphan Age est un jeu de micro-gestion dans lequel le joueur contrôle un groupe d’enfants livrés à eux-mêmes dans une ville ravagée. Il faudra leur construire une base, s’aventurer en ville pour récupérer les ressources nécessaires à la survie et s’assurer que les orphelins tiennent le coup. Orphan Age est un jeu solo créé par deux personnes qui sera bientôt présenté sur Kickstarter !",
       "platforms": ["windows"],
       "keywords": ["Gestion", "Solo"],
+      "award": "indie",
       "link": "http://orphan-age.com"
     },
     {

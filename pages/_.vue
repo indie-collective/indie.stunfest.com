@@ -68,6 +68,25 @@
       </div>
     </section>
     <div>
+      <section v-if="filter === 'all' && sortedAwards.length" class="section">
+        <div class="columns is-tablet is-multiline is-centered">
+          <div
+            v-for="i in sortedAwards"
+            :key="i.title"
+            class="award-container column is-half-tablet is-one-quarter-widescreen"
+            :class="
+              i.award + '-award' + (i.award === 'indie' ? ' is-half' : '')
+            "
+          >
+            <p class="award title is-size-3 is-uppercase has-text-centered">
+              {{ getAwardTitle(i.award) }}
+            </p>
+            <card class="tile is-vertical" :card="i" :vote-link="i.voteLink">
+              {{ i.summary }}
+            </card>
+          </div>
+        </div>
+      </section>
       <section
         v-if="
           (filter === 'all' || filter === 'competition') && items.competition
@@ -78,14 +97,15 @@
           Competition
         </p>
         <div class="columns is-tablet is-multiline is-centered">
-          <card
+          <div
             v-for="i in competitionRandom"
             :key="i.title"
-            :card="i"
-            :vote-link="i.voteLink"
+            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
           >
-            {{ i.summary }}
-          </card>
+            <card :card="i" :vote-link="i.voteLink">
+              {{ i.summary }}
+            </card>
+          </div>
         </div>
       </section>
       <section
@@ -96,9 +116,15 @@
           Indie Village
         </p>
         <div class="columns is-tablet is-multiline is-centered">
-          <card v-for="i in villageRandom" :key="i.title" :card="i">
-            {{ i.summary }}
-          </card>
+          <div
+            v-for="i in villageRandom"
+            :key="i.title"
+            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
+          >
+            <card :card="i">
+              {{ i.summary }}
+            </card>
+          </div>
         </div>
       </section>
       <section
@@ -109,9 +135,15 @@
           Prototypes
         </p>
         <div class="columns is-tablet is-multiline is-centered">
-          <card v-for="i in prototypesRandom" :key="i.title" :card="i">
-            {{ i.summary }}
-          </card>
+          <div
+            v-for="i in prototypesRandom"
+            :key="i.title"
+            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
+          >
+            <card :card="i">
+              {{ i.summary }}
+            </card>
+          </div>
         </div>
       </section>
     </div>
@@ -121,6 +153,37 @@
 <style>
 .tabs {
   font-family: 'Montserrat', sans-serif;
+}
+.award-title.award-title {
+  margin-bottom: 3rem;
+}
+.award-container {
+  position: relative;
+  margin-top: 2rem;
+}
+.award {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: -1.25rem 0.75rem;
+}
+.promise-award .award,
+.promise-award .card {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.indie-award .award,
+.indie-award .card {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.audience-award .award,
+.audience-award .card {
+  background-image: linear-gradient(to right, #6ce6ff 0%, #a1f6ed 100%);
+}
+.gamejam-award .award,
+.gamejam-award .card {
+  background-image: linear-gradient(to right, #d0bff0, #fbc7d4);
 }
 </style>
 
@@ -146,11 +209,19 @@ export default {
   },
 
   computed: {
+    sortedAwards() {
+      const awardsSort = ['indie', 'promise', 'audience', 'gamejam']
+      return this.items.competition
+        .filter(item => item.award)
+        .sort(
+          (a, b) => awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
+        )
+    },
     villageRandom() {
       return randomizeCards(this.items.village)
     },
     competitionRandom() {
-      return randomizeCards(this.items.competition)
+      return randomizeCards(this.items.competition.filter(item => !item.award))
     },
     prototypesRandom() {
       return randomizeCards(this.items.prototypes)
@@ -165,9 +236,30 @@ export default {
     }
 
     const items = await $axios.$get(
-      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2014.json'
+      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2018.json'
     )
     return { filter, items }
+  },
+
+  methods: {
+    getAwardTitle(award) {
+      let res = ''
+      switch (award) {
+        case 'promise':
+          res = 'Promise Award'
+          break
+        case 'audience':
+          res = "People's Choice Award"
+          break
+        case 'indie':
+          res = 'Stunfest Indie Award'
+          break
+        case 'gamejam':
+          res = 'GameJam Award'
+          break
+      }
+      return res
+    }
   }
 }
 </script>

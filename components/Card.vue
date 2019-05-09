@@ -1,44 +1,40 @@
 <template>
-  <div
-    class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
-  >
-    <div class="card is-dark">
-      <div class="card-image">
-        <a :href="card.link">
-          <figure class="image is-16by9">
-            <img :src="path(card.title)" />
-          </figure>
-        </a>
-      </div>
-
-      <div class="card-content">
-        <p class="title is-2">
-          {{ card.title }}
-        </p>
-        <p class="subtitle is-5">
-          {{ card.studio }}
-        </p>
-        <p class="is-size-6">
-          <slot />
-        </p>
-      </div>
-
-      <footer v-if="card.link" class="card-footer">
-        <a
-          :href="card.link"
-          class="card-footer-item has-background-link has-text-white"
-        >
-          View more...
-        </a>
-        <a
-          v-if="isItTimeToVote()"
-          href="https://xoyondo.com/ap/RAGfHVZ4lG3o80N"
-          class="card-footer-item vote-for-me has-text-weight-bold is-uppercase"
-        >
-          Vote for me!
-        </a>
-      </footer>
+  <div class="card is-dark">
+    <div class="card-image">
+      <a :href="card.link">
+        <figure class="image is-16by9">
+          <img :src="path(card.title)" />
+        </figure>
+      </a>
     </div>
+
+    <div class="card-content">
+      <p class="title is-2">
+        {{ card.title }}
+      </p>
+      <p class="subtitle is-5">
+        {{ card.studio }}
+      </p>
+      <p class="is-size-6">
+        <slot />
+      </p>
+    </div>
+
+    <footer v-if="card.link" class="card-footer">
+      <a
+        :href="card.link"
+        class="card-footer-item has-background-link has-text-white"
+      >
+        View more...
+      </a>
+      <a
+        v-if="isItTimeToVote()"
+        href="https://xoyondo.com/ap/RAGfHVZ4lG3o80N"
+        class="card-footer-item vote-for-me has-text-weight-bold is-uppercase"
+      >
+        Vote for me!
+      </a>
+    </footer>
   </div>
 </template>
 
@@ -170,7 +166,7 @@ export default {
       )
     },
     path(img) {
-      return require(`../static/logos/2014/${img
+      return require(`../static/logos/2018/${img
         .toLowerCase()
         .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}.jpg`)
     }
