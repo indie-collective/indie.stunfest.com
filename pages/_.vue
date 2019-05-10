@@ -17,7 +17,10 @@
                   All
                 </nuxt-link>
               </li>
-              <li :class="{ 'is-active': filter === 'competition' }">
+              <li
+                v-show="items.competition"
+                :class="{ 'is-active': filter === 'competition' }"
+              >
                 <nuxt-link
                   to="/competition"
                   class="has-text-white"
@@ -29,7 +32,10 @@
                   Competition
                 </nuxt-link>
               </li>
-              <li :class="{ 'is-active': filter === 'village' }">
+              <li
+                v-show="items.village"
+                :class="{ 'is-active': filter === 'village' }"
+              >
                 <nuxt-link
                   to="/village"
                   class="has-text-white"
@@ -41,7 +47,10 @@
                   Indie Village
                 </nuxt-link>
               </li>
-              <li :class="{ 'is-active': filter === 'prototypes' }">
+              <li
+                v-show="items.prototypes"
+                :class="{ 'is-active': filter === 'prototypes' }"
+              >
                 <nuxt-link
                   to="/prototypes"
                   class="has-text-white"
@@ -54,7 +63,7 @@
                 </nuxt-link>
               </li>
               <li
-                v-if="items.gamejam"
+                v-show="items.gamejam"
                 :class="{ 'is-active': filter === 'gamejam' }"
               >
                 <nuxt-link
@@ -69,13 +78,32 @@
                 </nuxt-link>
               </li>
               <li>
-                <a
-                  class="has-background-black-ter has-text-white"
-                  href="http://indie.stunfest.fr/2018/"
-                  target="_blank"
-                >
-                  Archive
-                </a>
+                <div class="dropdown is-active is-up" style="z-index: 1000">
+                  <div class="dropdown-trigger">
+                    <button
+                      class="button"
+                      aria-haspopup="true"
+                      aria-controls="dropdown-menu"
+                    >
+                      <span>2018</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div id="dropdown-menu" class="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a
+                        v-for="year in ['2019', '2018', '2016', '2015', '2014']"
+                        :key="year"
+                        href="#"
+                        class="dropdown-item"
+                      >
+                        {{ year }}
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -246,16 +274,22 @@ export default {
     sortedAwards() {
       const awardsSort = ['indie', 'promise', 'audience', 'gamejam']
       return [
-        ...this.items.competition
-          .filter(item => item.award)
-          .sort(
-            (a, b) => awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
-          ),
-        ...this.items.gamejam
-          .filter(item => item.award)
-          .sort(
-            (a, b) => awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
-          )
+        ...((this.items.competition &&
+          this.items.competition
+            .filter(item => item.award)
+            .sort(
+              (a, b) =>
+                awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
+            )) ||
+          []),
+        ...((this.items.gamejam &&
+          this.items.gamejam
+            .filter(item => item.award)
+            .sort(
+              (a, b) =>
+                awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
+            )) ||
+          [])
       ]
     },
     villageRandom() {
@@ -284,7 +318,7 @@ export default {
     }
 
     const items = await $axios.$get(
-      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2018.json'
+      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2019.json'
     )
     return { filter, items }
   },
