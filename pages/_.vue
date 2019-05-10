@@ -78,10 +78,10 @@
                 </nuxt-link>
               </li>
               <li>
-                <div class="dropdown is-active is-up" style="z-index: 1000">
+                <a class="dropdown is-hoverable is-up">
                   <div class="dropdown-trigger">
                     <button
-                      class="button"
+                      class="button is-text"
                       aria-haspopup="true"
                       aria-controls="dropdown-menu"
                     >
@@ -103,7 +103,7 @@
                       </a>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -215,7 +215,42 @@
 <style>
 .tabs {
   font-family: 'Montserrat', sans-serif;
+  overflow: visible;
 }
+.tabs.tabs li a {
+  border: none;
+}
+.dropdown.dropdown {
+  padding: 0 1em;
+}
+.dropdown,
+.dropdown-trigger,
+.dropdown-trigger button {
+  width: 100%;
+  outline: none;
+}
+.dropdown-trigger button > span + span {
+  display: none;
+}
+.dropdown-trigger.dropdown-trigger button:hover,
+.dropdown .dropdown-menu {
+  background: transparent;
+  width: 100%;
+}
+.dropdown-trigger.dropdown-trigger button,
+.dropdown-trigger.dropdown-trigger button *,
+.dropdown .dropdown-menu,
+.dropdown .dropdown-menu * {
+  color: white !important;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+.dropdown .dropdown-content {
+  padding: 0;
+  background: transparent;
+}
+
 .award-title.award-title {
   margin-bottom: 3rem;
 }
