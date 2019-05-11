@@ -5,77 +5,23 @@
         <nav class="tabs is-centered is-medium is-fullwidth is-boxed">
           <div class="container">
             <ul>
-              <li :class="{ 'is-active': filter === 'all' }">
-                <nuxt-link
-                  to="/"
-                  class="has-text-white"
-                  :class="{
-                    'has-background-primary has-text-black has-text-weight-bold':
-                      filter === 'all'
-                  }"
-                >
-                  All
-                </nuxt-link>
-              </li>
               <li
-                v-show="items.competition"
-                :class="{ 'is-active': filter === 'competition' }"
+                v-for="tab in tabs"
+                v-show="tab === 'all' || items[tab]"
+                :key="tab"
+                :class="{ 'is-active': filter === tab }"
+                @click="filter = tab"
               >
-                <nuxt-link
-                  to="/competition"
+                <a
+                  :to="tab"
                   class="has-text-white"
                   :class="{
                     'has-background-primary has-text-black has-text-weight-bold':
-                      filter === 'competition'
+                      filter === tab
                   }"
                 >
-                  Competition
-                </nuxt-link>
-              </li>
-              <li
-                v-show="items.village"
-                :class="{ 'is-active': filter === 'village' }"
-              >
-                <nuxt-link
-                  to="/village"
-                  class="has-text-white"
-                  :class="{
-                    'has-background-primary has-text-black has-text-weight-bold':
-                      filter === 'village'
-                  }"
-                >
-                  Indie Village
-                </nuxt-link>
-              </li>
-              <li
-                v-show="items.prototypes"
-                :class="{ 'is-active': filter === 'prototypes' }"
-              >
-                <nuxt-link
-                  to="/prototypes"
-                  class="has-text-white"
-                  :class="{
-                    'has-background-primary has-text-black has-text-weight-bold':
-                      filter === 'prototypes'
-                  }"
-                >
-                  Prototypes
-                </nuxt-link>
-              </li>
-              <li
-                v-show="items.gamejam"
-                :class="{ 'is-active': filter === 'gamejam' }"
-              >
-                <nuxt-link
-                  to="/gamejam"
-                  class="has-text-white"
-                  :class="{
-                    'has-background-primary has-text-black has-text-weight-bold':
-                      filter === 'gamejam'
-                  }"
-                >
-                  GameJam
-                </nuxt-link>
+                  {{ tab[0].toUpperCase() }}{{ tab.slice(1) }}
+                </a>
               </li>
               <li>
                 <a class="dropdown is-hoverable is-up">
@@ -85,7 +31,7 @@
                       aria-haspopup="true"
                       aria-controls="dropdown-menu"
                     >
-                      <span>2018</span>
+                      <span>{{ currentYear }}</span>
                       <span class="icon is-small">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                       </span>
@@ -93,14 +39,14 @@
                   </div>
                   <div id="dropdown-menu" class="dropdown-menu" role="menu">
                     <div class="dropdown-content">
-                      <a
+                      <nuxt-link
                         v-for="year in ['2019', '2018', '2016', '2015', '2014']"
                         :key="year"
-                        href="#"
+                        :to="`/${year}`"
                         class="dropdown-item"
                       >
                         {{ year }}
-                      </a>
+                      </nuxt-link>
                     </div>
                   </div>
                 </a>
@@ -287,6 +233,10 @@
 <script>
 import Card from '~/components/Card'
 
+// Constants
+const tabs = ['all', 'competition', 'village', 'prototypes', 'gamejam']
+const awards = ['indie', 'promise', 'audience', 'gamejam']
+
 function randomizeCards(cardSection) {
   let j, x, i
   for (i = cardSection.length - 1; i > 0; i--) {
@@ -305,9 +255,20 @@ export default {
     Card
   },
 
+  props: {
+    tabs: {
+      type: Array,
+      default: () => tabs
+    },
+    currentYear: {
+      type: String,
+      default: () => location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
+    }
+  },
+
   computed: {
     sortedAwards() {
-      const awardsSort = ['indie', 'promise', 'audience', 'gamejam']
+      const awardsSort = awards
       return [
         ...((this.items.competition &&
           this.items.competition
@@ -344,18 +305,17 @@ export default {
   async asyncData({ $axios, params, error }) {
     const filter = params.pathMatch || 'all'
 
-    if (
-      !['all', 'competition', 'village', 'prototypes', 'gamejam'].includes(
-        filter
-      )
-    ) {
+    if (!tabs.includes(filter)) {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const items = await $axios.$get(
-      window.location.href.replace(/(.*?)\/\w+$/gi, '$1/') + '2019.json'
-    )
+    const items = await $axios.$get(params.year + '.json')
     return { filter, items }
+  },
+
+  mounted() {
+    const currentYear = this.$route.params.year
+    return { currentYear }
   },
 
   methods: {

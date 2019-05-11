@@ -96,10 +96,7 @@ module.exports = {
 
   generate: {
     routes: [
-      '/',
-      '/competition',
-      '/village',
-      '/prototypes'
+      '/:year'
     ]
   }
 }

@@ -45,3 +45,13 @@ a {
   z-index: 3000; /* For some reason cards were above the nav */
 }
 </style>
+
+<script>
+export default {
+  head() {
+    return {
+      title: `Indie@Stunfest ${this.$route.params.year}`
+    }
+  }
+}
+</script>
