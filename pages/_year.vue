@@ -20,7 +20,7 @@
                       filter === tab
                   }"
                 >
-                  {{ tab[0].toUpperCase() }}{{ tab.slice(1) }}
+                  {{ tab[0].toUpperCase() + tab.slice(1) }}
                 </a>
               </li>
               <li>
@@ -40,7 +40,7 @@
                   <div id="dropdown-menu" class="dropdown-menu" role="menu">
                     <div class="dropdown-content">
                       <nuxt-link
-                        v-for="year in ['2019', '2018', '2016', '2015', '2014']"
+                        v-for="year in years"
                         :key="year"
                         :to="`/${year}`"
                         class="dropdown-item"
@@ -234,8 +234,14 @@
 import Card from '~/components/Card'
 
 // Constants
+const years = ['2019', '2018', '2016', '2015', '2014']
 const tabs = ['all', 'competition', 'village', 'prototypes', 'gamejam']
-const awards = ['indie', 'promise', 'audience', 'gamejam']
+const awards = {
+  indie: 'Stunfest Indie Award',
+  promise: 'Promise Award',
+  audience: "People's Choice Award",
+  gamejam: 'GameJam Award'
+}
 
 function randomizeCards(cardSection) {
   let j, x, i
@@ -263,29 +269,32 @@ export default {
     currentYear: {
       type: String,
       default: () => location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
+    },
+    years: {
+      type: Array,
+      default: () => years
     }
   },
 
   computed: {
     sortedAwards() {
-      const awardsSort = awards
+      const awardsSort = Object.keys(awards)
+
+      const awardsItems = function(items) {
+        if (items) {
+          return items
+            .filter(item => item.award)
+            .sort(
+              (a, b) =>
+                awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
+            )
+        }
+        return []
+      }
+
       return [
-        ...((this.items.competition &&
-          this.items.competition
-            .filter(item => item.award)
-            .sort(
-              (a, b) =>
-                awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
-            )) ||
-          []),
-        ...((this.items.gamejam &&
-          this.items.gamejam
-            .filter(item => item.award)
-            .sort(
-              (a, b) =>
-                awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
-            )) ||
-          [])
+        ...awardsItems(this.items.competition),
+        ...awardsItems(this.items.gamejam)
       ]
     },
     villageRandom() {
@@ -320,22 +329,7 @@ export default {
 
   methods: {
     getAwardTitle(award) {
-      let res = ''
-      switch (award) {
-        case 'promise':
-          res = 'Promise Award'
-          break
-        case 'audience':
-          res = "People's Choice Award"
-          break
-        case 'indie':
-          res = 'Stunfest Indie Award'
-          break
-        case 'gamejam':
-          res = 'GameJam Award'
-          break
-      }
-      return res
+      return awards[award]
     }
   }
 }
