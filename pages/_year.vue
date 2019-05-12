@@ -76,79 +76,18 @@
           </div>
         </div>
       </section>
-      <section
-        v-if="
-          (filter === 'all' || filter === 'competition') && items.competition
-        "
-        class="section"
-      >
+
+      <section v-for="section in sections" :key="section" class="section">
         <p class="title is-size-1 is-text-primary is-uppercase">
-          Competition
+          {{ section }}
         </p>
         <div class="columns is-tablet is-multiline is-centered">
           <div
-            v-for="i in competitionRandom"
+            v-for="i in random(section)"
             :key="i.title"
             class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
           >
             <card :card="i" :vote-link="i.voteLink">
-              {{ i.summary }}
-            </card>
-          </div>
-        </div>
-      </section>
-      <section
-        v-if="(filter === 'all' || filter === 'village') && items.village"
-        class="section"
-      >
-        <p class="title is-size-1 is-text-primary is-uppercase">
-          Indie Village
-        </p>
-        <div class="columns is-tablet is-multiline is-centered">
-          <div
-            v-for="i in villageRandom"
-            :key="i.title"
-            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
-          >
-            <card :card="i">
-              {{ i.summary }}
-            </card>
-          </div>
-        </div>
-      </section>
-      <section
-        v-if="(filter === 'all' || filter === 'prototypes') && items.prototypes"
-        class="section"
-      >
-        <p class="title is-size-1 is-text-primary is-uppercase">
-          Prototypes
-        </p>
-        <div class="columns is-tablet is-multiline is-centered">
-          <div
-            v-for="i in prototypesRandom"
-            :key="i.title"
-            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
-          >
-            <card :card="i">
-              {{ i.summary }}
-            </card>
-          </div>
-        </div>
-      </section>
-      <section
-        v-if="(filter === 'all' || filter === 'gamejam') && items.gamejam"
-        class="section"
-      >
-        <p class="title is-size-1 is-text-primary is-uppercase">
-          GameJam
-        </p>
-        <div class="columns is-tablet is-multiline is-centered">
-          <div
-            v-for="i in gamejamRandom"
-            :key="i.title"
-            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
-          >
-            <card :card="i">
               {{ i.summary }}
             </card>
           </div>
@@ -182,6 +121,7 @@
 .dropdown .dropdown-menu {
   background: transparent;
   width: 100%;
+  left: auto;
 }
 .dropdown-trigger.dropdown-trigger button,
 .dropdown-trigger.dropdown-trigger button *,
@@ -234,7 +174,7 @@
 import Card from '~/components/Card'
 
 // Constants
-const years = ['2019', '2018', '2016', '2015', '2014']
+const years = [2014, 2015, 2016, 2018, 2019]
 const tabs = ['all', 'competition', 'village', 'prototypes', 'gamejam']
 const awards = {
   indie: 'Stunfest Indie Award',
@@ -297,17 +237,9 @@ export default {
         ...awardsItems(this.items.gamejam)
       ]
     },
-    villageRandom() {
-      return randomizeCards(this.items.village)
-    },
-    competitionRandom() {
-      return randomizeCards(this.items.competition)
-    },
-    prototypesRandom() {
-      return randomizeCards(this.items.prototypes)
-    },
-    gamejamRandom() {
-      return randomizeCards(this.items.gamejam)
+
+    sections() {
+      return tabs.filter(tab => this.items[tab])
     }
   },
 
@@ -330,6 +262,10 @@ export default {
   methods: {
     getAwardTitle(award) {
       return awards[award]
+    },
+
+    random(section) {
+      return randomizeCards(this.items[section])
     }
   }
 }
