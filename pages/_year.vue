@@ -138,7 +138,7 @@
 }
 .dropdown .dropdown-content {
   padding: 0;
-  background: transparent;
+  background: rgba(54, 54, 54, 0.95);
 }
 
 .award-title.award-title {
