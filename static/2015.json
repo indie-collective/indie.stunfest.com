@@ -46,6 +46,7 @@
       "summary": "Crowd Smashers est un jeu d’affrontement en local. Detruisez le public de votre adversaire tout en protégeant le votre. Combinez 3 écoles de magies pour créer des sorts puissants et surprenants. Plus vous faites d’échanges plus la boule gagne en puissance et en vitesse. Faites appel à des super attaques pour; Buff, Debuff, et détruire encore plus violemment la foule adverse.",
       "platforms": ["windows", "mac", "linux"],
       "keywords": ["Arcade", "Multi"],
+      "award": "indie",
       "link": "http://www.CrowdSmashers.com"
     },
     {
@@ -86,6 +87,7 @@
       "summary": "Hazelrun est un jeu de course multijoueur compétitif. Il met en scène 4 écureuils qui doivent se frayer un chemin dans un parcours semé d’obstacles, sans se faire rattraper par le scrolling. Le jeu prend tout son intérêt à quatre joueurs, chacun tentant de rattraper l’autre au moyen de noisettes piégées, d’inverseurs de gravité ou de marteaux rétrécissants.",
       "platforms": ["windows", "mac", "mobile", "consoles"],
       "keywords": ["Party Game", "Multi"],
+      "award": "audience",
       "link": "https://www.facebook.com/hazelrungame/"
     },
     {
@@ -110,6 +112,7 @@
       "summary": "Ilios est un jeu d’action-aventure en 2D HD. S’inspirant de titres encensés par la critique telles que les productions du studio Vanillaware (Dragon’s Crown), des titres de chez Platinum Games (Bayonneta) ou de références plus ancienne (Megaman, Castlevania) la volonté de cette équipe est d’offrir une aventure qui sort des canons actuels en proposant une narration poussée et un gameplay nerveux. ",
       "platforms": ["windows", "consoles"],
       "keywords": ["Action", "Solo"],
+      "award": "promise",
       "link": "http://www.ilios-thegame.com"
     },
     {
@@ -279,6 +282,46 @@
       "platforms": ["windows"],
       "keywords": ["Stratégie", "Solo", "Multi", "Online"],
       "link": "http://www.winthatwar.com"
+    }
+  ],
+  "gamejam": [
+    {
+      "title": "Under The Sea",
+      "studio": "Nahala",
+      "summary": "Récupérez le trésor sans vous faire repérer par le phare ! Restez dans la pénombre et envoyez des ondes à vos adversaires afin d'arriver à l'objectif en premier !",
+      "platforms": ["windows"],
+      "keywords": ["Party Game", "Multi"],
+      "link": "http://nahala-world.blogspot.com/2015/05/game-jam-stunjam-2015-under-sea.html"
+    },
+    {
+      "title": "TowardsThePast",
+      "studio": "feoche",
+      "summary": "Manipulez l'espace-temps pour interagir avec votre environnement et vous sortir des différentes embûches, tout en évitant les pirates de l'espace !",
+      "platforms": ["windows"],
+      "keywords": ["Puzzle", "Platformer", "Solo"],
+      "link": "https://arthurmaugendre.wixsite.com/cgportfolio/vierge"
+    },
+    {
+    "title": "Supa Shogen No Boken",
+    "studio": "Nemotaku",
+    "summary": "Réussissez une pléthore de mini-jeux basés sur le quart de cercle tous plus délirants les uns que les autres en un minimum de temps !",
+    "platforms": ["windows"],
+    "keywords": ["Mini-Game", "Solo"]
+    },
+    {
+    "title": "Silly Bundle",
+    "studio": "RegisRquoi",
+    "summary": "Ce bundle regroupe deux merveilleux jeux : Stunfest, The Game, où l'on peut assister aux dramas les plus dantesques des influenceurs du Stunfest, et Achivements, qui permet de réaliser les achivements de la Jam",
+    "platforms": ["windows"],
+    "keywords": ["Drama", "Solo"],
+    "link": "https://twitter.com/regisRquoi/status/603124596297113601"
+    },
+    {
+    "title": "Circle Survival Trip",
+    "studio": "Car De Cercles",
+    "summary": "VOilà un jeu coop où vous incarnez un car de cercles où vous devez avancer en tirant sur les vaisseaux qui veulent vous détruire ! Un runner-shumup de folie !",
+    "platforms": ["windows"],
+    "keywords": ["Runner", "Shoot 'Em Up", "Multi"]
     }
   ]
 }

@@ -78,6 +78,7 @@
       "summary": "Don’t Kill Her est un plateformer étrange et mignon à la fois. Entièrement dessiné à la main, son intrigue a pour personnage principal une femme qui ne cesse de répéter au joueur qu’il est son meurtrier. L’aventure est jalonnée d’étonnantes surprises, dont il faudra démêler les tenants et aboutissants afin de percer les mystères de cet énigmatique univers.",
       "platforms": ["windows", "mac"],
       "keywords": ["Platformer", "Solo"],
+      "award": "promise",
       "link": "http://wuthrer.net/dontkillher/"
     },
     {
@@ -150,6 +151,7 @@
       "summary": "Splasher est un Plateformer 2D dans lequel vous êtes armé d’un canon à peinture surpuissant, et dont le but est de faire preuve d’adresse pour sauver un max d’innocents des griffes d’un big boss megalo. Chaque couleur de peinture offre des possibilités différentes comme se coller aux murs et aux plafonds, rebondir partout, ou encore barbouiller les ennemis pour altérer leurs comportements.",
       "platforms": ["windows"],
       "keywords": ["Platformer", "Solo"],
+      "award": "indie",
       "link": "http://www.splasher-game.com/"
     },
     {
@@ -198,6 +200,7 @@
       "summary": "Hell Eluja est un jeu à deux joueurs asymétrique. Un des joueurs joue en réalité virtuelle avec le Gear VR, l’autre sur tablette. Chaque personne a une façon de jouer complètement différente. Le premier, livré à lui-même, doit éviter des monstres pour sortir d’un donjon (horreur à la première personne). Le second l’en empêche en y invoquant les monstres (stratégie / dungeon defender).",
       "platforms": ["windows", "tablette"],
       "keywords": ["VR", "Tablette", "Multi"],
+      "award": "audience",
       "link": "http://oniroforge.ch/hell-eluja/"
     },
     {
@@ -280,6 +283,7 @@
         "summary": "Sauvez le mineur des grottes dantesques à l'aide de moult puzzles à résoudre !",
         "platforms": ["windows"],
         "keywords": ["Puzzle", "Solo"],
+        "award": "gamejam",
         "link": "https://zril.itch.io/mighty-miner-6"
       },
       {

@@ -200,5 +200,37 @@
       "keywords": ["Multi"],
       "link": "http://www.9andsome.com/stunfest"
     }
+  ],
+  "gamejam": [
+    {
+      "title": "Port Tales",
+      "studio": "Electric Dragons",
+      "summary": "C’est un détournement ingénieux d’un genre classique, le jeu de patinoire, à compléter en coopération ! L’idée ? « Amener les joueurs à communiquer et à s’entre-aider pour atteindre un objectif commun. » Facile à dire ? Un indice : « Qui a dit que se faire marcher dessus est une mauvaise chose ? » L’idée fonctionne très bien, le jeu est amusant et propose une bonne dose de challenges !",
+      "platforms": ["windows"],
+      "keywords": ["Puzzle", "Solo"],
+      "link": "https://github.com/webshinra/Port-Tales"
+    },
+    {
+      "title": "Asteruga",
+      "studio": "Gwleclerc",
+      "summary": "Une déclinaison en mode coopératif d’un grand classique : deux vaisseaux, chacun ne pouvant détruire que les astéroïdes de sa propre couleur. Il faut tenir ensemble le plus longtemps possible car, si l’un des deux meurt, les astéroïdes de sa couleur envahiront l’écran !",
+      "platforms": ["windows"],
+      "keywords": ["Shoot 'Em Up", "Coop", "Multi"]
+    },
+    {
+      "title": "Base Control",
+      "studio": "Strance",
+      "summary": "Un projet mystérieux, lui aussi en mode coopératif. Deux joueurs sont transportés dans une base en crise : incendies, inondations.. Un joueur devra parcourir les couloirs pour les réguler, à moins qu’il remporte des minijeux pour gagner du minerais utilisable par l’autre joueur, sous Occulus Rift et les yeux rivés sur des écrans de contrôle, pour payer au prix fort l’extinction du danger.",
+      "platforms": ["windows"],
+      "keywords": ["VR", "Puzzle", "Coop"]
+    },
+    {
+      "title": "ACME",
+      "studio": "Corentin Derbre",
+      "summary": "3, 2, 1, FIGHT ! De la baston dans un univers tordu avec un loup, un agneau, des caisses d’explosifs et des coussins nichons. Pour le thème, c’est aussi barré : l’acronyme du thème donne ACMA, ce qui fait penser à …? ACME, la fausse firme des Toons ! Voilà. Le résultat est amusant, on découvre à travers les niveaux un tas d’idées rigolotes, avec une touche de plaisir nostalgique pour la licence.",
+      "platforms": ["web"],
+      "keywords": ["Brawler", "Multi"],
+      "link": "http://arcade.gamesalad.com/game/121062"
+    }
   ]
 }
