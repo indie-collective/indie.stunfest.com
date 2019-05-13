@@ -93,11 +93,11 @@ export default {
     },
     currentYear: {
       type: String,
-      default: () => +location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
+      default: () => location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
     }
   },
   mounted() {
-    const currentYear = +this.$route.params.year
+    const currentYear = this.$route.params.year
     return { currentYear }
   }
 }

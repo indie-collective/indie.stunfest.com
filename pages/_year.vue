@@ -2,7 +2,7 @@
   <div>
     <section class="hero is-dark sticky">
       <div class="hero-foot">
-        <nav class="tabs is-centered is-medium is-fullwidth is-boxed">
+        <nav class="tabs is-medium is-fullwidth is-boxed">
           <div class="container">
             <ul>
               <li
@@ -77,7 +77,11 @@
         </div>
       </section>
 
-      <section v-for="section in sections" :key="section" class="section">
+      <section
+        v-for="section in filteredSections"
+        :key="section"
+        class="section"
+      >
         <p class="title is-size-1 is-text-primary is-uppercase">
           {{ section }}
         </p>
@@ -208,7 +212,7 @@ export default {
     },
     currentYear: {
       type: String,
-      default: () => +location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
+      default: () => location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
     },
     years: {
       type: Array,
@@ -239,11 +243,13 @@ export default {
     },
 
     filteredYears() {
-      return this.years.filter(i => i !== this.currentYear)
+      return this.years.filter(i => i !== +this.currentYear)
     },
 
-    sections() {
-      return tabs.filter(tab => this.items[tab])
+    filteredSections() {
+      return tabs.filter(
+        tab => (this.filter === 'all' || this.filter === tab) && this.items[tab]
+      )
     }
   },
 
