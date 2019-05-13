@@ -40,7 +40,7 @@
                   <div id="dropdown-menu" class="dropdown-menu" role="menu">
                     <div class="dropdown-content">
                       <nuxt-link
-                        v-for="year in years"
+                        v-for="year in filteredYears"
                         :key="year"
                         :to="`/${year}`"
                         class="dropdown-item"
@@ -174,7 +174,7 @@
 import Card from '~/components/Card'
 
 // Constants
-const years = [2014, 2015, 2016, 2018, 2019]
+const years = [2013, 2014, 2015, 2016, 2018, 2019]
 const tabs = ['all', 'competition', 'village', 'prototypes', 'gamejam']
 const awards = {
   indie: 'Stunfest Indie Award',
@@ -208,7 +208,7 @@ export default {
     },
     currentYear: {
       type: String,
-      default: () => location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
+      default: () => +location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
     },
     years: {
       type: Array,
@@ -236,6 +236,10 @@ export default {
         ...awardsItems(this.items.competition),
         ...awardsItems(this.items.gamejam)
       ]
+    },
+
+    filteredYears() {
+      return this.years.filter(i => i !== this.currentYear)
     },
 
     sections() {
