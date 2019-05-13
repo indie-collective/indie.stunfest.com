@@ -246,5 +246,39 @@
       "platforms": ["windows"],
       "keywords": ["Gestion", "Solo"]
     }
+  ],
+  "gamejam": [
+    {
+      "title": "TVLink",
+      "studio": "SuperZikoure",
+      "summary": "Un jeu multi local de stratégie sur les compagnies de publicité qui se combattent pour des parts d'audience",
+      "platforms": ["windows"],
+      "keywords": ["Stratégie", "Multi"],
+      "link": "https://superzikoure.itch.io/tvlink"
+    },
+    {
+      "title": "Quasi Mire",
+      "studio": "Studio Casserole",
+      "summary": "Fuyez les enfants, Casimir veut vous manger tout cru ! Evitez les obstacles et sortez du plateau de tournage de l'Île aux Enfants vivant !",
+      "platforms": ["windows"],
+      "keywords": ["Platformer", "Solo"],
+      "link": "https://studio-casserole.itch.io/quasimire"
+    },
+    {
+      "title": "You Need to Translate",
+      "studio": "Mahjoub",
+      "summary": "Placé dans la station mir, vous devez traduire des signaux de dirigeants mondiaux. Le gameplay consiste à brancher des cables entre des téléviseurs demandant et envoyant un symbole associé à une couleur.  Ces signaux devront être traduit en les passant dans des boites afin d'éviter que les dirigeants se déconnectent les uns après les autres.",
+      "platforms": ["windows"],
+      "keywords": ["Puzzle", "Solo"],
+      "link": "https://mahjoub.itch.io/you-need-to-translate"
+    },
+    {
+      "title": "HDMI-RE",
+      "studio": "Hamrod",
+      "summary": "Vous incarnez l'amire-al Lumire devant étalonner des écrans de télé. Pour ce faire, réparez la TV Kassai à l'aide d'un modèle, et récupérez les couleurs manquantes sur le circuit imprimé rempli de puzzles !",
+      "platforms": ["windows"],
+      "keywords": ["Puzzle", "Solo"],
+      "link": "https://hamrod.itch.io/hdmi-re"
+    }
   ]
 }
