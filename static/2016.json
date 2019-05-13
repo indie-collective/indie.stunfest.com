@@ -264,5 +264,31 @@
       "keywords": ["RPG", "Multi"],
       "link": "https://cityinvaders.game/fr-FR/"
     }
+  ],
+  "gamejam": [
+      {
+        "title": "Merci Jambon !",
+        "studio": "RegisRquoi",
+        "summary": "Une histoire de dramas, de Dorian, d'Usul, de CdV et de faisage de sandwichs",
+        "platforms": ["web"],
+        "keywords": ["Drama", "Solo"],
+        "link": "https://regisrquoi.itch.io/merci-jambon-"
+      },
+      {
+        "title": "Mighty Miner 6",
+        "studio": "zriL",
+        "summary": "Sauvez le mineur des grottes dantesques à l'aide de moult puzzles à résoudre !",
+        "platforms": ["windows"],
+        "keywords": ["Puzzle", "Solo"],
+        "link": "https://zril.itch.io/mighty-miner-6"
+      },
+      {
+        "title": "Blob Jumper",
+        "studio": "Pascal Le Merrer",
+        "summary": "Envoyez la petite goutte de blob dans les tuyaux ! A l'aide de mécaniques applicables sur les plateformes, soyez agiles afin de finir les niveaux !",
+        "platforms": ["web"],
+        "keywords": ["Puzzle", "Solo"],
+        "link": "https://pascallemerrer.itch.io/blob-jumper"
+      }
   ]
 }
