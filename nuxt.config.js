@@ -25,8 +25,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Enriqueta' }
-      ]
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Enriqueta'
+      }
+    ]
   },
 
   /*
@@ -98,8 +101,6 @@ module.exports = {
   },
 
   generate: {
-    routes: [
-      '/:year'
-    ]
+    routes: ['/:year']
   }
 }

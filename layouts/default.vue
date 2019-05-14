@@ -152,6 +152,8 @@
 
 <script>
 export default {
+  middleware: 'redirection',
+
   props: {
     currentYear: {
       type: String,
