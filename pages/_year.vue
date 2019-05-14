@@ -1,6 +1,11 @@
 <template>
   <div>
-    <section class="hero is-dark sticky">
+    <section class="hero" :class="`header-${currentYear}`">
+      <div class="container has-text-centered">
+        <img :src="logoPath" alt="Stunfest Indie Game logo" />
+      </div>
+    </section>
+    <section class="hero sticky" :class="`header-${currentYear}`">
       <div class="hero-foot">
         <nav class="tabs is-medium is-fullwidth is-boxed">
           <div class="container">
@@ -9,22 +14,24 @@
                 v-for="tab in tabs"
                 v-show="tab === 'all' || items[tab]"
                 :key="tab"
-                :class="{ 'is-active': filter === tab }"
+                :class="
+                  `header-tab-${currentYear}${
+                    filter === tab ? ' is-active' : ''
+                  }`
+                "
                 @click="filter = tab"
               >
                 <a
                   :to="tab"
-                  class="has-text-white"
                   :class="{
-                    'has-background-primary has-text-black has-text-weight-bold':
-                      filter === tab
+                    'has-text-weight-bold': filter === tab
                   }"
                 >
                   {{ tab[0].toUpperCase() + tab.slice(1) }}
                 </a>
               </li>
-              <li>
-                <a class="dropdown is-hoverable is-up">
+              <li class="years-dropdown">
+                <a class="dropdown is-hoverable">
                   <div class="dropdown-trigger">
                     <button
                       class="button is-text"
@@ -67,7 +74,10 @@
               i.award + '-award' + (i.award === 'indie' ? ' is-half' : '')
             "
           >
-            <p class="award title is-size-3 is-uppercase has-text-centered">
+            <p
+              class="award title is-size-3 is-uppercase has-text-centered"
+              :class="`award-${currentYear}`"
+            >
               {{ getAwardTitle(i.award) }}
             </p>
             <card class="tile is-vertical" :card="i" :vote-link="i.voteLink">
@@ -82,7 +92,7 @@
         :key="section"
         class="section"
       >
-        <p class="title is-size-1 is-text-primary is-uppercase">
+        <p class="title is-size-1 is-uppercase" :class="`title-${currentYear}`">
           {{ section }}
         </p>
         <div class="columns is-tablet is-multiline is-centered">
@@ -101,53 +111,72 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .tabs {
   font-family: 'Montserrat', sans-serif;
   overflow: visible;
-}
-.tabs.tabs li a {
-  border: none;
-}
-.dropdown.dropdown {
-  padding: 0 1em;
-}
-.dropdown,
-.dropdown-trigger,
-.dropdown-trigger button {
-  width: 100%;
-  outline: none;
-}
-.dropdown-trigger button > span + span {
-  display: none;
-}
-.dropdown-trigger.dropdown-trigger button:hover,
-.dropdown .dropdown-menu {
-  background: transparent;
-  width: 100%;
-  left: auto;
-}
-.dropdown-trigger.dropdown-trigger button,
-.dropdown-trigger.dropdown-trigger button *,
-.dropdown .dropdown-menu,
-.dropdown .dropdown-menu * {
-  color: white !important;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-}
-.dropdown .dropdown-content {
-  padding: 0;
-  background: rgba(54, 54, 54, 0.95);
+  border-bottom: 2px #dbdbdb solid;
+
+  &.tabs li a {
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
-.award-title.award-title {
-  margin-bottom: 3rem;
+.years-dropdown {
+  flex: 0 0 150px !important;
+
+  .dropdown {
+    padding: 0 1em;
+
+    &,
+    &-trigger,
+    &-trigger button {
+      width: 100%;
+      outline: none;
+    }
+
+    &-trigger button > span + span {
+      display: none;
+    }
+
+    &-trigger.dropdown-trigger button:hover,
+    & .dropdown-menu {
+      background: transparent;
+      width: 100%;
+      left: auto;
+    }
+
+    &-trigger.dropdown-trigger button,
+    &-trigger.dropdown-trigger button *,
+    & .dropdown-menu,
+    & .dropdown-menu * {
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    & .dropdown-content {
+      padding: 0;
+      width: 150px;
+      margin: auto;
+
+      .dropdown-item {
+        width: 150px;
+      }
+    }
+  }
 }
-.award-container {
-  position: relative;
-  margin-top: 2rem;
+
+.column {
+  display: flex;
 }
+
 .award {
   position: absolute;
   top: 0;
@@ -155,22 +184,32 @@
   right: 0;
   z-index: 1;
   margin: -1.25rem 0.75rem;
-}
-.promise-award .award,
-.promise-award .card {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-}
-.indie-award .award,
-.indie-award .card {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-}
-.audience-award .award,
-.audience-award .card {
-  background-image: linear-gradient(to right, #6ce6ff 0%, #a1f6ed 100%);
-}
-.gamejam-award .award,
-.gamejam-award .card {
-  background-image: linear-gradient(to right, #d0bff0, #fbc7d4);
+
+  &-title.award-title {
+    margin-bottom: 3rem;
+  }
+
+  &-container {
+    position: relative;
+    margin-top: 2rem;
+
+    &.promise-award .award,
+    &.promise-award .card {
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    &.indie-award .award,
+    &.indie-award .card {
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    }
+    &.audience-award .award,
+    &.audience-award .card {
+      background-image: linear-gradient(to right, #6ce6ff 0%, #a1f6ed 100%);
+    }
+    &.gamejam-award .award,
+    &.gamejam-award .card {
+      background-image: linear-gradient(to right, #d0bff0, #fbc7d4);
+    }
+  }
 }
 </style>
 
@@ -250,6 +289,16 @@ export default {
       return tabs.filter(
         tab => (this.filter === 'all' || this.filter === tab) && this.items[tab]
       )
+    },
+
+    logoPath() {
+      let img = ''
+      try {
+        img = require('../static/logos/' + this.currentYear + '.png')
+      } catch (e) {
+        img = require('../static/logos/indie_logo.png')
+      }
+      return img
     }
   },
 
