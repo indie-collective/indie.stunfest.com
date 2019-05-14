@@ -98,9 +98,5 @@ module.exports = {
         )
       }
     }
-  },
-
-  generate: {
-    routes: ['/:year']
   }
 }
