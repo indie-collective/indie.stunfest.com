@@ -14,6 +14,7 @@
       "summary": "ScourgeBringer est un jeu de plate-forme roguelite, où vous devrez aider Kyhra à explorer l’inconnu et à se frayer un chemin entre les anciennes machines gardant le sceau de son passé, mais aussi la rédemption de l’humanité.",
       "platforms": ["steam"],
       "keywords": ["Rogue-lite", "Platformer", "Solo"],
+      "award": "indie",
       "link": "http://scourgebringer.com/"
     },
     {
@@ -62,6 +63,7 @@
       "summary": "Bondissez sur vos ami·e·s, empilez vous et explorez ensemble un joyeux monde de carton ! Pile Up est un adorable jeu coopératif de plateformes et de puzzle en 3D qui peut se jouer jusqu’à quatre personnes !",
       "platforms": ["windows", "mac", "switch"],
       "keywords": ["Platformer", "Puzzle", "Coop", "Solo", "Multi"],
+      "award": "promise",
       "link": "https://www.pileupgame.com/"
     },
     {
@@ -94,6 +96,7 @@
       "summary": "Dans ce jeu coopératif fou, une équipe de deux joueurs en combat une autre. Dans chaque équipe, un joueur est la monture, l’autre le cavalier. Pour gagner, ils devront attraper le poulet et fuir l’autre équipe pour marquer des points et devenir les Super Chicken Catchers !",
       "platforms": ["windows"],
       "keywords": ["Battle", "Multi"],
+      "award": "audience",
       "link": "https://whitesmokegames.com/"
     },
     {
@@ -254,6 +257,7 @@
       "summary": "Un jeu multi local de stratégie sur les compagnies de publicité qui se combattent pour des parts d'audience",
       "platforms": ["windows"],
       "keywords": ["Stratégie", "Multi"],
+      "award": "gamejam",
       "link": "https://superzikoure.itch.io/tvlink"
     },
     {
