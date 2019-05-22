@@ -103,6 +103,6 @@ module.exports = {
   },
 
   generate: {
-    routes: [...['/'], ...years]
+    routes: [...['/'], ...years.map(year => `${year}`)]
   }
 }
