@@ -67,9 +67,7 @@ module.exports = {
   },
 
   axios: {
-    baseURL: 'https://feoche.github.io/indie-nuxt/',
-    proxyHeaders: false,
-    credentials: false
+    proxyHeaders: false
   },
 
   /*

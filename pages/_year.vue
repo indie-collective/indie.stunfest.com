@@ -309,7 +309,9 @@ export default {
       error({ statusCode: 404, message: 'Page not found' })
     }
 
-    const items = await $axios.$get(params.year + '.json')
+    const items = await $axios.$get(
+      `${location.href.replace(/\d{4}\/?$/, '') + params.year}.json`
+    )
     return { filter, items }
   },
 
