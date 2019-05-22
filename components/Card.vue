@@ -49,6 +49,8 @@
 }
 
 .card {
+  background-attachment: fixed;
+
   .card-content {
     margin-bottom: 3rem;
 
