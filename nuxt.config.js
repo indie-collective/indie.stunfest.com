@@ -1,12 +1,14 @@
 const pkg = require('./package')
 
+const years = [2013, 2014, 2015, 2016, 2018, 2019]
+
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/indie-nuxt/'
-        }
+      router: {
+        base: '/indie-nuxt/'
       }
+    }
     : {}
 
 module.exports = {
@@ -75,7 +77,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
+    extend (config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push(
@@ -98,5 +100,9 @@ module.exports = {
         )
       }
     }
+  },
+
+  generate: {
+    routes: [...['/'], ...years.map(year => `/${year}`)]
   }
 }
