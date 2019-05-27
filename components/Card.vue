@@ -5,7 +5,7 @@
         <figure class="image is-16by9">
           <img
             :src="
-              `/${currentYear}/${card.title
+              `./${currentYear}/${card.title
                 .toLowerCase()
                 .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}.jpg`
             "
