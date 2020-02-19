@@ -1,11 +1,11 @@
 <template>
   <div>
-    <section class="hero" :class="`header-${currentYear}`">
+    <section :class="`header-${currentYear}`" class="hero">
       <div class="container has-text-centered">
         <img :src="logoPath" alt="Stunfest Indie Game logo" />
       </div>
     </section>
-    <section class="hero sticky" :class="`header-${currentYear}`">
+    <section :class="`header-${currentYear}`" class="hero sticky">
       <div class="hero-foot">
         <nav class="tabs is-medium is-fullwidth is-boxed">
           <div class="container">
@@ -40,7 +40,7 @@
                     >
                       <span>{{ currentYear }}</span>
                       <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        <i class="fas fa-angle-down" aria-hidden="true" />
                       </span>
                     </button>
                   </div>
@@ -69,18 +69,19 @@
           <div
             v-for="i in sortedAwards"
             :key="i.title"
-            class="award-container column is-half-tablet is-one-quarter-widescreen"
+            v-if="i.title"
             :class="
               i.award + '-award' + (i.award === 'indie' ? ' is-half' : '')
             "
+            class="award-container column is-half-tablet is-one-quarter-widescreen"
           >
             <p
-              class="award title is-size-3 is-uppercase has-text-centered"
               :class="`award-${currentYear}`"
+              class="award title is-size-3 is-uppercase has-text-centered"
             >
               {{ getAwardTitle(i.award) }}
             </p>
-            <card class="tile is-vertical" :card="i" :vote-link="i.voteLink">
+            <card :card="i" :vote-link="i.voteLink" class="tile is-vertical">
               {{ i.summary }}
             </card>
           </div>
@@ -92,13 +93,14 @@
         :key="section"
         class="section"
       >
-        <p class="title is-size-1 is-uppercase" :class="`title-${currentYear}`">
+        <p :class="`title-${currentYear}`" class="title is-size-1 is-uppercase">
           {{ section }}
         </p>
         <div class="columns is-tablet is-multiline is-centered">
           <div
             v-for="i in random(section)"
             :key="i.title"
+            v-if="i.title"
             class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
           >
             <card :card="i" :vote-link="i.voteLink">
@@ -217,7 +219,7 @@
 import Card from '~/components/Card'
 
 // Constants
-const years = [2013, 2014, 2015, 2016, 2018, 2019]
+const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
 const tabs = ['all', 'competition', 'village', 'prototypes', 'gamejam']
 const awards = {
   indie: 'Stunfest Indie Award',

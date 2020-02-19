@@ -1,7 +1,7 @@
 <template>
   <div>
     <nuxt />
-    <section class="hero" :class="`header-${currentYear}`">
+    <section :class="`header-${currentYear}`" class="hero">
       <div class="hero-body has-text-centered">
         Made with 💖 by
         <a href="https://indieco.xyz" target="_blank">Indie Collective</a>
@@ -43,7 +43,16 @@
   --card-h1-2013: var(--header-tab-bg-2013);
   --card-link-bg-2013: var(--link-color);
   --card-link-font-2013: var(--header-font-2013);
-  --main-font-2013: 'distortion_of_the_brain_and_mind', 'Oswald', sans-serif;
+  --main-font-2013: 'distortion_of_the_brain_and_mind';
+
+  --header-bg-2020: #d55132;
+  --header-font-2020: #e8dada;
+  --header-tab-bg-2020: #e8dada;
+  --header-tab-font-2020: #363636;
+  --card-h1-2020: #d55132;
+  --card-link-bg-2020: var(--card-h1-2020);
+  --card-link-font-2020: var(--header-font-2020);
+  --main-font-2020: 'distortion_of_the_brain_and_mind';
 
   --header-bg-2019: #f8f8fb;
   --header-font-2019: #363636;
@@ -52,7 +61,7 @@
   --card-h1-2019: var(--header-tab-bg-2019);
   --card-link-bg-2019: var(--header-tab-bg-2019);
   --card-link-font-2019: var(--header-font-2019);
-  --main-font-2019: 'distortion_of_the_brain_and_mind', 'Oswald', sans-serif;
+  --main-font-2019: 'distortion_of_the_brain_and_mind';
 
   --header-bg-2018: #f8f8fb;
   --header-font-2018: #363636;
@@ -61,7 +70,7 @@
   --card-h1-2018: var(--header-tab-bg-2018);
   --card-link-bg-2018: var(--header-tab-bg-2018);
   --card-link-font-2018: var(--header-font-2018);
-  --main-font-2018: '04B03', 'Oswald', sans-serif;
+  --main-font-2018: '04B03';
 
   --header-bg-2016: #f8f8fb;
   --header-font-2016: #363636;
@@ -70,7 +79,7 @@
   --card-h1-2016: var(--header-tab-bg-2016);
   --card-link-bg-2016: var(--header-tab-bg-2016);
   --card-link-font-2016: var(--header-font-2016);
-  --main-font-2016: '04B03', 'Oswald', sans-serif;
+  --main-font-2016: '04B03';
 
   --header-bg-2015: #f8f8fb;
   --header-font-2015: #363636;
@@ -79,7 +88,7 @@
   --card-h1-2015: var(--header-tab-bg-2015);
   --card-link-bg-2015: var(--header-tab-bg-2015);
   --card-link-font-2015: var(--header-font-2015);
-  --main-font-2015: '04B03', 'Oswald', sans-serif;
+  --main-font-2015: '04B03';
 
   --header-bg-2014: #d55132;
   --header-font-2014: #e8dada;
@@ -88,7 +97,7 @@
   --card-h1-2014: #d55132;
   --card-link-bg-2014: var(--card-h1-2014);
   --card-link-font-2014: var(--header-font-2014);
-  --main-font-2014: 'Enriqueta', 'Oswald', sans-serif;
+  --main-font-2014: 'Enriqueta';
 }
 
 @for $year from 2013 to 2030 {
@@ -118,16 +127,16 @@
 
   .title-#{$year} {
     color: var(--card-h1-#{$year});
-    font-family: var(--main-font-#{$year});
+    font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
   }
 
   .award-#{$year} {
-    font-family: var(--main-font-#{$year});
+    font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
   }
 
   .card-#{$year} {
     .title {
-      font-family: var(--main-font-#{$year});
+      font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
     }
     .card-footer-item {
       background: var(--card-link-bg-#{$year});

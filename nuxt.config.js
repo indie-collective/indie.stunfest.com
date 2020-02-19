@@ -5,10 +5,10 @@ const years = [2013, 2014, 2015, 2016, 2018, 2019]
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-      router: {
-        base: '/indie-nuxt/'
+        router: {
+          base: '/indie-nuxt/'
+        }
       }
-    }
     : {}
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Indie@Stunfest 2019',
+    title: 'Indie@Stunfest',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }

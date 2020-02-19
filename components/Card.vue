@@ -1,15 +1,9 @@
 <template>
-  <div class="card is-dark" :class="`card-${currentYear}`">
+  <div :class="`card-${currentYear}`" class="card is-dark">
     <div class="card-image">
       <a :href="card.link">
         <figure class="image is-16by9">
-          <img
-            :src="
-              `./${card.title
-                .toLowerCase()
-                .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}.jpg`
-            "
-          />
+          <img :src="`/${currentYear}/${fileName}.jpg`" />
         </figure>
       </a>
     </div>
@@ -83,8 +77,16 @@ export default {
       default: () => location.href.replace(/.*?\/(\d{4})(\/.*?)?$/gim, '$1')
     }
   },
+  data: function() {
+    return {
+      fileName: ''
+    }
+  },
   mounted() {
     const currentYear = this.$route.params.year
+    this.fileName = this.card.title
+      .toLowerCase()
+      .replace(/[^a-zA-Z0-9]|-|\s/gim, '')
     return { currentYear }
   }
 }
