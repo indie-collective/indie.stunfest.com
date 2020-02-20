@@ -3,7 +3,7 @@
     <div class="card-image">
       <a :href="card.link">
         <figure class="image is-16by9">
-          <img :src="`/${currentYear}/${fileName}.jpg`" />
+          <img :src="fileName" />
         </figure>
       </a>
     </div>
@@ -84,9 +84,9 @@ export default {
   },
   mounted() {
     const currentYear = this.$route.params.year
-    this.fileName = this.card.title
+    this.fileName = `${location.href}/${this.card.title
       .toLowerCase()
-      .replace(/[^a-zA-Z0-9]|-|\s/gim, '')
+      .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}.jpg`
     return { currentYear }
   }
 }
