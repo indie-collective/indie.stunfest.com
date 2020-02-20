@@ -1,6 +1,6 @@
 const pkg = require('./package')
 
-const years = [2013, 2014, 2015, 2016, 2018, 2019]
+const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
 
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
