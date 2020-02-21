@@ -78,7 +78,7 @@
               :class="`award-${currentYear}`"
               class="award title is-size-3 is-uppercase has-text-centered"
             >
-              {{ getAwardTitle(i.award) }}
+              {{ i.award }}
             </p>
             <card :card="i" :vote-link="i.voteLink" class="tile is-vertical">
               {{ i.summary }}
@@ -194,20 +194,20 @@
     position: relative;
     margin-top: 2rem;
 
-    &.promise-award .award,
-    &.promise-award .card {
-      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    }
-    &.indie-award .award,
-    &.indie-award .card {
+    &:nth-child(1) .award,
+    &:nth-child(1) .card {
       background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     }
-    &.audience-award .award,
-    &.audience-award .card {
+    &:nth-child(2) .award,
+    &:nth-child(2) .card {
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    &:nth-child(3) .award,
+    &:nth-child(3) .card {
       background-image: linear-gradient(to right, #6ce6ff 0%, #a1f6ed 100%);
     }
-    &.gamejam-award .award,
-    &.gamejam-award .card {
+    &:nth-child(4) .award,
+    &:nth-child(4) .card {
       background-image: linear-gradient(to right, #d0bff0, #fbc7d4);
     }
   }
@@ -219,12 +219,12 @@ import Card from '~/components/Card'
 
 // Constants
 const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
-const awards = {
-  indie: 'Stunfest Indie Award',
-  promise: 'Promise Award',
-  audience: "People's Choice Award",
-  gamejam: 'GameJam Award'
-}
+const awards = [
+  'Stunfest Indie Award',
+  'Promise Award',
+  "People's Choice Award",
+  'GameJam Award'
+]
 
 function randomizeCards(cardSection) {
   let j, x, i
@@ -261,24 +261,19 @@ export default {
 
   computed: {
     sortedAwards() {
-      const awardsSort = Object.keys(awards)
-
       const awardsItems = function(items) {
         if (items && items.games) {
           return items.games
             .filter(item => item.award)
-            .sort(
-              (a, b) =>
-                awardsSort.indexOf(a.award) - awardsSort.indexOf(b.award)
-            )
+            .sort((a, b) => awards.indexOf(a.award) - awards.indexOf(b.award))
         }
         return []
       }
 
-      return [
-        ...awardsItems(this.items.competition),
-        ...awardsItems(this.items.gamejam)
-      ]
+      const res = []
+      this.items.map(i => res.push(...awardsItems(i)))
+
+      return res
     },
 
     currentYearTabs() {
@@ -327,10 +322,6 @@ export default {
   },
 
   methods: {
-    getAwardTitle(award) {
-      return awards[award]
-    },
-
     getDisplayName(name) {
       if (name === 'all') {
         return '🏠'
