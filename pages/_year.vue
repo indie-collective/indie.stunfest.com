@@ -11,8 +11,7 @@
           <div class="container">
             <ul>
               <li
-                v-for="tab in tabs"
-                v-show="tab === 'all' || items[tab]"
+                v-for="tab in currentYearTabs"
                 :key="tab"
                 :class="
                   `header-tab-${currentYear}${
@@ -27,7 +26,7 @@
                     'has-text-weight-bold': filter === tab
                   }"
                 >
-                  {{ tab[0].toUpperCase() + tab.slice(1) }}
+                  {{ getDisplayName(tab) }}
                 </a>
               </li>
               <li class="years-dropdown">
@@ -94,7 +93,7 @@
         class="section"
       >
         <p :class="`title-${currentYear}`" class="title is-size-1 is-uppercase">
-          {{ section }}
+          {{ getDisplayName(section) }}
         </p>
         <div class="columns is-tablet is-multiline is-centered">
           <div
@@ -220,7 +219,6 @@ import Card from '~/components/Card'
 
 // Constants
 const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
-const tabs = ['all', 'competition', 'village', 'prototypes', 'gamejam']
 const awards = {
   indie: 'Stunfest Indie Award',
   promise: 'Promise Award',
@@ -249,7 +247,7 @@ export default {
   props: {
     tabs: {
       type: Array,
-      default: () => tabs
+      default: () => []
     },
     currentYear: {
       type: String,
@@ -266,8 +264,8 @@ export default {
       const awardsSort = Object.keys(awards)
 
       const awardsItems = function(items) {
-        if (items) {
-          return items
+        if (items && items.games) {
+          return items.games
             .filter(item => item.award)
             .sort(
               (a, b) =>
@@ -283,13 +281,19 @@ export default {
       ]
     },
 
+    currentYearTabs() {
+      return ['all', ...this.items.map(i => i.name)]
+    },
+
     filteredYears() {
       return this.years.filter(i => i !== +this.currentYear)
     },
 
     filteredSections() {
-      return tabs.filter(
-        tab => (this.filter === 'all' || this.filter === tab) && this.items[tab]
+      return this.currentYearTabs.filter(
+        tab =>
+          (this.filter === 'all' || this.filter === tab) &&
+          this.items.find(i => i.name === tab)
       )
     },
 
@@ -307,9 +311,9 @@ export default {
   async asyncData({ $axios, params, error }) {
     const filter = params.pathMatch || 'all'
 
-    if (!tabs.includes(filter)) {
-      error({ statusCode: 404, message: 'Page not found' })
-    }
+    // if (!currentYearTabs().includes(filter)) {
+    //   error({ statusCode: 404, message: 'Page not found' })
+    // }
 
     const items = await $axios.$get(
       `${location.href.replace(/\d{4}\/?$/, '') + params.year}.json`
@@ -327,8 +331,18 @@ export default {
       return awards[award]
     },
 
+    getDisplayName(name) {
+      if (name === 'all') {
+        return '🏠'
+      } else if (this.items.find(i => i.name === name)) {
+        return this.items.find(i => i.name === name).displayName
+      }
+    },
+
     random(section) {
-      return randomizeCards(this.items[section])
+      if (this.items.find(i => i.name === section)) {
+        return randomizeCards(this.items.find(i => i.name === section).games)
+      }
     }
   }
 }

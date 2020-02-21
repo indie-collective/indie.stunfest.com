@@ -1,12 +1,12 @@
 <template>
   <div>
     <nuxt />
-    <section :class="`header-${currentYear}`" class="hero">
+    <footer class="hero">
       <div class="hero-body has-text-centered">
-        Made with 💖 by
+        Fait avec tout notre petit 💖 par
         <a href="https://indieco.xyz" target="_blank">Indie Collective</a>
       </div>
-    </section>
+    </footer>
   </div>
 </template>
 
@@ -45,14 +45,14 @@
   --card-link-font-2013: var(--header-font-2013);
   --main-font-2013: 'distortion_of_the_brain_and_mind';
 
-  --header-bg-2020: #d55132;
+  --header-bg-2020: #4500b4;
   --header-font-2020: #e8dada;
   --header-tab-bg-2020: #e8dada;
   --header-tab-font-2020: #363636;
-  --card-h1-2020: #d55132;
+  --card-h1-2020: #4500b4;
   --card-link-bg-2020: var(--card-h1-2020);
   --card-link-font-2020: var(--header-font-2020);
-  --main-font-2020: 'distortion_of_the_brain_and_mind';
+  --main-font-2020: 'Raleway';
 
   --header-bg-2019: #f8f8fb;
   --header-font-2019: #363636;
@@ -146,8 +146,8 @@
 }
 
 .hero img {
-  width: 50vw;
   max-width: 30rem;
+  max-height: 10rem;
   margin: 2rem;
   filter: drop-shadow(5px 5px lightgray);
 }
@@ -156,6 +156,18 @@
   position: sticky;
   top: 0;
   z-index: 3000; /* For some reason cards were above the nav */
+}
+
+footer {
+  background: linear-gradient(to bottom right, #004e43, #008674);
+  color: white;
+  font-size: 1.5rem;
+
+  a {
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+  }
 }
 </style>
 
@@ -171,14 +183,12 @@ export default {
   },
 
   mounted() {
-    const currentYear = this.$route.params.year
-
-    return { currentYear }
+    return { currentYear: this.$route.params.year }
   },
 
   head() {
     return {
-      title: `Indie@Stunfest ${this.$route.params.year}`
+      title: `Indie Stunfest ${this.$route.params.year}`
     }
   }
 }

@@ -24,17 +24,13 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Indie@Stunfest',
+    title: 'Indie Stunfest',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Enriqueta'
-      }
     ]
   },
 
@@ -66,7 +62,12 @@ module.exports = {
 
   webfontloader: {
     google: {
-      families: ['Montserrat:500,700', 'Oswald']
+      families: [
+        'Montserrat:500,700',
+        'Oswald:500',
+        'Enriqueta:500',
+        'Raleway:800'
+      ]
     }
   },
 

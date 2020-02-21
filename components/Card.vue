@@ -22,7 +22,7 @@
 
     <footer v-if="card.link" class="card-footer">
       <a :href="card.link" class="card-footer-item has-text-weight-bold">
-        View more...
+        Allez-le voir !
       </a>
     </footer>
   </div>
