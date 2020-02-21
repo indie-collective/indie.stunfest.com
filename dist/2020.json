@@ -1,0 +1,74 @@
+[
+  {
+    "name": "indieawards",
+    "displayName": "Indie Awards",
+    "games": [
+      {
+        "title": "",
+        "studio": "",
+        "summary": "",
+        "platforms": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ],
+        "link": ""
+      }
+    ]
+  },
+  {
+    "name": "village",
+    "displayName": "Village",
+    "games": [
+      {
+        "title": "",
+        "studio": "",
+        "summary": "",
+        "platforms": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ],
+        "link": ""
+      }
+    ]
+  },
+  {
+    "name": "prototypes",
+    "displayName": "Prototypes",
+    "games": [
+      {
+        "title": "",
+        "studio": "",
+        "summary": "",
+        "platforms": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ],
+        "link": ""
+      }
+    ]
+  },
+  {
+    "name": "gamejam",
+    "displayName": "Gamejam",
+    "games": [
+      {
+        "title": "",
+        "studio": "",
+        "summary": "",
+        "platforms": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ],
+        "link": ""
+      }
+    ]
+  }
+]
