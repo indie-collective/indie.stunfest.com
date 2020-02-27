@@ -1,0 +1,40 @@
+
+.title {
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.image > img {
+  object-fit: cover;
+}
+
+.card {
+  background-attachment: fixed;
+  width: 100%;
+
+  &.disabled {
+    opacity: .7;
+  }
+
+  .card-content {
+    margin-bottom: 3rem;
+
+    & > p:last-child {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 9;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .card-footer {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

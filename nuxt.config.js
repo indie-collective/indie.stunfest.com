@@ -53,7 +53,7 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://buefy.github.io/#/documentation
+    '@nuxtjs/date-fns',
     'nuxt-buefy',
     '@nuxtjs/pwa',
     'nuxt-webfontloader',

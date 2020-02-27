@@ -66,11 +66,11 @@
       <section v-if="filter === 'all' && sortedAwards.length" class="section">
         <div class="columns is-tablet is-multiline is-centered">
           <div
-            v-for="i in sortedAwards"
-            :key="i.title"
-            v-if="i.title"
+            v-for="game in sortedAwards"
+            :key="game.title"
+            v-if="game.title"
             :class="
-              i.award + '-award' + (i.award === 'indie' ? ' is-half' : '')
+              game.award + '-award' + (game.award === 'indie' ? ' is-half' : '')
             "
             class="award-container column is-half-tablet is-one-quarter-widescreen"
           >
@@ -78,10 +78,15 @@
               :class="`award-${currentYear}`"
               class="award title is-size-3 is-uppercase has-text-centered"
             >
-              {{ i.award }}
+              {{ game.award }}
             </p>
-            <card :card="i" :vote-link="i.voteLink" class="tile is-vertical">
-              {{ i.summary }}
+            <card
+              v-if="isGameVisible(game)"
+              :card="game"
+              :vote-link="game.voteLink"
+              class="tile is-vertical"
+            >
+              {{ game.summary }}
             </card>
           </div>
         </div>
@@ -97,13 +102,24 @@
         </p>
         <div class="columns is-tablet is-multiline is-centered">
           <div
-            v-for="i in random(section)"
-            :key="i.title"
-            v-if="i.title"
+            v-for="game in random(section)"
+            :key="game.title"
             class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
           >
-            <card :card="i" :vote-link="i.voteLink">
-              {{ i.summary }}
+            <card
+              v-if="isGameVisible(game)"
+              :card="game"
+              :vote-link="game.voteLink"
+            >
+              {{ game.summary }}
+            </card>
+            <card
+              v-if="!isGameVisible(game)"
+              :card="{
+                title: ''
+              }"
+              class="disabled"
+            >
             </card>
           </div>
         </div>

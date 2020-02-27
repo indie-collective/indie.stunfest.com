@@ -1,4 +1,4 @@
-import Card from '~/components/Card'
+import Card from '~/components/Card.vue'
 
 // Constants
 const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
@@ -81,9 +81,9 @@ export default {
     logoPath() {
       let img = ''
       try {
-        img = require('../static/logos/' + this.currentYear + '.png')
+        img = require('~/static/logos/' + this.currentYear + '.png')
       } catch (e) {
-        img = require('../static/logos/indie_logo.png')
+        img = require('~/static/logos/indie_logo.png')
       }
       return img
     }
@@ -120,6 +120,10 @@ export default {
       if (this.items.find(i => i.name === section)) {
         return randomizeCards(this.items.find(i => i.name === section).games)
       }
+    },
+
+    isGameVisible(game) {
+      return !game.visibleDate || Date.parse(game.visibleDate) < Date.now()
     }
   }
 }
