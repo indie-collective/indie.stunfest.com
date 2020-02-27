@@ -66,7 +66,7 @@ module.exports = {
         'Montserrat:500,700',
         'Oswald:500',
         'Enriqueta:500',
-        'Raleway:800'
+        'Barlow Condensed:800'
       ]
     }
   },

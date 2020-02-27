@@ -52,7 +52,7 @@
   --card-h1-2020: #4500b4;
   --card-link-bg-2020: var(--card-h1-2020);
   --card-link-font-2020: var(--header-font-2020);
-  --main-font-2020: 'Raleway';
+  --main-font-2020: 'Barlow Condensed';
 
   --header-bg-2019: #f8f8fb;
   --header-font-2019: #363636;
@@ -146,10 +146,22 @@
 }
 
 .hero img {
-  max-width: 30rem;
   max-height: 10rem;
-  margin: 2rem;
+  margin: 2rem 0;
   filter: drop-shadow(5px 5px lightgray);
+}
+
+.header-2020.hero {
+  .container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  img {
+    max-height: 100%;
+    margin: 0;
+    filter: none;
+  }
 }
 
 .sticky {

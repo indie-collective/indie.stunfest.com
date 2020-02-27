@@ -4,7 +4,7 @@
     "displayName": "Indie Awards",
     "games": [
       {
-        "title": "",
+        "title": "TBA",
         "studio": "",
         "summary": "",
         "platforms": [
@@ -20,55 +20,16 @@
   {
     "name": "village",
     "displayName": "Village",
-    "games": [
-      {
-        "title": "",
-        "studio": "",
-        "summary": "",
-        "platforms": [
-          ""
-        ],
-        "keywords": [
-          ""
-        ],
-        "link": ""
-      }
-    ]
+    "games": []
   },
   {
     "name": "prototypes",
     "displayName": "Prototypes",
-    "games": [
-      {
-        "title": "",
-        "studio": "",
-        "summary": "",
-        "platforms": [
-          ""
-        ],
-        "keywords": [
-          ""
-        ],
-        "link": ""
-      }
-    ]
+    "games": []
   },
   {
     "name": "gamejam",
     "displayName": "Gamejam",
-    "games": [
-      {
-        "title": "",
-        "studio": "",
-        "summary": "",
-        "platforms": [
-          ""
-        ],
-        "keywords": [
-          ""
-        ],
-        "link": ""
-      }
-    ]
+    "games": []
   }
 ]
