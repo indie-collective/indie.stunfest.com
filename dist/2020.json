@@ -1,0 +1,36 @@
+[
+  {
+    "name": "indieawards",
+    "displayName": "Indie Awards",
+    "games": [
+      {
+        "title": "TBA",
+        "visibleDate": "2020-02-31T19:01:00",
+        "studio": "",
+        "summary": "",
+        "platforms": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ],
+        "link": ""
+      }
+    ]
+  },
+  {
+    "name": "village",
+    "displayName": "Village",
+    "games": []
+  },
+  {
+    "name": "prototypes",
+    "displayName": "Prototypes",
+    "games": []
+  },
+  {
+    "name": "gamejam",
+    "displayName": "Gamejam",
+    "games": []
+  }
+]
