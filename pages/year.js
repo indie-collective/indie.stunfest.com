@@ -60,7 +60,7 @@ export default {
     },
 
     currentYearTabs() {
-      return ['all', ...this.items.map(i => i.name)]
+      return ['all', ...this.items.filter(i => i.games.length).map(i => i.name)]
     },
 
     filteredYears() {
