@@ -18,6 +18,16 @@
       <p class="is-size-6">
         <slot />
       </p>
+      <div class="networks">
+        <a
+          v-for="(network, key) in card.networks"
+          v-if="network.length"
+          :key="key"
+          :href="network"
+        >
+          <img :src="getNetworkImg(key)" />
+        </a>
+      </div>
     </div>
 
     <footer v-if="card.link" class="card-footer">

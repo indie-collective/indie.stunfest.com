@@ -4,6 +4,23 @@
     "displayName": "Indie Awards",
     "games": [
       {
+        "title": "Networks",
+        "studio": "",
+        "summary": "",
+        "platforms": [
+          ""
+        ],
+        "keywords": [
+          ""
+        ],
+        "networks": {
+          "twitter": "twitter.fr",
+          "facebook": "facebook.fr",
+          "instagram": "instagram.fr"
+        },
+        "link": "tamère.fr"
+      },
+      {
         "title": "TBA",
         "visibleDate": "2020-02-31T19:01:00",
         "studio": "",
