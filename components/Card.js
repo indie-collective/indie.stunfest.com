@@ -24,6 +24,11 @@ export default {
       return img
     }
   },
+  methods: {
+    getNetworkImg(network) {
+      return require(`~/static/${network}.png`)
+    }
+  },
   mounted() {
     const currentYear = this.$route.params.year
     return { currentYear }
