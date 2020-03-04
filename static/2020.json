@@ -14,10 +14,10 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/SneakyYakStudio",
-          "facebook": "https://www.facebook.com/SneakyYakStudio/",
-          "instagram": "https://www.instagram.com/sneakyyak_studio/"
+          "facebook": "https://www.facebook.com/SneakyYakStudio",
+          "instagram": "https://www.instagram.com/sneakyyak_studio"
         },
-        "link": "https://sneakyyakstudio.com/"
+        "link": "https://sneakyyakstudio.com"
       },
       {
         "title": "Block Chain battle",
@@ -29,9 +29,9 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/PlayCuriousGame",
-          "facebook": "https://www.facebook.com/PlayCurious/"
+          "facebook": "https://www.facebook.com/PlayCurious"
         },
-        "link": "https://playcurious.games/fr/"
+        "link": "https://playcurious.games/fr"
       },
       {
         "title": "Spliti",
@@ -45,9 +45,9 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/PhlegmaGames",
-          "facebook": "https://www.facebook.com/Phlegmagames/"
+          "facebook": "https://www.facebook.com/Phlegmagames"
         },
-        "link": "https://splitigame.com/"
+        "link": "https://splitigame.com"
       },
       {
         "title": "Kairo's Light",
@@ -60,10 +60,10 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/KairosLight",
-          "facebook": "https://www.facebook.com/KairosLight/",
-          "instagram": "https://www.instagram.com/jeukairoslight/"
+          "facebook": "https://www.facebook.com/KairosLight",
+          "instagram": "https://www.instagram.com/jeukairoslight"
         },
-        "link": "https://www.kairoslight.fr/"
+        "link": "https://www.kairoslight.fr"
       },
       {
         "title": "Dice of Olympus ",
@@ -76,9 +76,9 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/DiceOfOlympus",
-          "facebook": "https://www.facebook.com/DiceOfOlympus/"
+          "facebook": "https://www.facebook.com/DiceOfOlympus"
         },
-        "link": "https://dice.oathr.com/"
+        "link": "https://dice.oathr.com"
       },
       {
         "title": "Horribunnies",
@@ -93,7 +93,7 @@
           "facebook": "https://facebook.com/Horribunnies",
           "instagram": "https://instagram.com/Horribunnies"
         },
-        "link": "https://horribunnies.com/"
+        "link": "https://horribunnies.com"
       },
       {
         "title": "Promenade, A farewell to August",
@@ -104,9 +104,9 @@
           "windows"
         ],
         "networks": {
-          "facebook": "https://www.facebook.com/holycapstudio/"
+          "facebook": "https://www.facebook.com/holycapstudio"
         },
-        "link": "https://www.facebook.com/holycapstudio/"
+        "link": "https://www.facebook.com/holycapstudio"
       },
       {
         "title": "Time Rift: Escape From Speedjail",
@@ -130,10 +130,10 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/AkedoStudio",
-          "facebook": "https://www.facebook.com/akedostudio/",
-          "instagram": "https://www.instagram.com/akedo_studio/"
+          "facebook": "https://www.facebook.com/akedostudio",
+          "instagram": "https://www.instagram.com/akedo_studio"
         },
-        "link": "https://www.akedostudio.com/"
+        "link": "https://www.akedostudio.com"
       },
       {
         "title": "Haven",
@@ -175,7 +175,7 @@
           "windows",
           "switch"
         ],
-        "link": "https://www.graffitigames.com/cyberhook/"
+        "link": "https://www.graffitigames.com/cyberhook"
       },
       {
         "title": "dont_forget_me",
@@ -204,7 +204,7 @@
           "twitter": "https://twitter.com/TuesdayQuest",
           "facebook": "https://www.facebook.com/tuesdayquest"
         },
-        "link": "http://www.tuesdayquest.com/"
+        "link": "http://www.tuesdayquest.com"
       },
       {
         "title": "Save your nuts",
@@ -216,10 +216,10 @@
         ],
         "networks": {
           "twitter": "https://twitter.com/TripleScale",
-          "facebook": "https://www.facebook.com/SaveYourNutsGame/",
-          "instagram": "https://www.instagram.com/triplescalegames/"
+          "facebook": "https://www.facebook.com/SaveYourNutsGame",
+          "instagram": "https://www.instagram.com/triplescalegames"
         },
-        "link": "http://triplescalegames.com/"
+        "link": "http://triplescalegames.com"
       },
       {
         "title": "Sbirz",
@@ -254,26 +254,132 @@
     "games": [
       {
         "title": "Dunst",
-        "visibleDate": "2020-04-06T09:00:00",
+        "visibleDate": "2020-05-01T09:00:00",
         "studio": "Marble oak",
         "summary": "",
         "platforms": [
-          "windows",
-          "mac"
+          "windows"
         ],
         "networks": {
           "twitter": "https://twitter.com/Dunst_game",
-          "facebook": "https://www.facebook.com/dunstgame/",
-          "instagram": "https://www.instagram.com/dunstgame/"
+          "facebook": "https://www.facebook.com/dunstgame",
+          "instagram": "https://www.instagram.com/dunstgame"
         },
         "link": "https://dunst-game.com/home"
+      },
+      {
+        "title": "Abiding Bridge",
+        "visibleDate": "2020-05-01T09:00:00",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "networks": {
+          "twitter": "https://twitter.com/AbidingBridge",
+          "facebook": "https://www.facebook.com/AbidingBridge"
+        },
+        "link": "https://abidingbridge.com"
+      },
+      {
+        "title": "Plaine Images",
+        "visibleDate": "2020-05-01T09:00:00",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "networks": {
+          "twitter": "https://twitter.com/plaineimages",
+          "facebook": "https://www.facebook.com/plaine.images",
+          "instagram": "https://www.instagram.com/plaineimages"
+        },
+        "link": "https://www.plaine-images.fr"
+      },
+      {
+        "title": "WALGA",
+        "visibleDate": "2020-05-01T09:00:00",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "networks": {
+          "twitter": "https://twitter.com/WALGAbe",
+          "facebook": "https://www.facebook.com/walga.be"
+        },
+        "link": "http://www.walga.be"
+      },
+      {
+        "title": "SwissGames",
+        "visibleDate": "2020-05-01T09:00:00",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "networks": {
+          "twitter": "https://twitter.com/gameculture_ch"
+        },
+        "link": "https://swissgames.ch"
       }
     ]
   },
   {
     "name": "prototypes",
     "displayName": "Prototypes",
-    "games": []
+    "games": [
+      {
+        "title": "Perfect Teams",
+        "visibleDate": "2020-05-01T09:00:00",
+        "studio": "Lys games",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "link": "http://www.perfectteams.sitew.com"
+      },
+      {
+        "title": "Square Nose Color",
+        "visibleDate": "2020-05-01T09:00:00",
+        "studio": "Juice Lizard",
+        "summary": "",
+        "platforms": [
+          "gamebuino"
+        ],
+        "link": "www.juicelizard.com"
+      },
+      {
+        "title": "Projet Folklore",
+        "visibleDate": "2020-05-01T09:00:00",
+        "studio": "Radio Clock",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Six months too late",
+        "visibleDate": "2020-05-01T09:00:00",
+        "studio": "Furious Pixel",
+        "summary": "",
+        "platforms": [
+          "windows"
+        ],
+        "link": "http://furiouspixel.com"
+      },
+      {
+        "title": "Unmaze",
+        "visibleDate": "2020-05-01T09:00:00",
+        "studio": "Upian",
+        "summary": "",
+        "platforms": [
+          "mobile"
+        ],
+        "networks": {
+          "twitter": "https://twitter.com/upian",
+          "facebook": "https://www.facebook.com/upian"
+        },
+        "link": "https://www.upian.com/en/project/unmaze"
+      }
+    ]
   },
   {
     "name": "gamejam",
