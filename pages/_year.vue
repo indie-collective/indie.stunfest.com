@@ -94,15 +94,15 @@
 
       <section
         v-for="section in filteredSections"
-        :key="section"
+        :key="section.displayName"
         class="section"
       >
         <p :class="`title-${currentYear}`" class="title is-size-1 is-uppercase">
-          {{ getDisplayName(section) }}
+          {{ section.displayName }}
         </p>
         <div class="columns is-tablet is-multiline is-centered">
           <div
-            v-for="game in random(section)"
+            v-for="game in section.games"
             :key="game.title"
             class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
           >

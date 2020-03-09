@@ -11,10 +11,6 @@ export default {
   },
   computed: {
     fileName() {
-      // eslint-disable-next-line
-        console.info('a', `${this.card.title
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}`);
       let img = ''
       try {
         img = require(`~/static/${

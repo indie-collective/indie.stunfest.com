@@ -70,12 +70,19 @@ export default {
     },
 
     filteredSections() {
-      return this.currentYearTabs.filter(
-        tab =>
-          (this.filter === 'all' || this.filter === tab) &&
-          this.items.find(i => i.name === tab) &&
-          this.items.find(i => i.name === tab).games.length
-      )
+      return this.currentYearTabs
+        .filter(
+          tab =>
+            (this.filter === 'all' || this.filter === tab) &&
+            this.items.find(i => i.name === tab) &&
+            this.items.find(i => i.name === tab).games.length
+        )
+        .map(v => ({
+          displayName: this.items.find(i => i.name === v).displayName || '🏠',
+          games: randomizeCards(this.items.find(i => i.name === v).games).sort(
+            (a, b) => this.isGameVisible(b) - this.isGameVisible(a)
+          )
+        }))
     },
 
     logoPath() {
@@ -113,14 +120,6 @@ export default {
         return '🏠'
       } else if (this.items.find(i => i.name === name)) {
         return this.items.find(i => i.name === name).displayName
-      }
-    },
-
-    random(section) {
-      if (this.items.find(i => i.name === section)) {
-        return randomizeCards(
-          this.items.find(i => i.name === section).games
-        ).sort((a, b) => this.isGameVisible(b) - this.isGameVisible(a))
       }
     },
 
