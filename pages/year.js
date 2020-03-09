@@ -118,7 +118,9 @@ export default {
 
     random(section) {
       if (this.items.find(i => i.name === section)) {
-        return randomizeCards(this.items.find(i => i.name === section).games)
+        return randomizeCards(
+          this.items.find(i => i.name === section).games
+        ).sort((a, b) => this.isGameVisible(b) - this.isGameVisible(a))
       }
     },
 
