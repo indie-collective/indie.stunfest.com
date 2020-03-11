@@ -7,7 +7,24 @@
     </section>
     <section :class="`header-${currentYear}`" class="hero sticky">
       <div class="hero-foot">
-        <nav class="tabs is-medium is-fullwidth is-boxed">
+        <nav class="control is-hidden-tablet">
+          <div class="select is-medium is-fullwidth">
+            <select @change="onSelectChange()" v-model="currentTab">
+              <option v-for="tab in currentYearTabs" :key="tab" :value="tab">{{
+                getDisplayName(tab)
+              }}</option>
+              <optgroup label="Années">
+                <option
+                  v-for="year in filteredYears"
+                  :key="year"
+                  :value="year"
+                  >{{ year }}</option
+                >
+              </optgroup>
+            </select>
+          </div>
+        </nav>
+        <nav class="tabs is-medium is-fullwidth is-boxed is-hidden-mobile">
           <div class="container">
             <ul>
               <li

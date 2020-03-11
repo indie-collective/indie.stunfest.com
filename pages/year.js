@@ -27,6 +27,12 @@ export default {
     Card
   },
 
+  data: function() {
+    return {
+      currentTab: ''
+    }
+  },
+
   props: {
     tabs: {
       type: Array,
@@ -125,6 +131,18 @@ export default {
 
     isGameVisible(game) {
       return !game.visibleDate || Date.parse(game.visibleDate) < Date.now()
+    },
+
+    onSelectChange() {
+      // eslint-disable-next-line
+      console.info('this.currentTab:', this.currentTab)
+      if ((this.currentTab + '').match(/\d{4}/g)) {
+        this.$router.push({
+          path: `/${this.currentTab}`
+        })
+      } else {
+        this.filter = this.currentTab
+      }
     }
   }
 }
