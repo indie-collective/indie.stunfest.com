@@ -1,4 +1,4 @@
-export const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
+const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
 
 const title = 'Indie Stunfest'
 const description = 'Welcome to the Stunfest Indie section !'
@@ -9,7 +9,7 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/indie-nuxt/'
+          base: '/indie.stunfest.com/'
         }
       }
     : {
@@ -19,7 +19,10 @@ const routerBase =
       }
 
 module.exports = {
-  mode: 'spa',
+  years,
+
+  ssr: false,
+  target: 'static',
 
   ...routerBase,
 
