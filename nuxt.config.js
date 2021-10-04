@@ -2,21 +2,14 @@ const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
 
 const title = 'Indie Stunfest'
 const description = 'Welcome to the Stunfest Indie section !'
-const url = 'https://www.stunfest.com/'
+const url = 'https://indie.stunfest.com/'
 const img = 'webpage.jpg'
 
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/indie.stunfest.com/'
-        }
-      }
-    : {
-        router: {
-          base: '/'
-        }
-      }
+const routerBase = {
+  router: {
+    base: '/',
+  },
+}
 
 module.exports = {
   years,
