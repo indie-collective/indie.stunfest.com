@@ -1,7 +1,7 @@
 import Card from '~/components/Card.vue'
 
 // Constants
-const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020]
+const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022]
 const awards = [
   'Stunfest Indie Award',
   'Promise Award',

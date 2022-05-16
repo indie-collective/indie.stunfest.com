@@ -19,7 +19,11 @@ export default {
           .toLowerCase()
           .replace(/[^a-zA-Z0-9]|-|\s/gim, '')}.jpg`)
       } catch (e) {
-        img = require('~/static/tobeannounced.jpg')
+        try {
+          img = require(`~/static/${this.currentYear}/_tba.jpg`)
+        } catch (e) {
+          img = require(`~/static/tba.jpg`)
+        }
       }
       return img
     }
