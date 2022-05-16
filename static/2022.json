@@ -360,10 +360,12 @@
         "summary": "Avez vous déjà fait la course avec des béliers, mis des doigts dans le nez ou affronté des chats pirates ?\nBienvenue dans FUFUFU, un partygame roguelite déjanté en coopération de 1 à 4 joueurs.\nCercamon le grincheux a banni le rire, défiez-le et survivez aux situations délirantes en usant et abusant de votre rire comme arme principale.\nPréparez-vous, FU rires garantis !",
         "platforms": ["windows"],
         "keywords": ["Roguelike", "Coopératif", "Party Game"],
-        "networks": null,
+        "networks": {
+          "twitter": "https://twitter.com/fufufu_the_game"
+        },
         "award": null,
         "visibleDate": null,
-        "link": null
+        "link": "https://twitter.com/fufufu_the_game"
       }
     ]
   },
@@ -519,7 +521,7 @@
         "networks": null,
         "award": null,
         "visibleDate": null,
-        "link": "https://www.evprod.world/hungry_lizard/"
+        "link": "https://www.evprod.world/warm_monkey/"
       },
       {
         "title": "Hungry Lizard",
