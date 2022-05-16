@@ -3,6 +3,8 @@
     <section :class="`header-${currentYear}`" class="hero">
       <div class="container has-text-centered">
         <img :src="logoPath" alt="Stunfest Indie Game logo" />
+        <h6 v-if="currentYear === '2022'" class="subtitle" style="color: white; margin-bottom: 2em">A retrouver au Théâtre du Vieux Saint-Etienne<br/><br/>Horaires :<br/>- Vendredi 20 mai  : 14H – 19H<br/>- Samedi 21 mai  : 10H – 20H<br/>- Dimanche 22 mai  : 10H – 17H<br/>Accès Libre
+        </h6>
       </div>
     </section>
     <section :class="`header-${currentYear}`" class="hero sticky">
@@ -38,7 +40,6 @@
                 @click="filter = tab"
               >
                 <a
-                  :to="tab"
                   :class="{
                     'has-text-weight-bold': filter === tab
                   }"

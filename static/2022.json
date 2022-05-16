@@ -346,7 +346,7 @@
       {
         "title": "Captain Velvet Meteor : The Jump + Dimensions",
         "studio": "Momo-Pi Game Studio",
-        "summary": "Captain Velvet Meteor: The Jump+ Dimensions",
+        "summary": "Né dans une famille franco-japonaise, Damien est un adolescent créatif et imaginatif. Son monde s'écroule lorsque ses parents lui annoncent qu'ils ont décidé de quitter la France pour aller vivre au Japon, un pays qu'il connaît surtout grâce à tous les mangas qu'il lit. Damien va alors faire appel à son personnage de super-héros, le Capitaine Velvet Meteor, pour faire face à l'angoisse de son déménagement.",
         "platforms": ["windows", "switch"],
         "keywords": ["Action", "Stratégie"],
         "networks": null,
@@ -368,8 +368,8 @@
     ]
   },
   {
-    "name": "village",
-    "displayName": "Village",
+    "name": "indiegames",
+    "displayName": "Indie Games",
     "games": [
       {
         "title": "Péril En Daiza",
@@ -463,13 +463,7 @@
         "award": null,
         "visibleDate": null,
         "link": "https://play0ad.com/"
-      }
-    ]
-  },
-  {
-    "name": "prototypes",
-    "displayName": "Prototypes",
-    "games": [
+      },
       {
         "title": "Le Voyage De Salto Et Drogo",
         "studio": "Nightlight Studio",
