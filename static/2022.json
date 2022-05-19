@@ -166,7 +166,7 @@
       {
         "title": "Sclash",
         "studio": "Bevel Bakery",
-        "summary": "Sclash est un jeu de combat de samouraïs rempli de tensions, où un coup = un mort. Incarnez un samouraï expérimenté et affrontez vos adversaires dans des combats épiques où chaque mouvement compte. Gérez votre endurance, respirez et prenez votre temps pour asséner un coup mortel.",
+        "summary": "Sclash est un jeu de combat de samouraïs remplit de tension où un coup = un mort. Incarnez un samouraï expérimenté et affrontez vos adversaires dans des combats épiques où chaque mouvement compte. Gérez votre endurance, respirez et prenez votre temps pour asséner un coup mortel.",
         "platforms": ["windows"],
         "keywords": ["Action"],
         "networks": {
@@ -175,7 +175,7 @@
         },
         "award": null,
         "visibleDate": null,
-        "link": "https://store.steampowered.com/app/1284130/Sclash/?curator_clanid=39246230"
+        "link": "https://store.steampowered.com/app/1284130/Sclash/"
       },
       {
         "title": "Racine",
@@ -191,7 +191,7 @@
       {
         "title": "Time Rift",
         "studio": "Lightshards",
-        "summary": "Unique, fast-paced action-puzzle gameplay that’s a pleasure to master\nBeat the roving firewall system: a deadly, auto-scrolling bar which can chase you from any direction\nMaster bombs, gates and nodes to execute perfect runs\nRewind time to avoid traps and grab that last collectible",
+        "summary": "Time Rift est un puzzle shooter frénétique. Tu es un·e hacker, maintenant reconverti·e en testeur·se en sécurité, mais tes talents seuls ne te mèneront pas loin : pour renverser la mégacorporation VaultCo, tu devras manipuler le cours du temps !",
         "platforms": ["windows"],
         "keywords": ["Action", "Puzzle Game"],
         "networks": null,
@@ -318,19 +318,6 @@
         "link": "https://store.steampowered.com/app/1610500/Bibots/?curator_clanid=40469584"
       },
       {
-        "title": "Ruggnar",
-        "studio": "Sword N' Wands",
-        "summary": "Ruggnar est un jeu de plates-formes sans ennemi, mais de nombreux pièges sont cachés dans l'obscurité. Aidez Ruggnar à explorer des lieux sombres avec pour seuls équipements son sac et quelques bougies.",
-        "platforms": ["windows"],
-        "keywords": ["Platformer"],
-        "networks":  {
-          "twitter": "https://twitter.com/ruggnar"
-        },
-        "award": null,
-        "visibleDate": null,
-        "link": "https://store.steampowered.com/app/1303050/Ruggnar/"
-      },
-      {
         "title": "Mage Noir - Infinity",
         "studio": "Double Combo Games",
         "summary": "Mage Noir est un jeu de cartes stratégique et compétitif où les joueurs deviennent des Mages pour s'affronter. Créez vos propres sorts et lancez des boules de feu flamboyantes, soulevez des vagues monumentales, faites hurler des tornades dévastatrices et tenez une myriade de pouvoirs magiques dans la paume de vos mains.\nDans Mage Noir, vous utiliserez tout ce que vous avez à disposition pour mettre votre adversaire à 0HP. Pour ce faire, vous aurez vos sorts pour affaiblir vos ennemis, matérialiser des équipements, invoquer les forces de la nature ou vous préparer à lancer des sorts encore plus puissants. Cependant, vous devrez faire attention à vos choix. Utiliser vos sorts restitue une partie de leur énergie à votre adversaire, le rendant encore plus puissant.\nLes mécaniques novatrices principales de Mage Noir sont:\n- Le système de craft de sort\n- La mécanique de Mana partagée\n- La grande liberté apportée aux joueurs dans leur manière d'aborder leur stratégie\n- Le système de passage à Mage Noir.",
@@ -405,7 +392,7 @@
         "link": "https://phlegmagames.com/"
       },
       {
-        "title": "Toaster Ball",
+        "title": "Toasterball",
         "studio": "Les Crafteurs",
         "summary": "Une balle, deux buts, et... des grille-pains. Bienvenue dans Toasterball. Affrontez-vous entre amis jusqu’à 4 joueurs dans ce tournoi un peu inhabituel, où les grille-pains sont des athlètes, et où les lois de la physique sont en option.",
         "platforms": ["windows"],
@@ -556,7 +543,7 @@
         },
         "award": null,
         "visibleDate": null,
-        "link": "https://store.steampowered.com/app/1542140/Mage_Noir__Infinity"
+        "link": "https://www.breadpandagames.com/"
       },
       {
         "title": "Necroboy : Path To Evilship",
@@ -617,7 +604,51 @@
     "name": "gamejam",
     "displayName": "Gamejam",
     "games": [
-
+      {
+        "title": "balai-balai",
+        "summary": "Balai-balai est un jeu de plateau qui a été créé lors de la Stunjam 2022 avec comme thème \\ba. lɛ\\",
+        "platforms": ["windows"],
+        "keywords": ["Board game"],
+        "award": null,
+        "visibleDate": null,
+        "link": "https://nineufo.itch.io/balai-balai"
+      },
+      {
+        "title": "Street Food Fighter",
+        "summary": "Jeu fait à l'occasion de la Stunjam 2022 avec comme thème \\ba.lɛ\\\nBut :\nLe but est de lancer les miettes sur la tête de l'adversaire, une partie est gagné au bout de 10 points",
+        "platforms": ["windows"],
+        "keywords": ["Party game"],
+        "award": null,
+        "visibleDate": null,
+        "link": "https://golden-t-game.itch.io/street-food-fighter"
+      },
+      {
+        "title": "Clean Them 'op",
+        "summary": "Pour l'édition 2022 de la Stunjam, j'ai opté pour la création d'un petit jeu d'arcade en scrolling vertical.\nLe but du jeu est de récupérer un maximum de détritus à l'aide d'un balai ciseaux et de finir le niveau avec le score le plus élevé possible. Le joueur peut déplacer le personnage de gauche à droite sur l'écran à l'aide des touches directionnelles du clavier. Il peut également au choix refermer le balai ciseaux ou bien au contraire l'écarter pour récupérer un maximum de détritus en même temps. Cependant plus le balai est écarté, plus le risque de heurter le décor et ainsi entraîner un Game Over est élevé. Le joueur doit donc ajuster l'écartement du balai de façon à récupérer le plus de détritus possible et arriver à la fin du niveau sans heurter le décor.\nSi le joueur capture beaucoup de détritus dans son balai et qu'il ne peut plus en récupérer davantage, il doit alors passer sur l'icône représentant une poubelle, les détritus amassés jusqu'alors seront comptabilisés puis jetés à la poubelle et le joueur pourra à nouveau amasser de nouveaux détritus.\nLe jeu est destiné à être porté sur mobile par la suite.",
+        "platforms": ["windows", "android"],
+        "keywords": ["Mobile game"],
+        "award": null,
+        "visibleDate": null,
+        "link": "https://stephane-morvan.itch.io/clean-them-op"
+      },
+      {
+        "title": "Ballet des araignées",
+        "summary": "Made during the Stunjam 2022",
+        "platforms": ["windows"],
+        "keywords": ["Party game"],
+        "award": null,
+        "visibleDate": null,
+        "link": "https://altaezio.itch.io/ballet-des-araignes"
+      },
+      {
+        "title": "Windshield Warfare",
+        "summary": "Was the theme of the 2022 edition of the Stunjam, a 48h-long game jam taking place in Rennes, a French city located in Britany.\nBeing a phonetic theme, it aims to lead to a wide variety of ideas.\nWe choose to work on the \"balais\" meaning of it, in English: \"broom\".",
+        "platforms": ["windows"],
+        "keywords": ["Party game"],
+        "award": null,
+        "visibleDate": null,
+        "link": "https://alanoixdecocow.itch.io/windshield-warfare"
+      }
     ]
   }
 ]
