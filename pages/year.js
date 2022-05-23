@@ -6,7 +6,8 @@ const awards = [
   'Stunfest Indie Award',
   'Promise Award',
   "People's Choice Award",
-  'GameJam Award'
+  'GameJam Award',
+  'Young Public Award',
 ]
 
 function randomizeCards(cardSection) {
