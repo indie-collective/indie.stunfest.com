@@ -87,6 +87,21 @@
         "link": "https://helvetii-game.com/"
       },
       {
+        "title": "Soup Raiders",
+        "studio": "Team KwaKwa",
+        "summary": "Soup Raiders is a wacky and fun tactical RPG with a real time battle system where pirate and merchent animals fight each other and the world is in a soup. Liberate the Western Soup from the grasps of Mr. Whale.",
+        "platforms": [
+          "windows",
+          "linux",
+          "switch"
+        ],
+        "keywords": ["Strategy", "RPG"],
+        "networks": {
+          "twitter": "https://twitter.com/SoupRaiders"
+        },
+        "link": "https://soupraiders.com/"
+      },
+      {
         "title": "Crispr Crunch",
         "studio": "Play Curious",
         "summary": "Marre des virus ? Il est temps de prendre votre revanche !\nDefends ta bactérie contre des vagues de virus assaillants en reproduisant leur séquence ADN.\nCRISPR Crunch est un jeu mobile gratuit qui vous plonge dans le monde nébuleux de la microbiologie.\nLe gameplay combine des mécaniques de \"matching\" enrobé de concepts innovants de science.\"",
