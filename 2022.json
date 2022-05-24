@@ -91,8 +91,8 @@
         "studio": "Team KwaKwa",
         "summary": "Soup Raiders is a wacky and fun tactical RPG with a real time battle system where pirate and merchent animals fight each other and the world is in a soup. Liberate the Western Soup from the grasps of Mr. Whale.",
         "platforms": [
-          "linux",
           "windows",
+          "linux",
           "switch"
         ],
         "keywords": ["Strategy", "RPG"],
@@ -258,25 +258,6 @@
           "twitter": "https://twitter.com/ruggnar"
         },
         "link": "https://store.steampowered.com/app/1303050/Ruggnar/"
-      },
-      {
-        "title": "Cassiodora",
-        "studio": "Void Studios",
-        "summary": "Cassiodora est un jeu medieval fantasy inspiré des classiques du Shoot ‘em Up avec des mécaniques uniques et des combats de boss épiques. Sauvez la princesse Cassiodora seul ou avec 2 amis sur le même écran.",
-        "platforms": ["windows"],
-        "keywords": ["Shoot'em Up"],
-        "link": "https://store.steampowered.com/app/1708550/Cassiodora/"
-      },
-      {
-        "title": "Bibots",
-        "studio": "Square Squid",
-        "summary": "Bibots est un jeu de tir roguelite qui se déroule dans un monde futuriste. Incarnez Tayar, un explorateur au contrôle d’un nerveux robot et nettoyez les pièces remplies de monstres, de pouvoirs et de secrets à découvrir. Mourez, et recommencez jusqu’à affronter la menace ultime de votre monde.",
-        "platforms": ["windows"],
-        "keywords": ["Action", "Roguelike", "Bullet Hell"],
-        "networks": {
-          "twitter": "https://twitter.com/_squaresquid"
-        },
-        "link": "https://store.steampowered.com/app/1610500/Bibots/?curator_clanid=40469584"
       },
       {
         "title": "Mage Noir - Infinity",
