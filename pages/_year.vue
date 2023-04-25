@@ -84,69 +84,72 @@
         </nav>
       </div>
     </section>
-    <div>
-      <section v-if="filter === 'all' && sortedAwards.length" class="section">
-        <div class="columns is-tablet is-multiline is-centered">
-          <div
-            v-for="game in sortedAwards"
-            :key="game.title"
-            v-if="game.title"
-            :class="
-              game.award + '-award' + (game.award === 'indie' ? ' is-half' : '')
-            "
-            class="award-container column is-half-tablet is-one-quarter-widescreen"
-          >
-            <p
-              :class="`award-${currentYear}`"
-              class="award title is-size-3 is-uppercase has-text-centered"
-            >
-              {{ game.award }}
-            </p>
-            <card
-              v-if="isGameVisible(game)"
-              :card="game"
-              :vote-link="game.voteLink"
-              class="tile is-vertical"
-            >
-              {{ game.summary }}
-            </card>
-          </div>
-        </div>
-      </section>
 
-      <section
-        v-for="section in filteredSections"
-        :key="section.displayName"
-        class="section"
-      >
-        <p :class="`title-${currentYear}`" class="title is-size-1 is-uppercase">
-          {{ section.displayName }}
-        </p>
-        <div class="columns is-tablet is-multiline is-centered">
-          <div
-            v-for="game in section.games"
-            :key="game.title"
-            class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
+    <section v-if="filter === 'all' && sortedAwards.length" class="section">
+      <div class="columns is-tablet is-multiline is-centered">
+        <div
+          v-for="game in sortedAwards"
+          :key="game.title"
+          v-if="game.title"
+          :class="
+            game.award + '-award' + (game.award === 'indie' ? ' is-half' : '')
+          "
+          class="award-container column is-half-tablet is-one-quarter-widescreen"
+        >
+          <p
+            :class="`award-${currentYear}`"
+            class="award title is-size-3 is-uppercase has-text-centered"
           >
-            <card
-              v-if="isGameVisible(game)"
-              :card="game"
-              :vote-link="game.voteLink"
-            >
-              {{ game.summary }}
-            </card>
-            <card
-              v-if="!isGameVisible(game)"
-              :card="{
-                title: ''
-              }"
-              class="disabled"
-            >
-            </card>
-          </div>
+            {{ game.award }}
+          </p>
+          <card
+            v-if="isGameVisible(game)"
+            :card="game"
+            :vote-link="game.voteLink"
+            class="tile is-vertical"
+          >
+            {{ game.summary }}
+          </card>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section
+      v-for="section in filteredSections"
+      :key="section.displayName"
+      class="section"
+    >
+      <p :class="`title-${currentYear}`" class="title is-size-1 is-uppercase">
+        {{ section.displayName }}
+      </p>
+      <div class="columns is-tablet is-multiline is-centered">
+        <div
+          v-for="game in section.games"
+          :key="game.title"
+          class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
+        >
+          <card
+            v-if="isGameVisible(game)"
+            :card="game"
+            :vote-link="game.voteLink"
+          >
+            {{ game.summary }}
+          </card>
+          <card
+            v-if="!isGameVisible(game)"
+            :card="{
+              title: ''
+            }"
+            class="disabled"
+          >
+          </card>
+        </div>
+      </div>
+    </section>
+
+    <section :class="`empty-section-${currentYear}`" class="empty-section" v-if="filteredSections.length === 0">
+      <p>Les jeux seront annoncés<br />prochainement !</p>
+    </section>
   </div>
 </template>
 <style lang="scss" src="~/pages/year.scss"></style>

@@ -168,6 +168,11 @@
     font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
   }
 
+  .empty-section-#{$year} {
+    color: var(--card-h1-#{$year});
+    font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
+  }
+
   .award-#{$year} {
     font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
   }
