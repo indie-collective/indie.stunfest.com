@@ -2,7 +2,13 @@
   <div>
     <section :class="`header-${currentYear}`" class="hero">
       <div class="container has-text-centered">
-        <img :src="logoPath" alt="Stunfest Indie Game logo" />
+        <h1><img :src="logoPath" alt="Stunfest Indie Game logo" /></h1>
+        <h2
+          v-if="currentYear === '2023'"
+          style="margin-bottom: 2em"
+        >
+          À retrouver les 19 – 20 – 21 mai 2023 au Liberté à Rennes.
+        </h2>
       </div>
     </section>
     <section :class="`header-${currentYear}`" class="hero sticky">

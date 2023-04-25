@@ -38,6 +38,14 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'stunfest';
+  src: url('/2023/stunfest.otf');
+  font-display: fallback;
+  font-style: normal;
+  font-weight: normal;
+}
+
 :root {
   --primary-color: #ff5446;
   --link-color: #3273dc;
@@ -53,6 +61,15 @@
   --card-link-bg-2013: var(--link-color);
   --card-link-font-2013: var(--header-font-2013);
   --main-font-2013: 'distortion_of_the_brain_and_mind';
+
+  --header-bg-2023: #eb5b26;
+  --header-font-2023: #fff;
+  --header-tab-bg-2023: #fff;
+  --header-tab-font-2023: #000;
+  --card-h1-2023: #000;
+  --card-link-bg-2023: var(--card-h1-2023);
+  --card-link-font-2023: var(--header-font-2023);
+  --main-font-2023: 'stunfest';
 
   --header-bg-2022: #000;
   --header-font-2022: #fff;
@@ -121,6 +138,9 @@
 @for $year from 2013 to 2030 {
   .header-#{$year} {
     background: var(--header-bg-#{$year});
+    font-family: var(--main-font-#{$year}), 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: var(--header-font-#{$year});
 
     .header-tab-#{$year}:not(.is-active) a {
       color: var(--header-font-#{$year}) !important;

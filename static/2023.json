@@ -1,0 +1,17 @@
+[
+  {
+    "name": "indieawards",
+    "displayName": "Indie Awards",
+    "games": []
+  },
+  {
+    "name": "indiegames",
+    "displayName": "Indie Games",
+    "games": []
+  },
+  {
+    "name": "gamejam",
+    "displayName": "Gamejam",
+    "games": []
+  }
+]
