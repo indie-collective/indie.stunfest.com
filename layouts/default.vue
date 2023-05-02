@@ -67,7 +67,7 @@
   --header-tab-bg-2023: #fff;
   --header-tab-font-2023: #000;
   --card-h1-2023: #000;
-  --card-link-bg-2023: var(--card-h1-2023);
+  --card-link-bg-2023: var(--header-bg-2023);
   --card-link-font-2023: var(--header-font-2023);
   --main-font-2023: 'stunfest';
 
