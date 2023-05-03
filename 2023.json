@@ -1,7 +1,7 @@
 [
   {
-    "name": "indieawards",
-    "displayName": "Indie Awards",
+    "name": "competition",
+    "displayName": "Compétition",
     "games": [
       {
         "title": "Abiding Bridge",
@@ -61,14 +61,21 @@
       },
       {
         "title": "Project Operator",
-        "studio": "Bastienre4",
+        "studio": "Bastien Giafferi",
         "summary": "Play an operator and assist field agents by analyzing proofs and making deductions via your computer. You will solve several cases not linked to each other. Unless…",
         "platforms": ["Windows"],
-        "keywords": null,
         "networks": {
           "twitter": "https://twitter.com/Bastienre4",
           "facebook": "https://m.facebook.com/ClusterEastGames/photos/a.1610310165941751/2900700096902745/?type=3&eid=ARDqKqf_kK1sEdrJ2zJTCEGlP35K3wky5qJiJB0Sk-i41tYFkLarno29tidRLyt-b9Stou_Vw4NmXz0l"
         },
+        "link": "https://t.co/EAenzgSvLS"
+      },
+      {
+        "title": "Spook Bowl",
+        "studio": "Kalank Studio",
+        "summary": "Dans Spook Bowl, dirigez votre équipe d'athlètes universitaires monstrueux dans un jeu de ballon au tour par tour pas comme les autres. Assemblez une équipe gagnante grâce aux capacités et aux histoires uniques de chaque personnage. Trouvez votre propre façon de marquer des points et percez les secrets énigmatiques de ce tournoi universitaire.",
+        "platforms": ["Windows", "Switch", "PS4", "Xbox"],
+        "keywords": ["Tactical", "Sports"],
         "link": "https://t.co/EAenzgSvLS"
       },
       {
@@ -112,17 +119,6 @@
           "twitter": "https://twitter.com/Magical_Drop_DB?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
         },
         "link": "https://store.steampowered.com/app/2176320/Magical_Drop_VI/"
-      },
-      {
-        "title": "How 2 Escape",
-        "studio": "Breakfirst Games",
-        "summary": "How 2 Escape is an escape-simulation game where two players will need to cooperate on asymmetrical gameplay and devices. \"Talk together. Help each other.\" will be your new motto to survive in How 2 Escape.",
-        "platforms": ["Windows"],
-        "keywords": ["Simulation"],
-        "networks": {
-          "twitter": "https://twitter.com/how2escape_Game"
-        },
-        "link": "https://store.steampowered.com/app/2264140/How_2_Escape/"
       },
       {
         "title": "Saga of Sins",
@@ -230,6 +226,17 @@
         "link": "https://wildwits.games/",
         "keywords": ["RPG Aventure"],
         "platforms": ["Windows"]
+      },
+      {
+        "title": "How 2 Escape",
+        "studio": "Breakfirst Games",
+        "summary": "How 2 Escape is an escape-simulation game where two players will need to cooperate on asymmetrical gameplay and devices. \"Talk together. Help each other.\" will be your new motto to survive in How 2 Escape.",
+        "platforms": ["Windows"],
+        "keywords": ["Simulation"],
+        "networks": {
+          "twitter": "https://twitter.com/how2escape_Game"
+        },
+        "link": "https://store.steampowered.com/app/2264140/How_2_Escape/"
       },
       {
         "title": "DarkTimes: Wrath of the Raven",
