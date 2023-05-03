@@ -4,6 +4,7 @@
     <footer class="hero">
       <div class="hero-body has-text-centered">
         Fait avec tout notre petit 💖 par
+        <a href="http://www.3hitcombo.fr/" target="_blank">3 Hit Combo</a> et
         <a href="https://indieco.xyz" target="_blank">Indie Collective</a>
       </div>
     </footer>
