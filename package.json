@@ -45,5 +45,6 @@
     "eslint-plugin-vue": "^7.18.0",
     "nodemon": "^1.18.9",
     "prettier": "^2.4.1"
-  }
+  },
+  "packageManager": "yarn@3.5.1"
 }
