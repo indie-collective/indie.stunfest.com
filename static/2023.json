@@ -13,18 +13,6 @@
         "link": "https://abidingbridge.com/"
       },
       {
-        "title": "Paquerette down the Bunburrows",
-        "studio": "Bunstack",
-        "summary": "Les lapinous... Tu DOIS les attraper !! Pense en dehors du terrier ou fais-toi duper par l'IA de lapins plus malins que toi...",
-        "platforms": ["Windows"],
-        "keywords": ["Puzzle"],
-        "networks": {
-          "twitter": "https://twitter.com/AbidingBridge",
-          "facebook": "https://www.facebook.com/AbidingBridge"
-        },
-        "link": "https://store.steampowered.com/app/1628610/Paquerette_Down_the_Bunburrows/?l=french"
-      },
-      {
         "title": "Jumalien",
         "studio": "Kevin Pedatte",
         "summary": "The great Jumalien tournament enters its final phase, only the god of gods will emerge victorious. Embody a deity and hunt down your opponents to receive the supreme sacrament in this local multiplayer hack & slash!",
@@ -111,7 +99,7 @@
       },
       {
         "title": "Magical Drop VI",
-        "studio": "Highball Games",
+        "studio": "Highball Games / TA Publishing / Storm Trident",
         "summary": "Follow the story, battle a cast of whimsical characters, set new records, solve puzzles, engage your friends and family in local multiplayer, or compete against players from around the world through online play.",
         "platforms": ["Windows"],
         "keywords": ["Puzzle"],
@@ -216,6 +204,18 @@
     "displayName": "Indie Games",
     "games": [
       {
+        "title": "Paquerette down the Bunburrows",
+        "studio": "Bunstack",
+        "summary": "Pense en dehors du terrier ou fais-toi duper par l'IA de lapins trop kawaii dans Pâquerette Down the Bunburrows, un jeu de puzzle mignon et profond où tu dois attraper tous les petits lapinous!",
+        "platforms": ["Windows"],
+        "keywords": ["Puzzle"],
+        "networks": {
+          "twitter": "https://twitter.com/AbidingBridge",
+          "facebook": "https://www.facebook.com/AbidingBridge"
+        },
+        "link": "https://store.steampowered.com/app/1628610/Paquerette_Down_the_Bunburrows/?l=french"
+      },
+      {
         "title": "Aetheris",
         "studio": "Wild Wits Games",
         "summary": "Trouvez le pouvoir dont vous avez besoin pour venger votre tribu dans ce RPG d'aventure, avec des combats en tour par tour et une expérience de coopération jusqu’à 4 joueurs.",
@@ -240,7 +240,7 @@
       },
       {
         "title": "DarkTimes: Wrath of the Raven",
-        "studio": "Flys",
+        "studio": "Salvagers Studio",
         "summary": "DarkTimes is a twin-stick horror shooter where you can use two guns to aim two directions simultaneously. Defend Louisiana with your occult raven: shoot, dash, stun, bullet time to defeat hordes of monsters. They stole your child, get him back. Want to play with a friend? Coop is in the works!",
         "networks": {
           "twitter": "https://twitter.com/darktimesgame?lang=fr"
@@ -271,7 +271,7 @@
       },
       {
         "title": "To Hell With The Ugly",
-        "studio": "ARTE",
+        "studio": "La Poule Noire",
         "summary": "\"To Hell With the Ugly\" est un jeu d’aventure adapté du roman éponyme de Boris Vian. Incarnez Rock Bailey, jeune homme aussi beau que superficiel, kidnappé à la sortie d’un club de jazz. Entre bagarres de bars et enquête policière, aidez Rocky à faire la lumière sur son enlèvement.",
         "networks": {
           "twitter": "https://twitter.com/LaPouleNoireJV?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1451194059045826562%7Ctwgr%5Ebeb8431494397d24bf5c1c2513b8292f9ce77b84%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.arte.tv%2Fdigitalproductions%2Ffr%2Fto-hell-with-the-ugly"
@@ -399,11 +399,41 @@
       },
       {
         "title": "Cordialement",
-        "studio": "Playfool",
-        "summary": "Cordialement est un jeu dans lequel le joueur est invité à taper “cordialement” le plus rapidement possible !",
+        "studio": "Play-Fool",
+        "summary": "Jeu de petite frappe administrative. l'objectif : taper cordialement le plus vite possible",
         "link": "http://www.play-fool.net/cordialement",
         "keywords": ["Humour"],
         "platforms": ["Windows"]
+      },
+      {
+        "title": "Golf Fight",
+        "studio": "Play-Fool",
+        "summary": "Golf Fight, est un jeu de mini-golf retro pixel inspiré par la GameBoy. Sa particularité ? Deux balles, pas de trou !",
+        "link": "https://projet.jeremypicard.fr/GolfFight/",
+        "networks": {
+          "instagram": "https://www.instagram.com/z00keep/"
+        },
+        "keywords": ["Versus", "Golf"],
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Blooming Business Casino",
+        "studio": "Homo Ludens",
+        "summary": "Blooming Business: Casino is a business tycoon sim with a narrative twist. Build and run your own fantasy casino in a bustling world full of animals, drama and danger.",
+        "link": "https://store.steampowered.com/app/1388580/Blooming_Business_Casino/",
+        "networks": {
+          "facebook": "https://www.facebook.com/BloomingBusinessCasino/"
+        },
+        "keywords": ["Simulation"],
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Cesspool",
+        "studio": "Radio Cloaque",
+        "summary": "Dans ce JRPG minimaliste et bienveillant, vous voyagerai à travers une Bretagne post-apocalyptique à la recherche de votre petit singe que vous avez perdu de vu.",
+        "platforms": ["windows"],
+        "keywords": ["RPG"],
+        "link": "https://store.steampowered.com/app/1394030/CESSPOOL/"
       }
     ]
   },
