@@ -3,7 +3,7 @@
     <div class="card-image">
       <a :href="card.link">
         <figure class="image is-16by9">
-          <img :src="fileName" />
+          <img :src="fileName" alt="" />
         </figure>
       </a>
     </div>
