@@ -26,6 +26,19 @@ export default {
         }
       }
       return img
+    },
+    mainLink() {
+      let { link } = this.card;
+
+      const url = new URL(link);
+      if (url.hostname === 'store.steampowered.com') {
+        // let's give us some views :P
+        url.searchParams.set('curator_clanid', '42527171');
+
+        link = url.toString();
+      }
+
+      return link;
     }
   },
   methods: {

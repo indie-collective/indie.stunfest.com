@@ -30,8 +30,8 @@
       </div>
     </div>
 
-    <footer v-if="card.link" class="card-footer">
-      <a :href="card.link" class="card-footer-item has-text-weight-bold">
+    <footer v-if="mainLink" class="card-footer">
+      <a :href="mainLink" class="card-footer-item has-text-weight-bold">
         Allez-le voir !
       </a>
     </footer>
