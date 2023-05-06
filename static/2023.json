@@ -15,7 +15,7 @@
       {
         "title": "Jumalien",
         "studio": "Kevin Pedatte",
-        "summary": "The great Jumalien tournament enters its final phase, only the god of gods will emerge victorious. Embody a deity and hunt down your opponents to receive the supreme sacrament in this local multiplayer hack & slash!",
+        "summary": "Le grand tournoi du Jumalien entre dans sa phase finale, seul le dieu des dieux en sortira vainqueur. Incarnez une divinité et traquez vos adversaires pour recevoir le sacrement suprême dans ce hack & slash multijoueur local !",
         "platforms": ["Windows"],
         "keywords": ["Rogue lite"],
         "networks": {
@@ -38,7 +38,7 @@
       {
         "title": "Kairo's Light Remake",
         "studio": "Let's Develop Change",
-        "summary": "Change the future of Edmond, a desperate guy who failed his life. In this simulation, improve the town of Thésye, earn money, buy a castle, and collect cattails.",
+        "summary": "Changez l'avenir d'Edmond, un type paumé qui a raté sa vie. Dans cette simulation, améliorez la ville de Thésye, gagnez du pognon, achetez un château, et ramassez des quenouilles.",
         "platforms": ["Windows"],
         "keywords": ["Simulation"],
         "networks": {
@@ -50,7 +50,7 @@
       {
         "title": "Project Operator",
         "studio": "Bastien Giafferi",
-        "summary": "Play an operator and assist field agents by analyzing proofs and making deductions via your computer. You will solve several cases not linked to each other. Unless…",
+        "summary": "Incarnez un opérateur du ███ et assistez les agents sur le terrain en analysant les preuves et en faisant des déductions via votre ordinateur. Vous allez ainsi résoudre plusieurs enquêtes sans lien les unes avec les autres. À moins que…",
         "platforms": ["Windows"],
         "networks": {
           "twitter": "https://twitter.com/Bastienre4",
@@ -69,7 +69,7 @@
       {
         "title": "RUN : World In-Between",
         "studio": "Team Run",
-        "summary": "RUN: The World In-Between is a new “Die and Retry” platformer game with a procedurally-generated path. Be fast, jump, and run to unlock new content.",
+        "summary": "RUN: The World In-Between est un nouveau plateformer \"Die and Retry\" dont le parcours à effectuer se génère de manière procédurale. Sois rapide, saute, cours pour débloquer du nouveau contenu.",
         "platforms": ["Windows"],
         "keywords": ["Platformer"],
         "networks": {
@@ -100,7 +100,7 @@
       {
         "title": "Magical Drop VI",
         "studio": "Highball Games / TA Publishing / Storm Trident",
-        "summary": "Follow the story, battle a cast of whimsical characters, set new records, solve puzzles, engage your friends and family in local multiplayer, or compete against players from around the world through online play.",
+        "summary": "Plongez dans l'histoire, affrontez des personnages fantasques, établissez de nouveaux records, résolvez des casse-tête ou mesurez-vous à vos amis/votre famille en mode multijoueur local comme aux joueurs du monde entier via la fonction en ligne.",
         "platforms": ["Windows"],
         "keywords": ["Puzzle"],
         "networks": {
@@ -111,7 +111,7 @@
       {
         "title": "Saga of Sins",
         "studio": "Bonus Level Entertainment",
-        "summary": "Saga of Sins is an expiatory action-adventure which features a mystical storyline and a rewarding arcade gameplay! Transform into demonic creatures and fight the seven deadly sins.",
+        "summary": "Saga of Sins est un jeu d'action-aventure expiatoire avec un scénario mystique et un gameplay arcade gratifiant ! Plongez dans un monde de vitraux imprégné par le péché, et venez à bout des sept pêchés capitaux.",
         "platforms": ["Windows"],
         "keywords": ["Action Adventure"],
         "networks": {
@@ -121,7 +121,7 @@
       {
         "title": "Crime O'Clock",
         "studio": "Bad Seed",
-        "summary": "Crime O'Clock is an investigation and time exploration game with a deep storyline. Investigate cases through time and evolving maps by unveiling a multi-eras linked story. Will you be observant enough to solve the mysteries? Crime waits for no man!",
+        "summary": "Crime O'Clock est un jeu d'enquête et d'exploration du temps à travers les époques et les univers. Enquêtez sur des affaires à travers le temps et des cartes évolutives qui dévoileront une histoire aux liens multiples. Serez-vous assez observateur pour résoudre tous les mystères ?",
         "platforms": ["Windows"],
         "keywords": ["Puzzle"],
         "networks": {
@@ -230,7 +230,7 @@
       {
         "title": "How 2 Escape",
         "studio": "Breakfirst Games",
-        "summary": "How 2 Escape is an escape-simulation game where two players will need to cooperate on asymmetrical gameplay and devices. \"Talk together. Help each other.\" will be your new motto to survive in How 2 Escape.",
+        "summary": "How 2 Escape est un jeu de simulation d'évasion où deux joueurs devront coopérer via des supports différents et un gameplay asymétrique. Entraide & Coopération seront les mots d'ordre pour survivre dans How 2 Escape !",
         "platforms": ["Windows"],
         "keywords": ["Simulation"],
         "networks": {
@@ -241,7 +241,7 @@
       {
         "title": "DarkTimes: Wrath of the Raven",
         "studio": "Salvagers Studio",
-        "summary": "DarkTimes is a twin-stick horror shooter where you can use two guns to aim two directions simultaneously. Defend Louisiana with your occult raven: shoot, dash, stun, bullet time to defeat hordes of monsters. They stole your child, get him back. Want to play with a friend? Coop is in the works!",
+        "summary": "DarkTimes est un jeu de tir en vue de dessus d'horreur où vous pouvez tirer avec deux armes dans deux directions différentes, simultanément. Accompagné de votre corbeau occulte, défendez la Louisiane: Tirez, esquivez, ralentissez le temps pour défaire les hordes de monstres. Mode Coop...",
         "networks": {
           "twitter": "https://twitter.com/darktimesgame?lang=fr"
         },
@@ -342,7 +342,7 @@
       {
         "title": "Each Other",
         "studio": "Smeeki",
-        "summary": "In this new puzzle game, guide Edwin and Judy through an original story and many levels. And help them to avoid the eye of the supervisors and to escape from their orphanage for the least strange...",
+        "summary": "Dans ce nouveau puzzle game, guidez Edwin et Judy à travers une histoire originale et de nombreux niveaux. Et aidez les à échapper à l'œil des surveillants et à s'enfuir de leur orphelinat pour le moins des plus étrange...",
         "networks": {
           "instagram": "https://instagram.com/eachothergame",
           "twitter": "https://twitter.com/eachothergame",
@@ -419,7 +419,7 @@
       {
         "title": "Blooming Business Casino",
         "studio": "Homo Ludens",
-        "summary": "Blooming Business: Casino is a business tycoon sim with a narrative twist. Build and run your own fantasy casino in a bustling world full of animals, drama and danger.",
+        "summary": "Blooming Business : Casino est un jeu de gestion avec un vrai aspect narratif. Construisez et gérez votre casino dans un monde plein d'animaux & de drames.",
         "link": "https://store.steampowered.com/app/1388580/Blooming_Business_Casino/",
         "networks": {
           "facebook": "https://www.facebook.com/BloomingBusinessCasino/"
