@@ -498,6 +498,17 @@
           "twitter": "https://twitter.com/how2escape_Game"
         },
         "link": "https://store.steampowered.com/app/2264140/How_2_Escape/"
+      },
+      {
+        "title": "Prune & Milo",
+        "studio": "Flocons Studio",
+        "summary": "Contrôlez Prune et Milo, un frère et une sœur, perdus dans une grotte, et aidez-les à retrouver leur maman, et, pourquoi pas, empêcher la fin du monde. 4 univers, 100 niveaux, les amèneront à acquérir de mystérieux artefacts et se retrouver au cœur d’une aventure rocambolesque qui fera chauffer vos neurones..",
+        "platforms": ["Windows"],
+        "keywords": ["Puzzle", "Narration"],
+        "networks": {
+          "twitter": "https://twitter.com/flocons_studio"
+        },
+        "link": "https://twitter.com/flocons_studio"
       }
     ]
   },
