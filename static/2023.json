@@ -17,7 +17,7 @@
         "studio": "Kevin Pedatte",
         "summary": "Le grand tournoi du Jumalien entre dans sa phase finale, seul le dieu des dieux en sortira vainqueur. Incarnez une divinité et traquez vos adversaires pour recevoir le sacrement suprême dans ce hack & slash multijoueur local !",
         "platforms": ["Windows"],
-        "keywords": ["Rogue lite"],
+        "keywords": ["Action", "Hack'n'slash"],
         "networks": {
           "twitter": "https://twitter.com/pedatte?lang=fr"
         },
@@ -28,7 +28,7 @@
         "studio": "Zero One",
         "summary": "Thanks to the Draw Your Game Infinite with its exclusive box, turn your drawings into video games! Are you ready for the adventure?",
         "platforms": ["Windows"],
-        "keywords": ["Action"],
+        "keywords": ["Action", "Platformer"],
         "networks": {
           "instagram": "https://www.instagram.com/zeroonegames/",
           "twitter": "https://twitter.com/DrawYourGame?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
@@ -99,10 +99,10 @@
       },
       {
         "title": "Magical Drop VI",
-        "studio": "Highball Games / TA Publishing / Storm Trident",
+        "studio": "Highball Games / TA Publishing / Storm Trident / Forever Entertainment",
         "summary": "Plongez dans l'histoire, affrontez des personnages fantasques, établissez de nouveaux records, résolvez des casse-tête ou mesurez-vous à vos amis/votre famille en mode multijoueur local comme aux joueurs du monde entier via la fonction en ligne.",
         "platforms": ["Windows"],
-        "keywords": ["Puzzle"],
+        "keywords": ["Arcade", "Puzzle"],
         "networks": {
           "twitter": "https://twitter.com/Magical_Drop_DB?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
         },
@@ -134,9 +134,7 @@
         "studio": "SuperSaZ Studio",
         "summary": "Super reaKtor is a survival / scoring game, created during the OctoJam 2022.",
         "platforms": ["Windows"],
-        "keywords": ["Schmup"],
-        "networks": {
-        },
+        "keywords": ["Arcade", "Bullet Hell"],
         "link": "https://sushift5.itch.io/super-reaktor"
       },
       {
@@ -178,7 +176,7 @@
         "studio": "Belette Team Studio",
         "summary": "Let's micro chip some peasants and overthrow the king ! TNM is a roguelike where you control an army of micro chipped warriors during a half autobattle, half action phase. After the fights, manage your resources into a secret laboratory !",
         "platforms": ["Windows"],
-        "keywords": ["Rogue like"],
+        "keywords": ["Roguelike"],
         "networks": {
           "instagram": "https://www.instagram.com/theyrenotmonsters/",
           "twitter": "https://twitter.com/Azgoum",
@@ -196,6 +194,18 @@
           "twitter": "https://twitter.com/prismalice?lang=fr"
         },
         "link": "https://store.steampowered.com/app/1138210/Esperia__Uprising_of_the_Scarlet_Witch/"
+      },
+      {
+        "title": "Number 99",
+        "studio": "Tuesday Quest",
+        "summary": "Each galactic cycle, the best pilots of the galaxy compete in an extreme championship of races where all the tricks are allowed. You are the first representative of the earth, the 99th planet to have reached the technology level necessary to be granted to run.",
+        "networks": {
+          "twitter": "https://twitter.com/TuesdayQuest",
+          "facebook": "http://www.facebook.com/tuesdayquest"
+        },
+        "link": "https://www.tuesdayquest.com/games/number99/",
+        "keywords": ["Racing", "Roguelike"],
+        "platforms": ["Windows"]
       }
     ]
   },
@@ -208,7 +218,7 @@
         "studio": "Bunstack",
         "summary": "Pense en dehors du terrier ou fais-toi duper par l'IA de lapins trop kawaii dans Pâquerette Down the Bunburrows, un jeu de puzzle mignon et profond où tu dois attraper tous les petits lapinous!",
         "platforms": ["Windows"],
-        "keywords": ["Puzzle"],
+        "keywords": ["Aventure", "Puzzle"],
         "networks": {
           "twitter": "https://twitter.com/AbidingBridge",
           "facebook": "https://www.facebook.com/AbidingBridge"
@@ -224,19 +234,8 @@
           "twitter": "https://twitter.com/wildwitsgames"
         },
         "link": "https://wildwits.games/",
-        "keywords": ["RPG Aventure"],
+        "keywords": ["RPG", "Aventure", "Roguelike"],
         "platforms": ["Windows"]
-      },
-      {
-        "title": "How 2 Escape",
-        "studio": "Breakfirst Games",
-        "summary": "How 2 Escape est un jeu de simulation d'évasion où deux joueurs devront coopérer via des supports différents et un gameplay asymétrique. Entraide & Coopération seront les mots d'ordre pour survivre dans How 2 Escape !",
-        "platforms": ["Windows"],
-        "keywords": ["Simulation"],
-        "networks": {
-          "twitter": "https://twitter.com/how2escape_Game"
-        },
-        "link": "https://store.steampowered.com/app/2264140/How_2_Escape/"
       },
       {
         "title": "DarkTimes: Wrath of the Raven",
@@ -246,7 +245,7 @@
           "twitter": "https://twitter.com/darktimesgame?lang=fr"
         },
         "link": "https://store.steampowered.com/app/1737530/DarkTimes_Wrath_of_the_Raven/",
-        "keywords": ["Shooter"],
+        "keywords": ["Aventure", "Shooter"],
         "platforms": ["Windows"]
       },
       {
@@ -257,6 +256,7 @@
           "facebook": "https://www.youtube.com/watch?v=dNQwzWMF8Z8"
         },
         "link": "https://lecolededesign.com/fr",
+        "keywords": ["Arcade"],
         "platforms": ["Windows"]
       },
       {
@@ -267,6 +267,7 @@
           "facebook": "https://www.youtube.com/watch?v=fRgWi46wj98"
         },
         "link": "https://lecolededesign.com/fr",
+        "keywords": ["Arcade"],
         "platforms": ["Windows"]
       },
       {
@@ -277,18 +278,7 @@
           "twitter": "https://twitter.com/LaPouleNoireJV?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1451194059045826562%7Ctwgr%5Ebeb8431494397d24bf5c1c2513b8292f9ce77b84%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.arte.tv%2Fdigitalproductions%2Ffr%2Fto-hell-with-the-ugly"
         },
         "link": "https://www.arte.tv/digitalproductions/fr/to-hell-with-the-ugly",
-        "platforms": ["Windows"]
-      },
-      {
-        "title": "Number 99",
-        "studio": "Tuesday Quest",
-        "summary": "Each galactic cycle, the best pilots of the galaxy compete in an extreme championship of races where all the tricks are allowed. You are the first representative of the earth, the 99th planet to have reached the technology level necessary to be granted to run.",
-        "networks": {
-          "twitter": "https://twitter.com/TuesdayQuest",
-          "facebook": "http://www.facebook.com/tuesdayquest"
-        },
-        "link": "https://www.tuesdayquest.com/games/number99/",
-        "keywords": ["Racing"],
+        "keywords": ["Aventure", "Enquête"],
         "platforms": ["Windows"]
       },
       {
@@ -311,7 +301,7 @@
           "facebook": "https://www.facebook.com/toasterball/"
         },
         "link": "https://store.steampowered.com/app/1142810/Toasterball/",
-        "keywords": ["Arcade Multi"],
+        "keywords": ["Arcade", "Multi", "Sport"],
         "platforms": ["Windows"]
       },
       {
@@ -379,7 +369,7 @@
           "twitter": "https://twitter.com/Play_Chyss"
         },
         "link": "https://store.steampowered.com/app/2072730/Chyss/",
-        "keywords": ["Strategy"],
+        "keywords": ["Strategie"],
         "platforms": ["Windows"]
       },
       {
@@ -387,6 +377,7 @@
         "studio": "Shred Eagle",
         "summary": "Snacman est un pacman multijoueur local. Incarné un donuts prêt a tout pour manger plus de burger que vos adversaire. Avec l'aide du meilleur compagnon du donuts triompher des autres donuts pour devenir le plus gros mangeur de burger !",
         "link": "http://www.shredeagle.fr/sheet.php?p=snacman",
+        "keywords": ["Party game"],
         "platforms": ["Windows"]
       },
       {
@@ -394,8 +385,8 @@
         "studio": "Evprod",
         "summary": "Dans l’architecture moderne d’une ville exotique, un singe se multiplie et son besoin d’eau grandit. Il doit rejoindre l’océan. Vous incarnez un singe qui doit trouver de l’eau dans une ville moderne  (fusion de Brasilia et Saint-Nazaire).",
         "link": "https://www.evprod.world/warm_monkey/",
-        "keywords": ["Survie"],
-        "platforms": ["Windows, Android, Mac, IOS"]
+        "keywords": ["Aventure"],
+        "platforms": ["Windows, Android, Mac, iOS"]
       },
       {
         "title": "Cordialement",
@@ -434,6 +425,79 @@
         "platforms": ["windows"],
         "keywords": ["RPG"],
         "link": "https://store.steampowered.com/app/1394030/CESSPOOL/"
+      },
+      {
+        "title": "How to Say Goodbye",
+        "studio": "Florian Veltman / Baptiste Portefaix",
+        "summary": "How to Say Goodbye est un puzzle game narratif inspiré des livres illustrés. Ce jeu raconte les aventures d'une bande de fantômes tout juste décédés, ayant pour objectif de quitter l'espace liminal dans lequel ils se trouvent piégés.",
+        "platforms": ["Windows", "PS4", "Xbox", "Switch"],
+        "keywords": ["Puzzle", "Fiction"],
+        "link": "https://www.arte.tv/digitalproductions/fr/how-to-say-goodbye/"
+      },
+      {
+        "title": "Family Bash",
+        "studio": "Atomic Raccoon / Kilosaurus",
+        "summary": "Family Bash place le joueur dans la peau d’un jeune adulte coincé dans une réunion de famille cauchemardesque, et sommé d’enquêter sur l’héritage de son grand-père. Après un interminable trajet en train, c’est la salle des fêtes d’un petit village de Normandie qui accueille le joueur. Entre réflexions avinées et secrets honteux, l’image de la famille parfaite n’en ressort pas sans égratignures.",
+        "platforms": ["Android", "iOS"],
+        "networks": {
+          "twitter": "https://twitter.com/family_bash"
+        },
+        "keywords": ["Aventure", "Fiction"],
+        "link": "https://www.arte.tv/digitalproductions/fr/fete-de-famille-1/"
+      },
+      {
+        "title": "Inua : A Story In Ice And Time",
+        "studio": "The Pixel Hunt",
+        "summary": "Inua est un jeu narratif d'aventure où trois protagonistes voient leur destins s’entrelacer à des décennies d’intervalle dans les mêmes lieux du Grand Nord. Explorez chaque époque, récupérez des idées et manipulez leurs esprits afin de changer le cours de l’Histoire.",
+        "platforms": ["Windows", "Switch", "Android", "iOS"],
+        "networks": {
+          "twitter": "https://twitter.com/inuagame"
+        },
+        "keywords": ["Aventure", "Fiction narrative"],
+        "link": "https://store.steampowered.com/app/1479890/Inua__A_Story_in_Ice_and_Time/"
+      },
+      {
+        "title": "Vectronom",
+        "studio": "Ludopium",
+        "summary": "Les joueurs devront observer les évolutions de l’environnement au gré de la musique pour déplacer un cube en rythme, et résoudre les énigmes auxquelles ils seront confrontés. Les obstacles évoluent avec la musique et deviennent de plus en plus difficile en fonction de la progression des joueurs, mettant à l’épreuve leurs capacités de réflexion dans l’espace.",
+        "platforms": [
+          "windows",
+          "mac",
+          "switch"
+        ],
+        "keywords": [
+          "Puzzle",
+          "Multi"
+        ],
+        "link": "https://www.arte.tv/sites/webproductions/vectronom/"
+      },
+      {
+        "title": "Type:Rider",
+        "studio": "Cosmografik",
+        "summary": "Dans ce jeu de plateforme vous incarnerez « : » prêt à tout pour parcourir l’Histoire de la typographie, de la préhistoire jusqu’à aujourdhui ! Surmontez les obstacles, échappez à vos ennemis et collectionnez les astérisques, mais attention, le tout sans tomber ! Sortirez-vous indemne de ce voyage ?",
+        "platforms": [
+          "windows",
+          "mac",
+          "switch"
+        ],
+        "networks": {
+          "twitter": "https://twitter.com/Type_Rider"
+        },
+        "keywords": [
+          "Platformer"
+        ],
+        "link": "https://www.arte.tv/digitalproductions/fr/typerider/"
+      },
+      {
+        "title": "How 2 Escape",
+        "studio": "Breakfirst Games",
+        "summary": "How 2 Escape est un jeu de simulation d'évasion où deux joueurs devront coopérer via des supports différents et un gameplay asymétrique. Entraide & Coopération seront les mots d'ordre pour survivre dans How 2 Escape !",
+        "platforms": ["Windows"],
+        "keywords": ["Simulation"],
+        "networks": {
+          "twitter": "https://twitter.com/how2escape_Game"
+        },
+        "link": "https://store.steampowered.com/app/2264140/How_2_Escape/"
       }
     ]
   },
