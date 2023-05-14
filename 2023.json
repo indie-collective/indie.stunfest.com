@@ -132,7 +132,7 @@
       {
         "title": "Super reaKtor",
         "studio": "SuperSaZ Studio",
-        "summary": "Super reaKtor is a survival / scoring game, created during the OctoJam 2022.",
+        "summary": "Au croisement entre Ikaruga et Kuru Kuru Kururin, Super reaKtor est un Bullet Hell aux controles atypiques où l'on va devoir survivre en déplaçant, en tournant, ou en agrandissant/rétrécissant le Noyau (joueur) du réacteur pour esquiver les différents patterns de boulettes.",
         "platforms": ["Windows"],
         "keywords": ["Arcade", "Bullet Hell"],
         "link": "https://sushift5.itch.io/super-reaktor"
