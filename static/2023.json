@@ -555,6 +555,42 @@
   {
     "name": "gamejam",
     "displayName": "Gamejam",
-    "games": []
+    "games": [
+      {
+        "title": "Seré Pastora",
+        "studio": "Naji Mammeri, Midahaine",
+        "summary": "Jeu de pâturage avec un patou, des brebis et des lamas.",
+        "link": "https://itch.io/jam/stunjam-2023/rate/2067630",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Improbus",
+        "studio": "Le Moine Victoria",
+        "summary": "IMPROBUS est un jeu de GameJam réalisée en 48H avec une équipe de 3 personnes. Le jeu peut contenir de nombreux bugs ou peut sembler non fini dans sa version actuelle, nous travaillerons dessus pour améliorer votre expérience.",
+        "link": "https://le-moine-victoria.itch.io/improbus",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Chat GéParLé",
+        "studio": "Ascreb_CreaJeu",
+        "summary": "spriteSVG demo for cluige minimalist terminal-based-games engine",
+        "link": "https://itch.io/jam/stunjam-2023/rate/2068032",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Bag Horn",
+        "studio": "Archer01",
+        "summary": "Pour qu'ils repartent à l'aventure, remplissez le sac de Olaf et Nathan et découvrez les 3 endings possibles !",
+        "link": "https://archer01.itch.io/bag-horn",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "The Discorder - agent 49.3",
+        "studio": "Maaarty",
+        "summary": "Il n'a qu'une seule mission. Raconter les pires saloperies sur le représentant de l'opposition.",
+        "link": "https://maaarty.itch.io/the-discorder",
+        "platforms": ["Windows"]
+      }
+    ]
   }
 ]
