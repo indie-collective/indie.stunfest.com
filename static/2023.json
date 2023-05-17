@@ -263,6 +263,30 @@
         "link": "https://store.steampowered.com/app/1142810/Toasterball/",
         "keywords": ["Arcade", "Multi", "Sport"],
         "platforms": ["Windows"]
+      },
+      {
+        "title": "Dolos",
+        "studio": "Playing Paradigms",
+        "summary": "Infiltrez-vous dans Dolos, un système de régulation sociale à grande échelle. Parviendrez-vous à contrecarrer les destins pré-déterminés d'un bon nombre d'individus discriminés par l'algorithme de Dolos ?",
+        "networks": {
+          "twitter": "https://twitter.com/AbidingBridge",
+          "facebook": "https://www.facebook.com/AbidingBridge"
+        },
+        "link": "https://abidingbridge.com/jeux/",
+        "keywords": ["Gestion", "Narration"],
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Satanislas",
+        "studio": "Operating Dwarves",
+        "summary": "Un jeu de plateforme atypique où les vies sont votre monnaie d'échange: dépensez-les pour acheter des pouvoirs, ou surmontez des défis supplémentaires pour en gagner davantage !",
+        "networks": {
+          "twitter": "https://twitter.com/AbidingBridge",
+          "facebook": "https://www.facebook.com/AbidingBridge"
+        },
+        "link": "https://abidingbridge.com/jeux/",
+        "keywords": ["RPG", "Aventure"],
+        "platforms": ["Windows"]
       }
     ]
   },
