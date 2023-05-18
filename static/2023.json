@@ -605,6 +605,13 @@
         "summary": "Il n'a qu'une seule mission. Raconter les pires saloperies sur le représentant de l'opposition.",
         "link": "https://maaarty.itch.io/the-discorder",
         "platforms": ["Windows"]
+      },
+      {
+        "title": "My Turn!",
+        "studio": "Dreca",
+        "summary": "4 enfants se disputent pour jouer à la tablette. Utilisez ballons, nerfs, briques de LEGO ou autres pistolets à eau pour empêcher les autres de l'utiliser. Le 1er qui remplit la barre gagne. Attention à ne pas réveiller les parents !",
+        "link": "https://dreca.itch.io/my-turn",
+        "platforms": ["Windows"]
       }
     ]
   }
