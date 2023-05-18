@@ -4,15 +4,6 @@
     "displayName": "Compétition",
     "games": [
       {
-        "title": "Abiding Bridge",
-        "summary": "Abiding Bridge est une maison d'édition de jeux vidéo indépendants. Cette année, ils reviennent au Stunfest pour vous présenter sur leur stand les nouveautés et pépites vidéoludiques de demain !",
-        "networks": {
-          "twitter": "https://twitter.com/AbidingBridge",
-          "facebook": "https://www.facebook.com/AbidingBridge"
-        },
-        "link": "https://abidingbridge.com/"
-      },
-      {
         "title": "Jumalien",
         "studio": "Kevin Pedatte",
         "summary": "Le grand tournoi du Jumalien entre dans sa phase finale, seul le dieu des dieux en sortira vainqueur. Incarnez une divinité et traquez vos adversaires pour recevoir le sacrement suprême dans ce hack & slash multijoueur local !",
@@ -272,7 +263,7 @@
           "twitter": "https://twitter.com/AbidingBridge",
           "facebook": "https://www.facebook.com/AbidingBridge"
         },
-        "link": "https://abidingbridge.com/jeux/",
+        "link": "https://store.steampowered.com/app/2371240/DOLOS/",
         "keywords": ["Gestion", "Narration"],
         "platforms": ["Windows"]
       },
@@ -284,7 +275,7 @@
           "twitter": "https://twitter.com/AbidingBridge",
           "facebook": "https://www.facebook.com/AbidingBridge"
         },
-        "link": "https://abidingbridge.com/jeux/",
+        "link": "https://store.steampowered.com/app/2171680/Satanislas/",
         "keywords": ["RPG", "Aventure"],
         "platforms": ["Windows"]
       }
