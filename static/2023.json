@@ -58,7 +58,7 @@
         "link": "https://store.steampowered.com/app/2383300/Spook_Bowl/"
       },
       {
-        "title": "RUN : World In-Between",
+        "title": "RUN : The World In-Between",
         "studio": "Team Run",
         "summary": "RUN: The World In-Between est un nouveau plateformer \"Die and Retry\" dont le parcours à effectuer se génère de manière procédurale. Sois rapide, saute, cours pour débloquer du nouveau contenu.",
         "platforms": ["Windows"],
@@ -611,6 +611,16 @@
         "studio": "Dreca",
         "summary": "4 enfants se disputent pour jouer à la tablette. Utilisez ballons, nerfs, briques de LEGO ou autres pistolets à eau pour empêcher les autres de l'utiliser. Le 1er qui remplit la barre gagne. Attention à ne pas réveiller les parents !",
         "link": "https://dreca.itch.io/my-turn",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Dwarfs Fight",
+        "studio": "Nod Studio",
+        "summary": "",
+        "networks": {
+          "twitter": "https://twitter.com/DwarfsFight"
+        },
+        "link": "https://store.steampowered.com/app/2169010/Dwarfs_Fight/",
         "platforms": ["Windows"]
       }
     ]
