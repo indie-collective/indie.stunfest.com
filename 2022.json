@@ -133,13 +133,14 @@
         "title": "Aetheris",
         "studio": "Wild Wits Games",
         "summary": "Trouvez le pouvoir dont vous avez besoin pour venger votre tribu dans ce RPG d'aventure,\navec des combats en tour par tour et une expérience de coopération jusqu’à 4 joueurs.\"",
+        "platforms": [
+          "windows"
+        ],
+        "keywords": ["RPG", "Aventure"],
         "networks": {
-          "instagram": "https://www.instagram.com/wildwitsgames/",
           "twitter": "https://twitter.com/wildwitsgames"
         },
-        "link": "https://wildwits.games/",
-        "keywords": ["RPG", "Aventure", "Roguelike"],
-        "platforms": ["Windows"]
+        "link": "https://store.steampowered.com/app/1786010/AETHERIS/"
       },
       {
         "title": "Zigglox",
