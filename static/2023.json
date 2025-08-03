@@ -160,6 +160,7 @@
         "networks": {
           "instagram": "https://www.instagram.com/umeshulovers/?hl=fr"
         },
+        "award": "Stunfest Indie Award",
         "link": "https://store.steampowered.com/app/1812170/Danghost/?l=french"
       },
       {
@@ -251,6 +252,7 @@
           "twitter": "https://twitter.com/toasterball",
           "facebook": "https://www.facebook.com/toasterball/"
         },
+        "award": "Young Public Award",
         "link": "https://store.steampowered.com/app/1142810/Toasterball/",
         "keywords": ["Arcade", "Multi", "Sport"],
         "platforms": ["Windows"]
@@ -263,6 +265,7 @@
           "twitter": "https://twitter.com/AbidingBridge",
           "facebook": "https://www.facebook.com/AbidingBridge"
         },
+        "award": "Promise Award",
         "link": "https://store.steampowered.com/app/2371240/DOLOS/",
         "keywords": ["Gestion", "Narration"],
         "platforms": ["Windows"]
@@ -275,6 +278,7 @@
           "twitter": "https://twitter.com/AbidingBridge",
           "facebook": "https://www.facebook.com/AbidingBridge"
         },
+        "award": "People's Choice Award",
         "link": "https://store.steampowered.com/app/2171680/Satanislas/",
         "keywords": ["RPG", "Aventure"],
         "platforms": ["Windows"]
@@ -488,32 +492,19 @@
         "title": "Vectronom",
         "studio": "Ludopium",
         "summary": "Les joueurs devront observer les évolutions de l’environnement au gré de la musique pour déplacer un cube en rythme, et résoudre les énigmes auxquelles ils seront confrontés. Les obstacles évoluent avec la musique et deviennent de plus en plus difficile en fonction de la progression des joueurs, mettant à l’épreuve leurs capacités de réflexion dans l’espace.",
-        "platforms": [
-          "windows",
-          "mac",
-          "switch"
-        ],
-        "keywords": [
-          "Puzzle",
-          "Multi"
-        ],
+        "platforms": ["windows", "mac", "switch"],
+        "keywords": ["Puzzle", "Multi"],
         "link": "https://www.arte.tv/sites/webproductions/vectronom/"
       },
       {
         "title": "Type:Rider",
         "studio": "Cosmografik",
         "summary": "Dans ce jeu de plateforme vous incarnerez « : » prêt à tout pour parcourir l’Histoire de la typographie, de la préhistoire jusqu’à aujourdhui ! Surmontez les obstacles, échappez à vos ennemis et collectionnez les astérisques, mais attention, le tout sans tomber ! Sortirez-vous indemne de ce voyage ?",
-        "platforms": [
-          "windows",
-          "mac",
-          "switch"
-        ],
+        "platforms": ["windows", "mac", "switch"],
         "networks": {
           "twitter": "https://twitter.com/Type_Rider"
         },
-        "keywords": [
-          "Platformer"
-        ],
+        "keywords": ["Platformer"],
         "link": "https://www.arte.tv/digitalproductions/fr/typerider/"
       },
       {
@@ -564,6 +555,16 @@
           "facebook": "https://www.facebook.com/AbidingBridge"
         },
         "platforms": ["Windows"]
+      },
+      {
+        "title": "Dwarfs Fight",
+        "studio": "Nod Studio",
+        "summary": "",
+        "networks": {
+          "twitter": "https://twitter.com/DwarfsFight"
+        },
+        "link": "https://store.steampowered.com/app/2169010/Dwarfs_Fight/",
+        "platforms": ["Windows"]
       }
     ]
   },
@@ -611,16 +612,6 @@
         "studio": "Dreca",
         "summary": "4 enfants se disputent pour jouer à la tablette. Utilisez ballons, nerfs, briques de LEGO ou autres pistolets à eau pour empêcher les autres de l'utiliser. Le 1er qui remplit la barre gagne. Attention à ne pas réveiller les parents !",
         "link": "https://dreca.itch.io/my-turn",
-        "platforms": ["Windows"]
-      },
-      {
-        "title": "Dwarfs Fight",
-        "studio": "Nod Studio",
-        "summary": "",
-        "networks": {
-          "twitter": "https://twitter.com/DwarfsFight"
-        },
-        "link": "https://store.steampowered.com/app/2169010/Dwarfs_Fight/",
         "platforms": ["Windows"]
       }
     ]

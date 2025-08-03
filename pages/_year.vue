@@ -3,12 +3,6 @@
     <section :class="`header-${currentYear}`" class="hero">
       <div class="container has-text-centered">
         <h1><img :src="logoPath" alt="Stunfest Indie Game logo" /></h1>
-        <h2
-          v-if="currentYear === '2023'"
-          style="margin-bottom: 2em"
-        >
-          Retrouvez la liste des jeux vidéo indépendants à découvrir durant la 18ème édition du Stunfest, <br>les 19 – 20 – 21 mai 2023 au Liberté à Rennes.
-        </h2>
       </div>
     </section>
     <section :class="`header-${currentYear}`" class="hero sticky">
