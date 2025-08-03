@@ -1,0 +1,17 @@
+[
+  {
+    "name": "competition",
+    "displayName": "Compétition",
+    "games": []
+  },
+  {
+    "name": "indiegames",
+    "displayName": "Jeux indés / amateurs",
+    "games": []
+  },
+  {
+    "name": "gamejam",
+    "displayName": "Game Jam",
+    "games": []
+  }
+]

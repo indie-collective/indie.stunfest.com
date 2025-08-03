@@ -63,6 +63,15 @@
   --card-link-font-2013: var(--header-font-2013);
   --main-font-2013: 'distortion_of_the_brain_and_mind';
 
+  --header-bg-2025: #131a12;
+  --header-font-2025: #fff;
+  --header-tab-bg-2025: #ea01ea;
+  --header-tab-font-2025: #0201dc;
+  --card-h1-2025: #131a12;
+  --card-link-bg-2025: var(--card-h1-2025);
+  --card-link-font-2025: var(--header-font-2025);
+  /*--main-font-2025: 'stunfest';*/
+
   --header-bg-2023: #00926d;
   --header-font-2023: #fff;
   --header-tab-bg-2023: #fff;

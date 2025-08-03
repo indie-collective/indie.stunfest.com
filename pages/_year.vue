@@ -3,6 +3,11 @@
     <section :class="`header-${currentYear}`" class="hero">
       <div class="container has-text-centered">
         <h1><img :src="logoPath" alt="Stunfest Indie Game logo" /></h1>
+        <h2 v-if="currentYear === '2025'" style="margin-bottom: 2em">
+          Retrouvez la liste des jeux vidéo indépendants à découvrir pour les 20
+          ans du <a href="https://stunfest.com">Stunfest</a> <br />les 24 – 25 –
+          26 octobre 2025 au 360 à Rennes.
+        </h2>
       </div>
     </section>
     <section :class="`header-${currentYear}`" class="hero sticky">
@@ -10,16 +15,13 @@
         <nav class="control is-hidden-tablet">
           <div class="select is-medium is-fullwidth">
             <select @change="onSelectChange()" v-model="currentTab">
-              <option v-for="tab in currentYearTabs" :key="tab" :value="tab">{{
-                getDisplayName(tab)
-              }}</option>
+              <option v-for="tab in currentYearTabs" :key="tab" :value="tab">
+                {{ getDisplayName(tab) }}
+              </option>
               <optgroup label="Années">
-                <option
-                  v-for="year in filteredYears"
-                  :key="year"
-                  :value="year"
-                  >{{ year }}</option
-                >
+                <option v-for="year in filteredYears" :key="year" :value="year">
+                  {{ year }}
+                </option>
               </optgroup>
             </select>
           </div>
@@ -30,16 +32,14 @@
               <li
                 v-for="tab in currentYearTabs"
                 :key="tab"
-                :class="
-                  `header-tab-${currentYear}${
-                    filter === tab ? ' is-active' : ''
-                  }`
-                "
+                :class="`header-tab-${currentYear}${
+                  filter === tab ? ' is-active' : ''
+                }`"
                 @click="filter = tab"
               >
                 <a
                   :class="{
-                    'has-text-weight-bold': filter === tab
+                    'has-text-weight-bold': filter === tab,
                   }"
                 >
                   {{ getDisplayName(tab) }}
@@ -132,7 +132,7 @@
           <card
             v-if="!isGameVisible(game)"
             :card="{
-              title: ''
+              title: '',
             }"
             class="disabled"
           >
@@ -141,7 +141,11 @@
       </div>
     </section>
 
-    <section :class="`empty-section-${currentYear}`" class="empty-section" v-if="filteredSections.length === 0">
+    <section
+      :class="`empty-section-${currentYear}`"
+      class="empty-section"
+      v-if="filteredSections.length === 0"
+    >
       <p>Les jeux seront annoncés<br />prochainement !</p>
     </section>
   </div>

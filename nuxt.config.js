@@ -1,4 +1,4 @@
-const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023]
+const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023, 2025]
 
 const title = 'Indie Stunfest'
 const description = 'Welcome to the Stunfest Indie section !'
