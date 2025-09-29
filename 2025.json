@@ -2,12 +2,231 @@
   {
     "name": "competition",
     "displayName": "Compétition",
-    "games": []
+    "games": [
+      {
+        "studio": "Doot Tiny Games",
+        "title": "Kabuto Park",
+        "keywords": ["collection de créature", "cozy"],
+        "link": "https://store.steampowered.com/app/3376990/Kabuto_Park/"
+      },
+      {
+        "studio": "Tohu Bohu Games",
+        "title": "Beware of the Cartographer!",
+        "keywords": ["Puzzle", "aventure"],
+        "link": "https://store.steampowered.com/app/3905500/Beware_of_the_Cartographer/"
+      },
+      {
+        "studio": "NaejDoree Studio",
+        "title": "Contenir",
+        "keywords": ["Platformer", "narratif"],
+        "link": "https://naejdoree.itch.io/contenir"
+      },
+      {
+        "studio": "PUNKCAKE Délicieux",
+        "title": "If Letters Had Pants...",
+        "keywords": ["Puzzle", "word game", "roguelite"],
+        "link": "https://store.steampowered.com/app/3659750/If_Letters_Had_Pants_Would_They_Wear_Them_Like_This_What_About_Numbers_What_If_They_Had_Small_Shovels_And_They_Dug_Stuff_Up_To_Put_In_A_Museum/"
+      },
+      {
+        "studio": "NEVERMIND",
+        "title": "Val Fortuna",
+        "keywords": ["Roguelite tour par tour"],
+        "link": ""
+      },
+      {
+        "studio": "Super SAZ Studio",
+        "title": "Super reaKtor",
+        "keywords": ["Bullet-Hell Arcade"],
+        "link": "https://store.steampowered.com/app/3077190/Super_reaKtor/  "
+      },
+      {
+        "studio": "Pixelnest Studio",
+        "title": "CTHULOOT",
+        "keywords": ["1-4 player Couch coop"],
+        "link": "https://store.steampowered.com/app/2283410/CTHULOOT/"
+      },
+      {
+        "studio": "Dale Coop Studio",
+        "title": "Chibi Monster Brawl",
+        "keywords": ["Petit jeu de combat à plusieurs"],
+        "link": "https://dale-coop.itch.io/chibi-monster-br4wl-nes"
+      },
+      {
+        "studio": "SJ Games & Dale Coop Studio",
+        "title": "SkateCat",
+        "keywords": ["Plateformes mignon"],
+        "link": "https://store.steampowered.com/app/2708010/SkateCat/"
+      },
+      {
+        "studio": "Choc Abyss",
+        "title": "Spikair Volleyball",
+        "keywords": ["sport"],
+        "link": "https://store.steampowered.com/app/1769270/Spikair_Volleyball/  "
+      },
+      {
+        "studio": "5 Bits Games",
+        "title": "DeadCore Redux",
+        "keywords": ["FPS", "3D Platformer", "Parkour"],
+        "link": "https://store.steampowered.com/app/3484260/DeadCore_Redux/  "
+      },
+      {
+        "studio": "Pantopie",
+        "title": "Trigger of Time",
+        "keywords": ["FPS", "Aventure", "Puzzle"],
+        "link": "https://store.steampowered.com/app/3209760  "
+      },
+      {
+        "studio": "Radio Cloaque",
+        "title": "Leak",
+        "keywords": ["RPG tour par tour", "Rogue like", "ARG"],
+        "link": "https://tryton.itch.io/leak"
+      },
+      {
+        "studio": "Charles Torris",
+        "title": "Blêktre 2081",
+        "keywords": ["MMORPG sandbox"],
+        "link": "https://store.steampowered.com/app/3045400/Blktre_2081/"
+      },
+      {
+        "studio": "Yliader",
+        "title": "Brumes",
+        "keywords": ["Exploration", "strategie"],
+        "link": "https://yliader.itch.io/brumes"
+      },
+      {
+        "studio": "SalmonellaSalami",
+        "title": "CrackSword",
+        "keywords": ["Combat 2D", "Duel", "Prototype"],
+        "link": "https://salmonellasalami.itch.io/cracksword"
+      },
+      {
+        "studio": "Le Rado",
+        "title": "Appulse",
+        "keywords": ["Pinball", "Top Down Shooter", "Roguelite"],
+        "link": "https://store.steampowered.com/app/3498700/Appulse/  "
+      },
+      {
+        "studio": "(Pas encore de studio)",
+        "title": "Don't Miss Hue",
+        "keywords": ["Rythme", "Adresse"],
+        "link": "https://xoltann.itch.io/dont-miss-hue"
+      },
+      {
+        "studio": "(Pas de studio)",
+        "title": "Chrono Daedalus",
+        "keywords": ["Jeu de labyrinthe procéduraux", "exploration"],
+        "link": "https://xoltann.itch.io/chrono-daedalus"
+      },
+      {
+        "studio": "ObenStudios",
+        "title": "Keep Crafting",
+        "keywords": ["Co-op", "crafting", "asymétrique"],
+        "link": "https://sygmei.itch.io/keep-crafting"
+      },
+      {
+        "studio": "ObenStudios",
+        "title": "My Death as a Duchess",
+        "keywords": ["Visual Novel", "Roguelike"],
+        "link": ""
+      },
+      {
+        "studio": "Vincent Ogloblinsky",
+        "title": "Le palet - le jeu vidéo",
+        "keywords": ["Jeu de simulation"],
+        "link": "https://www.lepalet-lejeuvideo.fr"
+      },
+      {
+        "studio": "Potofu Studio",
+        "title": "FUFUFU",
+        "keywords": ["Couch Game", "Roguelite"],
+        "link": "https://store.steampowered.com/app/2025050/FUFUFU/  "
+      },
+      {
+        "studio": "Studio Fadingues",
+        "title": "Fading Echoes",
+        "keywords": ["Immersive exploration"],
+        "link": "https://cloudcastleaudio.itch.io/fading-echoes"
+      },
+      {
+        "studio": "P21-ENJMIN",
+        "title": "Iridescent",
+        "keywords": ["Puzzle", "Narration", "Ambiance"],
+        "link": "https://felixve.itch.io/iridescent"
+      },
+      {
+        "studio": "Bastinus Rex",
+        "title": "CARIMARA - Beneath the forlorn limbs",
+        "keywords": ["Short", "Investigation", "Mystère", "Première personne"],
+        "link": "https://store.steampowered.com/app/3570370"
+      },
+      {
+        "studio": "Albatar Studio",
+        "title": "Kimz VS Les Ragogo",
+        "keywords": ["Visual Novel", "Arcade"],
+        "link": "https://albatar-studio.itch.io/kimz-vs-les-ragogo"
+      },
+      {
+        "studio": "Red Rabbit",
+        "title": "Lifelong",
+        "keywords": ["Aventure", "exploration", "réflexion"],
+        "link": "https://store.steampowered.com/app/2414990/Lifelong/  "
+      },
+      {
+        "studio": "Frog Collective",
+        "title": "Die for a Die",
+        "keywords": ["turn based strategy", "roguelike"],
+        "link": ""
+      },
+      {
+        "studio": "Furious Pixel",
+        "title": "La Litière: Trigo",
+        "keywords": ["Pédagogique"],
+        "link": "https://store.steampowered.com/app/3288520/La_Litire_Trigo/"
+      },
+      {
+        "studio": "Tiecorp Studio",
+        "title": "Tiebreakers",
+        "keywords": ["2D Shooter", "Run n' gun", "Action"],
+        "link": ""
+      },
+      {
+        "studio": "Team KwaKwa",
+        "title": "Beach Slap",
+        "keywords": ["Party game", "compétitif"],
+        "link": "https://store.steampowered.com/app/3170110/Beach_Slap/"
+      },
+      {
+        "studio": "Little Combo",
+        "title": "Versus in the Dark",
+        "keywords": ["Plateform", "fighter"],
+        "link": "https://store.steampowered.com/app/3064240/Versus_in_the_Dark/"
+      }
+    ]
   },
   {
     "name": "indiegames",
     "displayName": "Jeux indés / amateurs",
-    "games": []
+    "games": [
+      {
+        "studio": "Playing Paradigms",
+        "title": "DOLOS: Your Best Future",
+        "keywords": ["Narratif", "Gestion", "Strategie"],
+        "link": "https://store.steampowered.com/app/2371240/DOLOS_Your_Best_Future/"
+      },
+
+      {
+        "studio": "Vladirien",
+        "title": "Frontline Survivors",
+        "keywords": ["Bullet Heaven"],
+        "link": "https://store.steampowered.com/app/2275220/Frontline_Survivors/  "
+      },
+      {
+        "studio": "Vladirien",
+        "title": "Frontline Command",
+        "keywords": ["Auto Battler", "Roguelite"],
+        "link": "https://store.steampowered.com/app/3349060/Frontline_Command  "
+      }
+    ]
   },
   {
     "name": "gamejam",
