@@ -31,7 +31,7 @@
     </div>
 
     <footer v-if="mainLink" class="card-footer">
-      <a :href="mainLink" class="card-footer-item has-text-weight-bold">
+      <a :href="mainLink" target="_blank" rel="noopener noreferrer" class="card-footer-item has-text-weight-bold">
         Allez-le voir !
       </a>
     </footer>
