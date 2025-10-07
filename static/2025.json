@@ -21,7 +21,7 @@
         "studio": "NaejDoree Studio",
         "title": "Contenir",
         "keywords": ["Platformer", "narratif"],
-        "link": "https://naejdoree.itch.io/contenir",
+        "link": "https://store.steampowered.com/app/4037190/Contenir/",
         "summary": "Parcourez le journal d'une femme trans de son enface à l'age adulte sous une forme unique immergeant le joueur émotionellement via le gameplay."
       },
       {
@@ -88,20 +88,6 @@
         "summary": "Trigger of Time est une courte aventure atmosphérique en vue à la première personne, mêlant énigmes et manipulation temporelle, inspirée par Portal et Outer Wilds. Explorez les ruines d’une civilisation qui a tenté de maîtriser le temps. Découvrez ce qui est arrivé à une expédition disparue… et à la femme que vous recherchez."
       },
       {
-        "studio": "Radio Cloaque",
-        "title": "Leak",
-        "keywords": ["RPG tour par tour", "Rogue like", "ARG"],
-        "link": "https://tryton.itch.io/leak",
-        "summary": "Mon jeu est un roguelite où l’on explore un donjon à la manière de Binding of Isaac, avec des combats au tour par tour inspirés de Mario & Luigi. Les personnages gagnent en puissance en s’équipant de stickers, obtenus au hasard dans des boosters, des coffres, en boutique ou à la fin des combats."
-      },
-      {
-        "studio": "Charles Torris",
-        "title": "Blêktre 2081",
-        "keywords": ["MMORPG sandbox"],
-        "link": "https://store.steampowered.com/app/3045400/Blktre_2081/",
-        "summary": "Dans les vestiges d'un monde réduit en bouillie par le capitalisme, vous incarnez un migrant qui va tenter de survivre en investissant et en écrasant les autres."
-      },
-      {
         "studio": "Yliader",
         "title": "Brumes",
         "keywords": ["Exploration", "strategie"],
@@ -121,27 +107,6 @@
         "keywords": ["Pinball", "Top Down Shooter", "Roguelite"],
         "link": "https://store.steampowered.com/app/3498700/Appulse/",
         "summary": "Appulse est un jeu de flipper spatial qui réunit l'intensité des jeux de tir, la dextérité du flipper et la profondeur du roguelite. Améliorez votre bille, votre arme et partez à la conquête de vaisseaux spatiaux pour gagner la guerre !"
-      },
-      {
-        "studio": "(Pas encore de studio)",
-        "title": "Don't Miss Hue",
-        "keywords": ["Rythme", "Adresse"],
-        "link": "https://xoltann.itch.io/dont-miss-hue",
-        "summary": "Des balles se dirigent dans un rythme vers un cercle, le joueur doit ensuite tirer ces balles de  couleur sur des formes de couleurs correspondante avant que les balles n'entrent en collisions, plusieurs mécaniques viendront pimenter la partie."
-      },
-      {
-        "studio": "(Pas de studio)",
-        "title": "Chrono Daedalus",
-        "keywords": ["Jeu de labyrinthe procéduraux", "exploration"],
-        "link": "https://xoltann.itch.io/chrono-daedalus",
-        "summary": "Un jeu d'exploration de labyrinthe."
-      },
-      {
-        "studio": "ObenStudios",
-        "title": "Keep Crafting",
-        "keywords": ["Co-op", "crafting", "asymétrique"],
-        "link": "https://sygmei.itch.io/keep-crafting",
-        "summary": "Keep Crafting est un party game coopératif pour 4 joueurs. Trois Crafters gèrent l’atelier et ses nombreuses machines tandis que le Workshop Manager, privé d’écran, lit le manuel et guide l’équipe. Objectif : collecter les ressources, opérer finement chaque machine, gérer pannes et imprévus, puis assembler des objets exigeants pour des clients pressés. Communication précise, synchronisation stricte et gestion des erreurs font la différence."
       },
       {
         "studio": "ObenStudios",
@@ -261,6 +226,41 @@
         "keywords": ["Auto Battler", "Roguelite"],
         "link": "https://store.steampowered.com/app/3349060/Frontline_Command",
         "summary": "Frontline Command est un jeu de auto battler tactique dans lequel vous contrôlez une escouade de soldats au cours de missions intenses dans un cadre militaire moderne. Faites preuve de stratégie et d'habileté au combat pour déjouer les tactiques de vos adversaires tout en naviguant dans des scénarios de champ de bataille difficiles."
+      },
+      {
+        "studio": "Charles Torris",
+        "title": "Blêktre 2081",
+        "keywords": ["MMORPG sandbox"],
+        "link": "https://store.steampowered.com/app/3045400/Blktre_2081/",
+        "summary": "Dans les vestiges d'un monde réduit en bouillie par le capitalisme, vous incarnez un migrant qui va tenter de survivre en investissant et en écrasant les autres."
+      },
+      {
+        "studio": "Radio Cloaque",
+        "title": "Leak",
+        "keywords": ["RPG tour par tour", "Rogue like", "ARG"],
+        "link": "https://tryton.itch.io/leak",
+        "summary": "Mon jeu est un roguelite où l’on explore un donjon à la manière de Binding of Isaac, avec des combats au tour par tour inspirés de Mario & Luigi. Les personnages gagnent en puissance en s’équipant de stickers, obtenus au hasard dans des boosters, des coffres, en boutique ou à la fin des combats."
+      },
+      {
+        "studio": "(Pas encore de studio)",
+        "title": "Don't Miss Hue",
+        "keywords": ["Rythme", "Adresse"],
+        "link": "https://xoltann.itch.io/dont-miss-hue",
+        "summary": "Des balles se dirigent dans un rythme vers un cercle, le joueur doit ensuite tirer ces balles de  couleur sur des formes de couleurs correspondante avant que les balles n'entrent en collisions, plusieurs mécaniques viendront pimenter la partie."
+      },
+      {
+        "studio": "(Pas de studio)",
+        "title": "Chrono Daedalus",
+        "keywords": ["Jeu de labyrinthe procéduraux", "exploration"],
+        "link": "https://xoltann.itch.io/chrono-daedalus",
+        "summary": "Un jeu d'exploration de labyrinthe."
+      },
+      {
+        "studio": "ObenStudios",
+        "title": "Keep Crafting",
+        "keywords": ["Co-op", "crafting", "asymétrique"],
+        "link": "https://sygmei.itch.io/keep-crafting",
+        "summary": "Keep Crafting est un party game coopératif pour 4 joueurs. Trois Crafters gèrent l’atelier et ses nombreuses machines tandis que le Workshop Manager, privé d’écran, lit le manuel et guide l’équipe. Objectif : collecter les ressources, opérer finement chaque machine, gérer pannes et imprévus, puis assembler des objets exigeants pour des clients pressés. Communication précise, synchronisation stricte et gestion des erreurs font la différence."
       }
     ]
   },
