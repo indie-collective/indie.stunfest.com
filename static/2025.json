@@ -267,6 +267,28 @@
   {
     "name": "gamejam",
     "displayName": "Game Jam",
-    "games": []
+    "games": [
+      {
+        "title": "Lava Rush",
+        "studio": "Maaarty",
+        "summary": "Dans Lava Rush, les manchots n’ont pas peur de la chaleur ! Glisse à toute allure sur un glaçon en dévalant les pentes d’un volcan en éruption, pendant que la lave te talonne.\nFais un max de figures stylées, évite les obstacles, et marque plus de points que tes potes dans ce jeu de course multijoueur en coop locale complètement givré !",
+        "link": "https://maaarty.itch.io/lava-rush",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Monomain, Forgeron du Prince",
+        "studio": "Naji Mammeri",
+        "summary": "Vous incarnez Monomain, Forgeron du Prince. Les plus fines lames du royaume ont été forgées de vos mains. Enfin, de votre main.\nLes fruits acérés de votre forge ont tellement été couronnés de succès que le Prince ne connaît plus d'ennemi.\nPlus de contrée voisine débordant d'ardeur...\nPlus d'invasion de gobelins...\nPlus de révolte...\n...\nEn somme on se fait chier.\nAlors aujourd'hui, c'est juste de la petite bidouille à la forge, tranquilou bilou, pour garder la main.",
+        "link": "https://najjaman.itch.io/monomain",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Lavageddon",
+        "studio": "Dreca",
+        "summary": "",
+        "link": "",
+        "platforms": ["Windows"]
+      }
+    ]
   }
 ]
