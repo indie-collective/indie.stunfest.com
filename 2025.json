@@ -119,7 +119,7 @@
         "studio": "ObenStudios",
         "title": "My Death as a Duchess",
         "keywords": ["Visual Novel", "Roguelike"],
-        "link": "",
+        "link": "https://store.steampowered.com/app/3989950/My_Death_as_a_Duchess",
         "summary": "My Death as a Duchess est un jeu de survie où le joueur incarne une duchesse prenant le contrôle d'un duché maudit. Ce jeu mêle à la fois intrigue narrative et stratégie, où l’on vit des événements sous forme de Visual Novel, organise le quotidien de la duchesse via une interface de gestion de planning, et explore librement le château dans lequel évoluent les personnages."
       },
       {
@@ -259,7 +259,7 @@
         "studio": "ObenStudios",
         "title": "Keep Crafting",
         "keywords": ["Co-op", "crafting", "asymétrique"],
-        "link": "https://sygmei.itch.io/keep-crafting",
+        "link": "https://store.steampowered.com/app/3965290/Keep_Crafting",
         "summary": "Keep Crafting est un party game coopératif pour 4 joueurs. Trois Crafters gèrent l’atelier et ses nombreuses machines tandis que le Workshop Manager, privé d’écran, lit le manuel et guide l’équipe. Objectif : collecter les ressources, opérer finement chaque machine, gérer pannes et imprévus, puis assembler des objets exigeants pour des clients pressés. Communication précise, synchronisation stricte et gestion des erreurs font la différence."
       }
     ]
@@ -267,6 +267,28 @@
   {
     "name": "gamejam",
     "displayName": "Game Jam",
-    "games": []
+    "games": [
+      {
+        "title": "Lava Rush",
+        "studio": "Maaarty",
+        "summary": "Dans Lava Rush, les manchots n’ont pas peur de la chaleur ! Glisse à toute allure sur un glaçon en dévalant les pentes d’un volcan en éruption, pendant que la lave te talonne.\nFais un max de figures stylées, évite les obstacles, et marque plus de points que tes potes dans ce jeu de course multijoueur en coop locale complètement givré !",
+        "link": "https://maaarty.itch.io/lava-rush",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Monomain, Forgeron du Prince",
+        "studio": "Naji Mammeri",
+        "summary": "Vous incarnez Monomain, Forgeron du Prince. Les plus fines lames du royaume ont été forgées de vos mains. Enfin, de votre main.\nLes fruits acérés de votre forge ont tellement été couronnés de succès que le Prince ne connaît plus d'ennemi.\nPlus de contrée voisine débordant d'ardeur...\nPlus d'invasion de gobelins...\nPlus de révolte...\n...\nEn somme on se fait chier.\nAlors aujourd'hui, c'est juste de la petite bidouille à la forge, tranquilou bilou, pour garder la main.",
+        "link": "https://najjaman.itch.io/monomain",
+        "platforms": ["Windows"]
+      },
+      {
+        "title": "Lavageddon",
+        "studio": "Dreca",
+        "summary": "",
+        "link": "",
+        "platforms": ["Windows"]
+      }
+    ]
   }
 ]
