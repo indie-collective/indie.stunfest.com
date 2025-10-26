@@ -288,9 +288,9 @@
       },
       {
         "title": "Lavageddon",
-        "studio": "Dreca",
-        "summary": "",
-        "link": "",
+        "studio": "PaintAuChocolat, Herael, Dreca",
+        "summary": "Incarnez 2 touristes en embonpoint perdus au fond d'un cratère de volcan en éruption, et luttez pour assurer votre survie !",
+        "link": "https://paintauchocolat.itch.io/lavageddon",
         "platforms": ["Windows"]
       }
     ]
