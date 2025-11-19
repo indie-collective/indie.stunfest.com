@@ -3,11 +3,26 @@ import Card from '~/components/Card.vue'
 // Constants
 const years = [2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022, 2023, 2025]
 const awards = [
+  // old names until 2025
   'Stunfest Indie Award',
   'Promise Award',
   "People's Choice Award",
   'GameJam Award',
   'Young Public Award',
+
+  // official names decided in 2025
+  'Prix du Jury',
+  "Mention Spéciale du Jury", // not an award but happened
+  "Prix Espoir du Jury",
+  'Prix du Public',
+  'Prix Jury Jeunes',
+
+  // in English
+  'Jury Award',
+  "Special Mention", // not an award but happened
+  "Promise Award",
+  'Audience Award',
+  'Youth Jury Award'
 ]
 
 function randomizeCards(cardSection) {
