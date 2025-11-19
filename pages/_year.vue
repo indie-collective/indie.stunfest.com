@@ -4,7 +4,7 @@
       <div class="container has-text-centered">
         <h1><img :src="logoPath" alt="Stunfest Indie Game logo" /></h1>
         <h2 v-if="currentYear === '2025'" style="margin-bottom: 2em">
-          Retrouvez la liste des jeux vidéo indépendants à découvrir pour les 20
+          Retrouvez la liste des jeux vidéo indépendants présents pour les 20
           ans du <a href="https://stunfest.com">Stunfest</a> <br />les 24 – 25 –
           26 octobre 2025 au 360 à Rennes.
         </h2>
